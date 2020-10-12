@@ -3,7 +3,7 @@
     <div class="row justify-content-between">
       <div class="col-sm-6 col-md-6 col-xl-3 p-0">
         <div class="single-footer-widget footer_1">
-          <a href="/" class="whiteBig no-padding">{{ site.club.name }}</a>
+          <a href="/" class="whiteBig no-padding">{{ site.club_name }}</a>
           <p class="white d-none d-md-block">
             © 2020 | <a href="#">Privacy Policy</a>
           </p>
@@ -11,20 +11,22 @@
       </div>
       <div class="col-xl-3 col-sm-6 col-md-6 no-padding-mobile">
         <div class="single-footer-widget footer_2">
+          {% if site.modules.contacts %}
           <h4 class="foot-headings">Contatti</h4>
           <div class="contact_info">
             <ul>
               <li>
-                <a href="#">Numero Telefono</a>
+                <a href="#">{{ site.modules.contacts.phone }}</a>
               </li>
               <li>
-                <a href="#">Numero Mobile</a>
+                <a href="#">{{ site.modules.contacts.mobile }}</a>
               </li>
               <li>
-                <a href="#">Email</a>
+                <a href="#">{{ site.modules.contacts.email }}</a>
               </li>
             </ul>
           </div>
+          {% endif %}
         </div>
       </div>
       <div class="col-xl-3 col-sm-6 col-md-6 no-padding-mobile">

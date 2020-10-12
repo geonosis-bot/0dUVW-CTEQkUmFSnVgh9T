@@ -31,7 +31,7 @@ url: "https://golee.it/" # the base hostname & protocol for your site, e.g. http
 # Config from builder
 
 # Main 
-logo_url: https://via.placeholder.com/100x20
+logo_url: https://via.placeholder.com/300x80
 club_name: Club's name # maybe we can use only title (line 21)
 first_color: "#ccc"
 second_color: "#eee"
@@ -48,6 +48,13 @@ modules:
       consectetur adipisicing elit. Ut molestias id eaque delectus eos
       porro, ullam aperiam ad fugit, magnam laboriosam ex officia cumque
       voluptas nam doloremque mollitia ratione inventore.
+
+  # Contacts
+  contacts:
+    phone: 05499956788
+    mobile: 3351276318
+    email: info@club.it
+
 
 
 # Build settings

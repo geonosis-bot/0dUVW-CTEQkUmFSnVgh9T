@@ -28,10 +28,13 @@ It's divided into modules and a main configuration.
 
 - `modules`
     - `intro`: Intro module object
-        - `img_url`: image url to show as hero image of the website
+        - `img_url`
         - `title` 
         - `subtitle`
-    - ...
+    - `contacts`: Contacts module object
+        - `phone`
+        - `mobile`
+        - `email`
 
 To enable/disable modules just remove or add them to the `modules` list.
 

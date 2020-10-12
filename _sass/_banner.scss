@@ -1,24 +1,23 @@
 /**************** banner part css start ****************/
 .banner_part {
-  height: calc(100vh - $header_height);
+  height: calc(100vh - $header_height) !important;
   position: relative;
   overflow: hidden;
-  background-image: url(../img/banner_img_space.png);
+  // background-image: url(../img/banner_img_space.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right top;
-  background-position: 60%;
+  background-position: center;
 
-  @media #{$tab} {
-    height: 750px;
-    background-image: none;
-    background-color: #f7f7f7;
-  }
-  @media #{$medium_device} {
-    height: 650px;
-    background-image: none;
-    background-color: #f7f7f7;
-  }
+  // @media #{$tab} {
+  //   height: 750px;
+  //   background-image: none;
+  //   background-color: #f7f7f7;
+  // }
+  // @media #{$medium_device} {
+  //   height: 650px;
+  //   background-image: none;
+  //   background-color: #f7f7f7;
+  // }
 
   .banner_text {
     display: table;
