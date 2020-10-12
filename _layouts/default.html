@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body class="page-{{ page.namespace }}">
+    <!-- Header -->
+    {% include header.html %}
+
+    <!-- Content -->
+    <div class="content {{ page.namespace }}">{{ content }}</div>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+    <!-- Scripts -->
+    {% include scripts.html %}
+  </body>
+</html>
