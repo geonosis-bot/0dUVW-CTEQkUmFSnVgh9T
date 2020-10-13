@@ -16,5 +16,5 @@
   "first_color": "#fff",
   "club_name": "Seregno",
   "logo_url": "https://prod-pepa.goleeapi.dev/api/p/clubs/1/logo",
-  "subpath": ""
+  "subpath": "/"
 }
