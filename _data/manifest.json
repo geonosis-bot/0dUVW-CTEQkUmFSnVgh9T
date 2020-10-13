@@ -1,0 +1,19 @@
+{
+  "modules": {
+    "intro": {
+      "background_url": "https://storage.googleapis.com/golee.it/img/golee-evoluzione-digitale-sport-piattaforma-gestionale-club-sportivi-banner-home_01.jpg",
+      "title": "Benvenuti!",
+      "subtitle": "Questo è il sito nuovo del Milan"
+    },
+    "contacts": {
+      "phone": "0392051594",
+      "mobile": "3703074296",
+      "email": "piselli@golee.it"
+    }
+  },
+  "is_undermaintenance": true,
+  "second_color": "#fff",
+  "first_color": "#fff",
+  "club_name": "Seregno",
+  "logo_url": "https://prod-pepa.goleeapi.dev/api/p/clubs/1/logo"
+}

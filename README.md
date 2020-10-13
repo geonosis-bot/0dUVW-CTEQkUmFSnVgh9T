@@ -28,7 +28,7 @@ It's divided into modules and a main configuration.
 
 - `modules`
     - `intro`: Intro module object
-        - `img_url`
+        - `background_url`
         - `title` 
         - `subtitle`
     - `contacts`: Contacts module object
