@@ -15,7 +15,7 @@ section.intro {
 
       &.left {
         width: 40%;
-        padding-right: 20px !important;
+        padding-right: 40px !important;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -28,6 +28,17 @@ section.intro {
           }
           @include respond-to(xs) {
             font-size: 32px;
+          }
+        }
+
+        h3 {
+          font-size: 24px;
+
+          @include respond-to(sm) {
+            font-size: 20px;
+          }
+          @include respond-to(xs) {
+            font-size: 18px;
           }
         }
       }
@@ -43,18 +54,20 @@ section.intro {
   //   Responsive
 
   @include respond-to(upto-sm) {
+    height: auto !important;
     > div {
       flex-direction: column;
       > div {
         width: 100% !important;
 
         &.left {
+          padding: 30px 15px !important;
           justify-content: center;
           align-items: center;
-        //   height: 30%;
+          text-align: center;
         }
         &.right {
-        //   height: 70%;
+          height: 300px;
         }
       }
     }
