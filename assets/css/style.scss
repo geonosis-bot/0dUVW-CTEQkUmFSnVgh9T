@@ -4,9 +4,9 @@
 ---
 
 // Colors from _config.yml
-$first_color: "{{ site.first_color }}";
-$second_color: "{{ site.second_color }}";
-$third_color: "{{ site.third_color }}";
+$first_color: "{{ site.data.manifest.first_color }}";
+$second_color: "{{ site.data.manifest.second_color }}";
+$third_color: "{{ site.data.manifest.third_color }}";
 
 // variable scss
 @import "variables";
