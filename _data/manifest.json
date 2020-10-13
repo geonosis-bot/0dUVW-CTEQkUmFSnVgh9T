@@ -1,20 +1,22 @@
 {
+  "is_undermaintenance": false,
+  "first_color": "#3613D3",
+  "second_color": "#EFCB15",
+  "text_on_first_color": "#fff",
+  "text_on_second_color": "#fff",
+  "club_name": "Seregno",
+  "logo_url": "https://prod-pepa.goleeapi.dev/api/p/clubs/1/logo",
+  "subpath": "/",
   "modules": {
     "intro": {
       "background_url": "https://storage.googleapis.com/golee.it/img/golee-evoluzione-digitale-sport-piattaforma-gestionale-club-sportivi-banner-home_01.jpg",
-      "title": "Benvenuti!",
-      "subtitle": "Questo è il sito nuovo del Milan"
+      "title": "La passione prima di tutto",
+      "subtitle": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, vero accusamus distinctio, quisquam commodi maiores nobis odio nostrum veniam nihil tempore deserunt! Sequi nulla neque doloribus aliquam eum? Iste, recusandae!"
     },
     "contacts": {
       "phone": "0392051594",
       "mobile": "3703074296",
       "email": "piselli@golee.it"
     }
-  },
-  "is_undermaintenance": true,
-  "second_color": "#fff",
-  "first_color": "#fff",
-  "club_name": "Seregno",
-  "logo_url": "https://prod-pepa.goleeapi.dev/api/p/clubs/1/logo",
-  "subpath": "/"
+  }
 }

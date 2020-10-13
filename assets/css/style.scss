@@ -4,9 +4,11 @@
 ---
 
 // Colors from _config.yml
-$first_color: "{{ site.data.manifest.first_color }}";
-$second_color: "{{ site.data.manifest.second_color }}";
-$third_color: "{{ site.data.manifest.third_color }}";
+$first_color: {{ site.data.manifest.first_color }};
+$second_color: {{ site.data.manifest.second_color }};
+
+// Intro image (used in css so get it as variable)
+$intro_background_img: "{{site.data.manifest.modules.intro.background_url }}";
 
 // variable scss
 @import "variables";
@@ -22,9 +24,10 @@ $third_color: "{{ site.data.manifest.third_color }}";
 
 @import "blog";
 @import "single_blog";
+
 // body scss
+@import "header";
 @import "menu";
-@import "banner";
 @import "our_service";
 @import "about_part";
 @import "our_project";
@@ -46,4 +49,12 @@ $third_color: "{{ site.data.manifest.third_color }}";
 // The Space
 @import "thespace";
 
-@import "footer";
+// Modules
+@import "maintenance";
+@import "_modules/intro";
+
+// General overrides 
+
+a {
+    color: $base_color;
+}

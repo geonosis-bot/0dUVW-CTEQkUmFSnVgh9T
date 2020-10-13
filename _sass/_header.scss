@@ -1,0 +1,43 @@
+header.main_menu {
+  height: $header_height_full;
+  padding: 0 !important;
+  border-bottom: 2px solid $grey_color_light;
+
+  > div {
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .identity {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > img {
+        width: 80px;
+      }
+
+      > span {
+        margin-left: 20px;
+        font-weight: $font_bold;
+        font-size: $font_size30;
+      }
+    }
+
+    .menu {
+      > ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        > li {
+          > a {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+}

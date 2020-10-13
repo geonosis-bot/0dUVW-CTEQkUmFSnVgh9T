@@ -1,6 +1,6 @@
 /**************** banner part css start ****************/
 .banner_part {
-  height: calc(100vh - $header_height) !important;
+  height: calc(100vh - #{$header_height_full}) !important;
   position: relative;
   overflow: hidden;
   // background-image: url(../img/banner_img_space.png);

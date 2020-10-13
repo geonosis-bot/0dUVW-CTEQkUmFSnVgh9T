@@ -11,6 +11,11 @@ $font_size40: 36px;
 $font_size60: 60px;
 $font_size80: 80px;
 
+$font_light: 300;
+$font_regular: 400;
+$font_medium: 500;
+$font_bold: 700;
+
 $white_color: #fff;
 $black_color: #000;
 $menu_color: #0c2e60;
@@ -23,14 +28,26 @@ $grey_color_super_light: #f9f9f9;
 $grey_color_dark: #a3a3a3;
 $back_dark: #222222;
 
-$btn_bg: #e90c85;
-$btn_hover: #0167b2;
-$base_color: #0066b1;
-$menu_base_color: #0066b3;
+// Original from the space
+// $btn_bg: #e90c85;
+// $btn_hover: #0167b2;
+// $base_color: #0066b1;
+// $menu_base_color: #0066b3;
+// $section_bg: #111010;
+// $section_bg_1: #454545;
+// $heading_color: #0167b2;
+// $heading_color2: #e90c85;
+
+// Dynamic version
+$btn_bg: $second_color;
+$btn_hover: $first_color;
+$base_color: $first_color;
+$menu_base_color: $first_color;
 $section_bg: #111010;
 $section_bg_1: #454545;
-$heading_color: #0167b2;
-$heading_color2: #e90c85;
+$heading_color: $first_color;
+$heading_color2: $second_color;
+
 $p_color: #666666;
 $font_1: #83868c;
 $font_2: #646464;
@@ -59,3 +76,6 @@ $xs_mobile: "(max-width: 420px)";
 $sm_mobile: "only screen and (min-width: 421px) and (max-width: 575px)";
 $big_screen: "only screen and (min-width: 1200px) and (max-width: 1440px)";
 $extra_big_screen: "only screen and (min-width: 1200px) and (max-width: 3640px)";
+
+$header_height_full: 120px;
+$header_height: 80px;
