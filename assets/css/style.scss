@@ -6,6 +6,8 @@
 // Colors from _config.yml
 $first_color: {{ site.data.manifest.first_color }};
 $second_color: {{ site.data.manifest.second_color }};
+$text_on_first_color: {{ site.data.manifest.text_on_first_color }};
+$text_on_second_color: {{ site.data.manifest.text_on_second_color }};
 
 // Intro image (used in css so get it as variable)
 $intro_background_img: "{{site.data.manifest.modules.intro.background_url }}";
@@ -57,4 +59,18 @@ $intro_background_img: "{{site.data.manifest.modules.intro.background_url }}";
 
 a {
     color: $base_color;
+}
+
+// TODO: move to utils
+.first-color {
+    color: $first_color !important;
+}
+.second-color {
+    color: $second_color !important;
+}
+.first-color-bg {
+    background-color: $first_color !important;
+}
+.second-color-bg {
+    background-color: $second_color !important;
 }

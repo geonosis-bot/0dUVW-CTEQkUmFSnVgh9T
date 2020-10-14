@@ -6,9 +6,14 @@
   height: 100vh;
 
   > div {
+    background-color: $grey_color_light;
+    * {
+      color: $black_color !important;
+    }
     width: 600px;
     max-width: 100%;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+    border-radius: 10px;
   }
 }

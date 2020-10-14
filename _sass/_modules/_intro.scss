@@ -18,7 +18,11 @@ section.intro {
         padding-right: 40px !important;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: space-between;
+
+        .top {
+          padding-top: 20px;
+        }
 
         h1 {
           font-size: 65px;
