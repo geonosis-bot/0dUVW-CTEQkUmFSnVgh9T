@@ -4,16 +4,14 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-
+  background-color: $first_color;
   > div {
-    background-color: $grey_color_light;
     * {
-      color: $black_color !important;
+      color: $text_on_first_color !important;
     }
     width: 600px;
     max-width: 100%;
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
   }
 }
