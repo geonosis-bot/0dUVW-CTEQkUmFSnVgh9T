@@ -1,5 +1,5 @@
 {
-  "is_undermaintenance": true,
+  "is_undermaintenance": false,
   "first_color": "#2E4057",
   "second_color": "#4B88A2",
   "text_on_first_color": "#F18F01",
@@ -17,6 +17,12 @@
       "phone": "0392051594",
       "mobile": "3703074296",
       "email": "piselli@golee.it"
+    },
+    "social": {
+      "linkFb": "fasf",
+      "linkIg": "insta",
+      "linkYt": "youtybe",
+      "linkTw": ""
     }
   }
 }

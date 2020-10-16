@@ -31,29 +31,46 @@
       </div>
       <div class="col-xl-3 col-sm-6 col-md-6 no-padding-mobile">
         <div class="single-footer-widget footer_2">
+          {% if site.data.manifest.modules.social %}
+
+          <!-- Assign to avoid write always long name -->
+          {% assign fb = site.data.manifest.modules.social.linkFb %}
+          {% assign ig = site.data.manifest.modules.social.linkIg %}
+          {% assign tw = site.data.manifest.modules.social.linkTw %}
+          {% assign yt = site.data.manifest.modules.social.linkYt %}
+
           <h4 class="foot-headings">Social</h4>
           <div class="footer_img">
-            <a href="#"
+            {% if fb and fb != "" %}
+            <a href="{{fb}}" target="_blank"
               ><img
                 height="30"
                 src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_facebook_64x64.png"
             /></a>
-            <a href="#"
+            {% endif %}
+            {% if ig and ig != "" %}
+            <a href="{{ig}}" target="_blank"
               ><img
                 height="30"
                 src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_instagram_64x64.png"
             /></a>
-            <a href="#"
+            {% endif %}
+            {% if tw and tw != "" %}
+            <a href="{{tw}}" target="_blank"
               ><img
                 height="30"
                 src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_twitter_64x64.png"
             /></a>
-            <a href="#"
+            {% endif %}
+            {% if yt and yt != "" %}
+            <a href="{{yt}}" target="_blank"
               ><img
                 height="30"
                 src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_youtube_64x64.png"
             /></a>
+            {% endif %}
           </div>
+          {% endif %}
         </div>
       </div>
       <div class="col-xl-3 col-sm-6 col-md-6 no-padding-mobile">
