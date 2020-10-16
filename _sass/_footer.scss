@@ -1,10 +1,20 @@
 //--------- start footer Area -------------//
 .footer-area {
   background-color: #091b27;
-  padding: 100px 0 0;
+  padding: 100px 0 0 0;
   @media (max-width: 991px) {
-    padding: 70px 0 0;
+    padding: 70px 0 0 0;
   }
+
+  .copy {
+    p {
+      font-size: 12px;
+    }
+    a {
+      color: $white_color;
+    }
+  }
+
   .form-control {
     background-color: transparent;
   }

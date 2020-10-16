@@ -2469,7 +2469,7 @@ body {
 .footer-area {
   // margin-top: 100px;
   background: $back_dark !important;
-  padding: 50px 0px !important;
+  padding: 50px 0px 0 !important;
   border-bottom: 10px solid $base_color;
   @media #{$smartphone} {
     padding: 0px 0px !important;
