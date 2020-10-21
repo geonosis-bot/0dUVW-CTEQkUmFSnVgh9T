@@ -38,6 +38,7 @@ $intro_background_img: "{{site.data.manifest.modules.intro.background_url }}";
 @import "project_details";
 @import "cource_details";
 @import "testimonial_part";
+@import "sections";
 @import "footer";
 
 @import "elements";
@@ -54,6 +55,7 @@ $intro_background_img: "{{site.data.manifest.modules.intro.background_url }}";
 // Modules
 @import "maintenance";
 @import "_modules/intro";
+@import "_modules/preenrolled";
 
 // General overrides 
 
