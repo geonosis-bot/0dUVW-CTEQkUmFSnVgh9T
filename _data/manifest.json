@@ -1,15 +1,16 @@
 {
-  "club_name": "1924 suno f.c.d.",
-  "first_color": "#666999",
-  "second_color": "#bada55",
-  "text_on_first_color": "#fffbd5",
-  "text_on_second_color": "#442200",
+  "club_name": "San Marino Calcio",
+  "first_color": "#3085C2",
+  "second_color": "#fff",
+  "text_on_first_color": "#fff",
+  "text_on_second_color": "#000",
   "subpath": "/",
+  "domain": "https://localhost:4000",
   "modules": {
     "intro": {
-      "background_url": "https://www.investireoggi.it/economia/wp-content/uploads/sites/11/2020/04/calcio-coronavirus-soldi.jpg",
-      "title": "fsdfsd",
-      "subtitle": "ciao ciao \"sono un figlio di puttana\" ///||||\\\\\\\\'ciao'🧅"
+      "background_url": "https://www.fsgc.sm/wp-content/uploads/2018/02/smc.jpg",
+      "title": "Siamo dei brocchi e non vinciamo una partita dal 1893",
+      "subtitle": "Pero prendiamo qualche milione nei diritti televisivi UEFA e FIFA"
     },
     "contacts": {
       "phone": "3404003576",
@@ -25,28 +26,12 @@
     "preenrolled": {
       "url": "https://google.it",
       "subtitle": "Culpa exercitation qui amet anim reprehenderit duis Lorem ullamco proident minim enim voluptate et officia",
-      "image_url": "https://www.investireoggi.it/economia/wp-content/uploads/sites/11/2020/04/calcio-coronavirus-soldi.jpg"
+      "image_url": "https://www.corriereromagna.it/wp-content/uploads/2020/09/data10540663-750x488.jpg"
     },
     "news": [
       {
         "is_highlight": true,
-        "cover_url": "http://placehold.it/600x400",
-        "author": "Clemons Key",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
-        "publish_date": {
-          "DDMMYYYY": "11/11/2016",
-          "ddddDDMMMMYYYY": "Thursday, 27 August 2020"
-        },
-        "category": "nisi",
-        "title": "id aliquip amet ut in",
-        "slug": "ea-id",
-        "subtitle": "ullamco amet eu non culpa elit cupidatat non do tempor adipisicing laboris sint enim aliquip",
-        "prev": "",
-        "next": ""
-      },
-      {
-        "is_highlight": true,
-        "cover_url": "http://placehold.it/600x400",
+        "cover_url": "https://upload.wikimedia.org/wikipedia/it/a/a2/Davide_Gualtieri%2C_San_Marino-Inghilterra_1-7%2C_1993.jpg",
         "author": "Griffith Gray",
         "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
         "publish_date": {
@@ -54,7 +39,7 @@
           "ddddDDMMMMYYYY": "Friday, 14 February 2014"
         },
         "category": "adipisicing",
-        "title": "irure deserunt ex aliqua quis",
+        "title": "Irure deserunt ex aliqua quis",
         "slug": "ipsum-in",
         "subtitle": "ex proident proident occaecat culpa reprehenderit amet culpa ex nulla ullamco culpa Lorem laboris reprehenderit",
         "prev": "",
@@ -105,7 +90,7 @@
         "title": "ea magna aliquip Lorem nisi",
         "slug": "amet-aliquip",
         "subtitle": "minim enim aliqua enim consectetur sint exercitation consequat aliqua esse laboris culpa tempor aliqua ut",
-         "prev": "",
+        "prev": "",
         "next": ""
       },
       {
@@ -163,163 +148,9 @@
         "title": "do cillum duis eiusmod aliquip",
         "slug": "sit-ut",
         "subtitle": "sunt aliquip consectetur fugiat proident culpa anim fugiat sint id aliquip eu nulla officia laborum"
-      },
-      {
-        "is_highlight": false,
-        "cover_url": "http://placehold.it/600x400",
-        "author": "Holden Wong",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
-        "publish_date": {
-          "DDMMYYYY": "16/02/2016",
-          "ddddDDMMMMYYYY": "Wednesday, 12 November 2014"
-        },
-        "category": "labore",
-        "title": "ut nisi sunt Lorem fugiat",
-        "slug": "nostrud-sunt",
-        "subtitle": "enim duis Lorem laborum nulla ad officia esse ullamco magna dolore dolor eu occaecat do"
-      },
-      {
-        "is_highlight": false,
-        "cover_url": "http://placehold.it/600x400",
-        "author": "Mcgowan Harris",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
-        "publish_date": {
-          "DDMMYYYY": "18/05/2014",
-          "ddddDDMMMMYYYY": "Saturday, 02 June 2018"
-        },
-        "category": "veniam",
-        "title": "nostrud do laborum duis ut",
-        "slug": "ullamco-velit",
-        "subtitle": "nisi aliquip nisi anim officia officia irure voluptate incididunt occaecat adipisicing esse consequat voluptate consectetur"
-      },
-      {
-        "is_highlight": false,
-        "cover_url": "http://placehold.it/600x400",
-        "author": "Elba Bradford",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
-        "publish_date": {
-          "DDMMYYYY": "20/04/2014",
-          "ddddDDMMMMYYYY": "Thursday, 26 April 2018"
-        },
-        "category": "nostrud",
-        "title": "cillum duis dolor velit velit",
-        "slug": "excepteur-in",
-        "subtitle": "deserunt culpa officia aute exercitation sint enim velit culpa exercitation do commodo nostrud sit laboris"
-      },
-      {
-        "is_highlight": false,
-        "cover_url": "http://placehold.it/600x400",
-        "author": "Caroline Bean",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
-        "publish_date": {
-          "DDMMYYYY": "03/07/2017",
-          "ddddDDMMMMYYYY": "Saturday, 23 September 2017"
-        },
-        "category": "consequat",
-        "title": "ea non amet sunt pariatur",
-        "slug": "veniam-sint",
-        "subtitle": "deserunt culpa reprehenderit quis officia aute exercitation minim velit eu do veniam nulla consectetur incididunt"
-      },
-      {
-        "is_highlight": false,
-        "cover_url": "http://placehold.it/600x400",
-        "author": "Guthrie Mcclure",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
-        "publish_date": {
-          "DDMMYYYY": "25/10/2017",
-          "ddddDDMMMMYYYY": "Saturday, 16 August 2014"
-        },
-        "category": "exercitation",
-        "title": "qui consectetur anim in veniam",
-        "slug": "ea-veniam",
-        "subtitle": "tempor irure adipisicing excepteur ad eiusmod pariatur eiusmod minim proident elit dolore veniam tempor culpa"
-      },
-      {
-        "is_highlight": false,
-        "cover_url": "http://placehold.it/600x400",
-        "author": "Callie Booth",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
-        "publish_date": {
-          "DDMMYYYY": "29/11/2018",
-          "ddddDDMMMMYYYY": "Monday, 16 July 2018"
-        },
-        "category": "officia",
-        "title": "magna nisi veniam tempor sint",
-        "slug": "sint-laborum",
-        "subtitle": "consectetur dolore culpa velit sint reprehenderit irure ut aliquip Lorem enim aliquip et minim ea"
-      },
-      {
-        "is_highlight": false,
-        "cover_url": "http://placehold.it/600x400",
-        "author": "Blankenship Lynch",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
-        "publish_date": {
-          "DDMMYYYY": "21/12/2018",
-          "ddddDDMMMMYYYY": "Wednesday, 07 November 2018"
-        },
-        "category": "enim",
-        "title": "officia ullamco et proident nulla",
-        "slug": "laborum-deserunt",
-        "subtitle": "qui ea laborum veniam amet elit commodo quis elit pariatur labore deserunt minim nulla dolore"
-      },
-      {
-        "is_highlight": false,
-        "cover_url": "http://placehold.it/600x400",
-        "author": "Herring Chambers",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
-        "publish_date": {
-          "DDMMYYYY": "22/09/2017",
-          "ddddDDMMMMYYYY": "Wednesday, 26 June 2019"
-        },
-        "category": "id",
-        "title": "laborum Lorem occaecat dolore veniam",
-        "slug": "laborum-tempor",
-        "subtitle": "ipsum enim id laborum id eiusmod officia tempor qui et ea voluptate velit ullamco sit"
-      },
-      {
-        "is_highlight": true,
-        "cover_url": "http://placehold.it/600x400",
-        "author": "Vang Macdonald",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
-        "publish_date": {
-          "DDMMYYYY": "06/06/2015",
-          "ddddDDMMMMYYYY": "Tuesday, 08 April 2014"
-        },
-        "category": "non",
-        "title": "fugiat deserunt minim velit duis",
-        "slug": "amet-magna",
-        "subtitle": "amet in pariatur laboris do incididunt aliqua labore eiusmod amet est non adipisicing ad velit"
-      },
-      {
-        "is_highlight": false,
-        "cover_url": "http://placehold.it/600x400",
-        "author": "Luella Ramirez",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
-        "publish_date": {
-          "DDMMYYYY": "30/09/2017",
-          "ddddDDMMMMYYYY": "Monday, 24 August 2020"
-        },
-        "category": "eiusmod",
-        "title": "adipisicing sunt in ut ipsum",
-        "slug": "enim-reprehenderit",
-        "subtitle": "dolore dolore deserunt aliqua mollit veniam ullamco exercitation ex amet cupidatat tempor ex fugiat velit"
-      },
-      {
-        "is_highlight": false,
-        "cover_url": "http://placehold.it/600x400",
-        "author": "Watts Aguilar",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
-        "publish_date": {
-          "DDMMYYYY": "03/08/2014",
-          "ddddDDMMMMYYYY": "Sunday, 03 June 2018"
-        },
-        "category": "cupidatat",
-        "title": "quis ad eiusmod dolor cupidatat",
-        "slug": "excepteur-minim",
-        "subtitle": "officia eiusmod occaecat nulla excepteur sunt deserunt in duis occaecat officia laboris quis dolor magna"
       }
     ]
   },
-  "logo_url": "https://lh3.googleusercontent.com/SRoU-Gc2jC1edgjox2R87CtSpL9UNCWI6o_6HVKP2KQzCX_YqJj-gujJmJ1sJ7Tm-EbSQgoa5Y1LzqcHNyJvKA",
+  "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Federazione_Sammarinese_Giuoco_Calcio.svg/1200px-Federazione_Sammarinese_Giuoco_Calcio.svg.png",
   "is_undermaintenance": false
 }

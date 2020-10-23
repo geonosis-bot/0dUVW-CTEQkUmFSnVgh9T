@@ -37,38 +37,6 @@
                 <!-- Share -->
                 <div class="news-share">
                   <label>Condividi</label>
-
-                  <script>
-                    const currentURL =
-                      "{{site.data.manifest.domain}}{{site.data.manifest.subpath}}news/{{page.slug}}";
-
-                    function shareOnFB() {
-                      var url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURI(
-                        currentURL
-                      )}`;
-
-                      window.open(
-                        url,
-                        "",
-                        "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
-                      );
-                      return false;
-                    }
-
-                    function shareOnTwitter() {
-                      var url = `https://twitter.com/intent/tweet?url=${encodeURI(
-                        currentURL
-                      )}`;
-                      TwitterWindow = window.open(
-                        url,
-                        "TwitterWindow",
-                        (width = 600),
-                        (height = 300)
-                      );
-                      return false;
-                    }
-                  </script>
-
                   <div class="social-links">
                     <a onclick="shareOnFB()">
                       <i class="lab la-facebook"></i>
@@ -112,12 +80,12 @@
           <!-- "Paginator" -->
           <div class="news-paginator">
             {% if page.prev %}
-            <a class="btn btn-space prev" href="/news/{{page.prev}}">
+            <a class="btn btn-primary btn-3d prev" href="/news/{{page.prev}}">
               <!-- <i class="las la-angle-left"></i> -->
               Precedente
             </a>
             {% endif %} {% if page.next %}
-            <a class="btn btn-space next" href="/news/{{page.next}}">
+            <a class="btn btn-primary btn-3d next" href="/news/{{page.next}}">
               <!-- <i class="las la-angle-right"></i> -->
               Successiva
             </a>
@@ -132,6 +100,38 @@
 
     <!-- Scripts -->
     {% include scripts.html %}
+
+    <!-- Social share -->
+    <script>
+      const currentURL =
+        "{{site.data.manifest.domain}}{{site.data.manifest.subpath}}news/{{page.slug}}";
+
+      function shareOnFB() {
+        var url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURI(
+          currentURL
+        )}`;
+
+        window.open(
+          url,
+          "",
+          "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+        );
+        return false;
+      }
+
+      function shareOnTwitter() {
+        var url = `https://twitter.com/intent/tweet?url=${encodeURI(
+          currentURL
+        )}`;
+        TwitterWindow = window.open(
+          url,
+          "TwitterWindow",
+          (width = 600),
+          (height = 300)
+        );
+        return false;
+      }
+    </script>
 
     <!-- End -->
     {% endif %}

@@ -6,9 +6,33 @@
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
   <title>
-    {% if page.title %} {{ page.title }} | {{ site.data.manifest.club_name }} {%
+    {% if page.title %} {{ site.data.manifest.club_name }} | {{ page.title }}{%
     else %} {{ site.data.manifest.club_name }} {% endif %}
   </title>
+
+  <!-- Meta tags for news detail -->
+  {% if page.slug %}
+  <meta
+    name="description"
+    content="{{ page.body | markdownify | strip_html | truncatewords: 100 }}"
+  />
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" value="summary" />
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{{ page.title }} | {{ site.data.manifest.club_name }}" />
+  <meta property="og:type" content="article" />
+  <meta
+    property="og:url"
+    content="{{site.data.manifest.domain}}{{site.data.manifest.subpath}}news/{{page.slug}}"
+  />
+  <meta property="og:image" content="{{page.cover_url}}" />
+  <meta
+    property="og:description"
+    content="{{ page.body | markdownify | strip_html | truncatewords: 100 }}"
+  />
+  {% endif %}
 
   <!-- Favicon -->
   <link

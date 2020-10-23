@@ -1,4 +1,83 @@
 .btn {
-  border-radius: 0 !important;
-//   border: none;
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none !important;
+  }
+
+  font-size: 16px;
+  border-radius: 0;
+  border: none;
+  text-align: center;
+  padding: 15px 10px;
+
+  min-width: 170px;
+
+  @include respond-to(xs) {
+    min-width: 130px;
+  }
+
+  &.btn-primary {
+    background-color: $first_color;
+    color: $text_on_first_color;
+
+    &:not(.disabled),
+    &:not(:disabled) {
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $first_color;
+        color: $text_on_first_color !important;
+      }
+    }
+
+    &.btn-3d {
+      box-shadow: 0px 8px 0 $second_color;
+
+      &:active,
+      &:focus,
+      &:hover {
+        box-shadow: 0px 4px 0 $second_color !important;
+      }
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $second_color;
+    color: $text_on_second_color;
+
+    &:not(.disabled),
+    &:not(:disabled) {
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $second_color;
+        color: $text_on_second_color !important;
+      }
+    }
+
+    &.btn-3d {
+      box-shadow: 0px 8px 0 $text_on_second_color;
+
+      &:active,
+      &:focus,
+      &:hover {
+        box-shadow: 0px 4px 0 $text_on_second_color !important;
+      }
+    }
+  }
+
+  &.btn-3d {
+    position: relative;
+    transition: all 0.2s;
+
+    top: 0;
+
+    &:active,
+    &:focus,
+    &:hover {
+      top: 4px;
+      left: 0px;
+    }
+  }
 }
