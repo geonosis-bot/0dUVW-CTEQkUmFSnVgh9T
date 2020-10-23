@@ -1,6 +1,7 @@
 @import "./../_mixins/responsive";
 
 section.intro {
+  padding: 0;
   height: calc(100vh - #{$header_height_full}) !important;
   position: relative;
   overflow: hidden;

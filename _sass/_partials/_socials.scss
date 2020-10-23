@@ -1,0 +1,14 @@
+.social-links {
+  display: flex;
+  align-items: center;
+
+  a {
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+    color: $first_color;
+  }
+  i {
+    font-size: 30px;
+  }
+}

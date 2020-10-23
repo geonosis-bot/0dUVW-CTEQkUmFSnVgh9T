@@ -1,0 +1,56 @@
+<section class="news home">
+  <div class="container-fluid">
+    <!-- Title -->
+    <h3 class="section-title">News</h3>
+
+    <!-- Grid -->
+    <div class="news-grid">
+      {% for item in site.data.manifest.modules.news limit:5 %} {% if
+      item.is_highlight == true and forloop.first %}
+      <a class="news-box highlight" href="/news/{{ item.slug }}">
+        <div
+          class="news-background-img"
+          style="background-image: url('{{ item.cover_url }}')"
+        >
+          <div class="overlay"></div>
+          <div class="news-info">
+            <span class="news-category">{{ item.category }}</span>
+            <span class="news-date">{{ item.publish_date.DDMMYYYY }}</span>
+          </div>
+          <div class="news-heading">
+            <h3 class="news-title">{{ item.title }}</h3>
+            <hr />
+            <div class="news-content">
+              {{ item.body | markdownify | strip_html | truncatewords: 30 }}
+            </div>
+          </div>
+        </div>
+      </a>
+      {% endif %} {% if item.is_highlight != true or forloop.first != true %}
+      <a class="news-box" href="/news/{{ item.slug }}">
+        <span class="ti-arrow-top-right space-arrow"></span>
+        <div
+          class="news-img"
+          style="background-image: url('{{ item.cover_url }}')"
+        >
+          <div class="overlay"></div>
+        </div>
+
+        <h3 class="news-title">{{ item.title }}</h3>
+        <div class="news-content">
+          {{ item.body | markdownify | strip_html | truncatewords: 30 }}
+        </div>
+        <div class="news-info">
+          <span class="news-category">{{ item.category }}</span>
+          <span class="news-date">{{ item.publish_date.DDMMYYYY }}</span>
+        </div>
+      </a>
+      {% endif %} {% endfor %}
+    </div>
+
+    <!-- See more -->
+    <div class="text-center">
+      <a href="/news" class="btn-space">Vedi tutte</a>
+    </div>
+  </div>
+</section>

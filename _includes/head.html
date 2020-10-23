@@ -5,27 +5,58 @@
     name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
-  <title>{{ site.data.manifest.club_name }}</title>
+  <title>
+    {% if page.title %} {{ page.title }} | {{ site.data.manifest.club_name }} {%
+    else %} {{ site.data.manifest.club_name }} {% endif %}
+  </title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="{{site.data.manifest.logo_url}}=s16-c" />
+  <link
+    rel="icon"
+    type="image/png"
+    href="{{site.data.manifest.logo_url}}=s16-c"
+  />
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="{{site.data.manifest.subpath}}assets/css/bootstrap.min.css" />
+  <link
+    rel="stylesheet"
+    href="{{site.data.manifest.subpath}}assets/css/bootstrap.min.css"
+  />
   <!-- animate CSS -->
-  <link rel="stylesheet" href="{{site.data.manifest.subpath}}assets/css/animate.css" />
+  <link
+    rel="stylesheet"
+    href="{{site.data.manifest.subpath}}assets/css/animate.css"
+  />
   <!-- owl carousel CSS -->
-  <link rel="stylesheet" href="{{site.data.manifest.subpath}}assets/css/owl.carousel.min.css" />
+  <link
+    rel="stylesheet"
+    href="{{site.data.manifest.subpath}}assets/css/owl.carousel.min.css"
+  />
   <!-- themify CSS -->
-  <link rel="stylesheet" href="{{site.data.manifest.subpath}}assets/css/themify-icons.css" />
+  <link
+    rel="stylesheet"
+    href="{{site.data.manifest.subpath}}assets/css/themify-icons.css"
+  />
   <!-- flaticon CSS -->
-  <link rel="stylesheet" href="{{site.data.manifest.subpath}}assets/css/flaticon.css" />
+  <link
+    rel="stylesheet"
+    href="{{site.data.manifest.subpath}}assets/css/flaticon.css"
+  />
   <!-- font awesome CSS -->
-  <link rel="stylesheet" href="{{site.data.manifest.subpath}}assets/css/magnific-popup.css" />
+  <link
+    rel="stylesheet"
+    href="{{site.data.manifest.subpath}}assets/css/magnific-popup.css"
+  />
   <!-- swiper CSS -->
-  <link rel="stylesheet" href="{{site.data.manifest.subpath}}assets/css/slick.css" />
+  <link
+    rel="stylesheet"
+    href="{{site.data.manifest.subpath}}assets/css/slick.css"
+  />
   <!-- style CSS -->
-  <link rel="stylesheet" href="{{site.data.manifest.subpath}}assets/css/style.css" />
+  <link
+    rel="stylesheet"
+    href="{{site.data.manifest.subpath}}assets/css/style.css"
+  />
 
   <!-- Multilevel Menu -->
   <link
@@ -41,5 +72,14 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet"
   />
-  <link href="{{site.data.manifest.subpath}}assets/css/multilevelpushmenu.css" rel="stylesheet" />
+  <link
+    href="{{site.data.manifest.subpath}}assets/css/multilevelpushmenu.css"
+    rel="stylesheet"
+  />
+
+  <!-- Lineawesome -->
+  <link
+    rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+  />
 </head>

@@ -24,6 +24,7 @@ header.main_menu {
         margin-left: 20px;
         font-weight: $font_bold;
         font-size: $font_size30;
+        color: $black_color;
       }
     }
 
@@ -34,7 +35,10 @@ header.main_menu {
         justify-content: space-around;
         > li {
           > a {
+            font-weight: $font_regular;
+            font-size: 15px;
             padding: 0 20px;
+            color: $black_color;
           }
         }
       }

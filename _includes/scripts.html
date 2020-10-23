@@ -15,10 +15,24 @@
 <!-- swiper js -->
 <script src="{{site.data.manifest.subpath}}assets/js/slick.min.js"></script>
 <script src="{{site.data.manifest.subpath}}assets/js/jquery.counterup.min.js"></script>
-<script src="{{site.data.manifest.subpath}}assets/js/waypoints.min.js"></script>
+<!-- <script src="{{site.data.manifest.subpath}}assets/js/waypoints.min.js"></script> -->
 <!-- custom js -->
 <script src="{{site.data.manifest.subpath}}assets/js/custom.js"></script>
 
 <!-- MENU MULTILEVEL SIDEBAR -->
-<script src="https://oss.maxcdn.com/libs/modernizr/2.6.2/modernizr.min.js"></script>
-<script src="{{site.data.manifest.subpath}}assets/js/jquery.multilevelpushmenu.js"></script>
+<!-- <script src="https://oss.maxcdn.com/libs/modernizr/2.6.2/modernizr.min.js"></script> -->
+<!-- <script src="{{site.data.manifest.subpath}}assets/js/jquery.multilevelpushmenu.js"></script> -->
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  (function (d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, "script", "facebook-jssdk");
+</script>

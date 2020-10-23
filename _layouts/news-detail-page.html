@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body class="page-{{ page.namespace }}">
+    {% if site.data.manifest.is_undermaintenance %}
+    <!-- Under maintenance  -->
+
+    <div id="maintenance">
+      <div>
+        <h1>{{site.data.manifest.club_name}}</h1>
+        <p>Sito in manutenzione, riprova più tardi.</p>
+      </div>
+    </div>
+
+    {% else %}
+
+    <!-- No maintenance, show website content -->
+
+    <!-- Header -->
+    {% include header.html %}
+
+    <!-- Content -->
+    <div class="content news">
+      <section class="news-detail">
+        <div class="container-fluid">
+          <div class="news-box">
+            <h5 class="news-category">{{ page.category }}</h5>
+            <h1 class="news-title">{{ page.title }}</h1>
+
+            {% if page.subtitle %}
+            <h3 class="news-subtitle">{{ page.subtitle }}</h3>
+            {% endif %}
+
+            <div class="news-data">
+              <div class="news-info">
+                <!-- Share -->
+                <div class="news-share">
+                  <label>Condividi</label>
+
+                  <script>
+                    const currentURL =
+                      "{{site.data.manifest.domain}}{{site.data.manifest.subpath}}news/{{page.slug}}";
+
+                    function shareOnFB() {
+                      var url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURI(
+                        currentURL
+                      )}`;
+
+                      window.open(
+                        url,
+                        "",
+                        "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600"
+                      );
+                      return false;
+                    }
+
+                    function shareOnTwitter() {
+                      var url = `https://twitter.com/intent/tweet?url=${encodeURI(
+                        currentURL
+                      )}`;
+                      TwitterWindow = window.open(
+                        url,
+                        "TwitterWindow",
+                        (width = 600),
+                        (height = 300)
+                      );
+                      return false;
+                    }
+                  </script>
+
+                  <div class="social-links">
+                    <a onclick="shareOnFB()">
+                      <i class="lab la-facebook"></i>
+                    </a>
+
+                    <a onclick="shareOnTwitter()"
+                      ><i class="lab la-twitter"></i
+                    ></a>
+                    <a
+                      href="https://wa.me/?text={{site.data.manifest.club_name}} | {{page.title}} {{site.data.manifest.domain}}{{site.data.manifest.subpath}}news/{{page.slug}}"
+                      target="_blank"
+                      ><i class="lab la-whatsapp"></i
+                    ></a>
+
+                    <!-- <a href="{{tw}}" target="_blank"
+                      ><i class="las la-link"></i
+                    ></a> -->
+                  </div>
+                </div>
+
+                <!-- Author -->
+                {% if page.author %}
+                <div class="news-author">
+                  <label>Articolo di</label>
+                  <span>{{ page.author }}</span>
+                </div>
+                {% endif %}
+
+                <!-- Date -->
+                {% if page.publish_date %}
+                <div class="news-date">
+                  <label>Data di pubblicazione</label>
+                  <span>{{ page.publish_date.ddddDDMMMMYYYY }}</span>
+                </div>
+                {% endif %}
+              </div>
+              <div class="news-content">{{ page.body | markdownify }}</div>
+            </div>
+          </div>
+
+          <!-- "Paginator" -->
+          <div class="news-paginator">
+            {% if page.prev %}
+            <a class="btn btn-space prev" href="/news/{{page.prev}}">
+              <!-- <i class="las la-angle-left"></i> -->
+              Precedente
+            </a>
+            {% endif %} {% if page.next %}
+            <a class="btn btn-space next" href="/news/{{page.next}}">
+              <!-- <i class="las la-angle-right"></i> -->
+              Successiva
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+    <!-- Scripts -->
+    {% include scripts.html %}
+
+    <!-- End -->
+    {% endif %}
+  </body>
+</html>

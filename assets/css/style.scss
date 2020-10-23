@@ -56,23 +56,11 @@ $intro_background_img: "{{site.data.manifest.modules.intro.background_url }}";
 @import "maintenance";
 @import "_modules/intro";
 @import "_modules/preenrolled";
+@import "_modules/news";
 
-// General overrides 
+// Partials
+@import "_partials/sections";
+@import "_partials/buttons";
+@import "_partials/utils";
+@import "_partials/socials";
 
-a {
-    color: $base_color;
-}
-
-// TODO: move to utils
-.first-color {
-    color: $first_color !important;
-}
-.second-color {
-    color: $second_color !important;
-}
-.first-color-bg {
-    background-color: $first_color !important;
-}
-.second-color-bg {
-    background-color: $second_color !important;
-}

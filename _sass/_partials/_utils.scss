@@ -1,0 +1,24 @@
+.first-color {
+  color: $first_color !important;
+}
+.second-color {
+  color: $second_color !important;
+}
+.first-color-bg {
+  background-color: $first_color !important;
+}
+.second-color-bg {
+  background-color: $second_color !important;
+}
+
+.nopadding {
+  padding: 0 !important;
+}
+
+.nomargin {
+  margin: 0 !important;
+}
+
+a {
+  color: $base_color;
+}

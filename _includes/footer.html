@@ -41,31 +41,18 @@
         site.data.manifest.modules.social.linkYt %}
 
         <h4 class="foot-heading">Social</h4>
-        <div class="footer_img">
+        <div class="social-links">
           {% if fb and fb != "" %}
-          <a href="{{fb}}" target="_blank"
-            ><img
-              height="30"
-              src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_facebook_64x64.png"
-          /></a>
+          <a href="{{fb}}" target="_blank"><i class="lab la-facebook"></i></a>
           {% endif %} {% if ig and ig != "" %}
-          <a href="{{ig}}" target="_blank"
-            ><img
-              height="30"
-              src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_instagram_64x64.png"
-          /></a>
+          <a href="{{ig}}" target="_blank">
+            <i class="lab la-instagram"></i>
+          </a>
           {% endif %} {% if tw and tw != "" %}
-          <a href="{{tw}}" target="_blank"
-            ><img
-              height="30"
-              src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_twitter_64x64.png"
-          /></a>
+          <a href="{{tw}}" target="_blank"><i class="lab la-twitter"></i></a>
+
           {% endif %} {% if yt and yt != "" %}
-          <a href="{{yt}}" target="_blank"
-            ><img
-              height="30"
-              src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_youtube_64x64.png"
-          /></a>
+          <a href="{{yt}}" target="_blank"><i class="lab la-youtube"></i></a>
           {% endif %}
         </div>
         {% endif %}

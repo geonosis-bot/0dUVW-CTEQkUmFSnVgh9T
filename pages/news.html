@@ -1,0 +1,52 @@
+---
+layout: default
+
+namespace: news
+
+permalink: /news
+---
+
+<section class="news">
+  <div class="container-fluid">
+    <div class="news-grid">
+      {% for item in site.data.manifest.modules.news %} {% if
+      item.is_highlight == true and forloop.first %}
+      <a class="news-box highlight" href="{{ item.slug }}">
+        <div
+          class="news-background-img"
+          style="background-image: url('{{ item.cover_url }}')"
+        >
+          <div class="overlay"></div>
+          <div class="news-info">
+            <span class="news-category">{{ item.category }}</span>
+            <span class="news-date">{{ item.publish_date.DDMMYYYY }}</span>
+          </div>
+          <div class="news-heading">
+            <h3 class="news-title">{{ item.title }}</h3>
+            <hr />
+            <div class="news-content">
+              {{ item.body | markdownify | strip_html | truncatewords: 25 }}
+            </div>
+          </div>
+        </div>
+      </a>
+      {% endif %} {% if item.is_highlight != true or forloop.first != true %}
+      <a class="news-box" href="{{ item.slug }}">
+        <div
+          class="news-img"
+          style="background-image: url('{{ item.cover_url }}')"
+        ></div>
+
+        <h3 class="news-title">{{ item.title }}</h3>
+        <div class="news-content">
+          {{ item.body | markdownify | strip_html | truncatewords: 25 }}
+        </div>
+        <div class="news-info">
+          <span class="news-category">{{ item.category }}</span>
+          <span class="news-date">{{ item.publish_date.DDMMYYYY }}</span>
+        </div>
+      </a>
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+</section>
