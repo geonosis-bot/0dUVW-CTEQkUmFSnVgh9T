@@ -135,11 +135,6 @@ section.news {
 
     @include respond-to(sm) {
       grid-template-columns: repeat(2, 1fr);
-      .news-box {
-        &.highlight {
-          grid-column: 1;
-        }
-      }
     }
 
     @include respond-to(md) {
@@ -307,6 +302,24 @@ section.news-detail {
             max-width: 100%;
           }
         }
+      }
+    }
+
+    @include respond-to(upto-sm) {
+      .news-title {
+        font-size: 40px;
+      }
+
+      .news-subtitle {
+        font-size: 28px;
+      }
+
+      .news-content {
+        font-size: 16px;
+      }
+
+      .news-data {
+        flex-direction: column;
       }
     }
   }
