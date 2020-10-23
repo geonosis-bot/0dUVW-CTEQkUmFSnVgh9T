@@ -1,86 +1,88 @@
 <footer class="footer-area">
-  <div class="container-fluid px-5">
-    <div class="row justify-content-between">
-      <div class="col-sm-6 col-md-6 col-xl-3 p-0">
-        <div class="single-footer-widget footer_1">
-          <a href="#" class="whiteBig no-padding">{{ site.data.manifest.club_name }}</a>
-        </div>
+  <div class="container-fluid">
+    <div class="footer-widgets">
+      <!-- Club name -->
+      <div>
+        <h3 class="foot-heading">{{ site.data.manifest.club_name }}</h3>
       </div>
-      <div class="col-xl-3 col-sm-6 col-md-6 no-padding-mobile">
-        <div class="single-footer-widget footer_2">
-          {% if site.data.manifest.modules.contacts %}
-          <h4 class="foot-headings">Contatti</h4>
-          <div class="contact_info">
-            <ul>
-              <li>
-                <a href="tel:{{site.data.manifest.modules.contacts.phone}}">{{ site.data.manifest.modules.contacts.phone }}</a>
-              </li>
-              <li>
-                <a href="tel:{{site.data.manifest.modules.contacts.mobile}}">{{ site.data.manifest.modules.contacts.mobile }}</a>
-              </li>
-              <li>
-                <a href="mailto:{{ site.data.manifest.modules.contacts.email }}">{{ site.data.manifest.modules.contacts.email }}</a>
-              </li>
-            </ul>
-          </div>
+
+      <!-- Contacts -->
+      <div>
+        {% if site.data.manifest.modules.contacts %}
+        <h4 class="foot-heading">Contatti</h4>
+        <ul>
+          <li>
+            <a href="tel:{{site.data.manifest.modules.contacts.phone}}"
+              >{{ site.data.manifest.modules.contacts.phone }}</a
+            >
+          </li>
+          <li>
+            <a href="tel:{{site.data.manifest.modules.contacts.mobile}}"
+              >{{ site.data.manifest.modules.contacts.mobile }}</a
+            >
+          </li>
+          <li>
+            <a href="mailto:{{ site.data.manifest.modules.contacts.email }}"
+              >{{ site.data.manifest.modules.contacts.email }}</a
+            >
+          </li>
+        </ul>
+        {% endif %}
+      </div>
+
+      <!-- Social link -->
+      <div>
+        {% if site.data.manifest.modules.social %}
+
+        <!-- Assign to avoid write always long name -->
+        {% assign fb = site.data.manifest.modules.social.linkFb %} {% assign ig
+        = site.data.manifest.modules.social.linkIg %} {% assign tw =
+        site.data.manifest.modules.social.linkTw %} {% assign yt =
+        site.data.manifest.modules.social.linkYt %}
+
+        <h4 class="foot-heading">Social</h4>
+        <div class="footer_img">
+          {% if fb and fb != "" %}
+          <a href="{{fb}}" target="_blank"
+            ><img
+              height="30"
+              src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_facebook_64x64.png"
+          /></a>
+          {% endif %} {% if ig and ig != "" %}
+          <a href="{{ig}}" target="_blank"
+            ><img
+              height="30"
+              src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_instagram_64x64.png"
+          /></a>
+          {% endif %} {% if tw and tw != "" %}
+          <a href="{{tw}}" target="_blank"
+            ><img
+              height="30"
+              src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_twitter_64x64.png"
+          /></a>
+          {% endif %} {% if yt and yt != "" %}
+          <a href="{{yt}}" target="_blank"
+            ><img
+              height="30"
+              src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_youtube_64x64.png"
+          /></a>
           {% endif %}
         </div>
+        {% endif %}
       </div>
-      <div class="col-xl-3 col-sm-6 col-md-6 no-padding-mobile">
-        <div class="single-footer-widget footer_2">
-          {% if site.data.manifest.modules.social %}
 
-          <!-- Assign to avoid write always long name -->
-          {% assign fb = site.data.manifest.modules.social.linkFb %}
-          {% assign ig = site.data.manifest.modules.social.linkIg %}
-          {% assign tw = site.data.manifest.modules.social.linkTw %}
-          {% assign yt = site.data.manifest.modules.social.linkYt %}
-
-          <h4 class="foot-headings">Social</h4>
-          <div class="footer_img">
-            {% if fb and fb != "" %}
-            <a href="{{fb}}" target="_blank"
-              ><img
-                height="30"
-                src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_facebook_64x64.png"
-            /></a>
-            {% endif %}
-            {% if ig and ig != "" %}
-            <a href="{{ig}}" target="_blank"
-              ><img
-                height="30"
-                src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_instagram_64x64.png"
-            /></a>
-            {% endif %}
-            {% if tw and tw != "" %}
-            <a href="{{tw}}" target="_blank"
-              ><img
-                height="30"
-                src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_twitter_64x64.png"
-            /></a>
-            {% endif %}
-            {% if yt and yt != "" %}
-            <a href="{{yt}}" target="_blank"
-              ><img
-                height="30"
-                src="{{site.data.manifest.subpath}}assets/img/footer_img/logo_youtube_64x64.png"
-            /></a>
-            {% endif %}
-          </div>
-          {% endif %}
-        </div>
-      </div>
-      <div class="col-xl-3 col-sm-6 col-md-6 no-padding-mobile">
-        <div class="single-footer-widget footer_2 last">
-          <h4 class="foot-headings text-right powered">Powered by</h4>
-          <div class="contact_info text-right">
-            <a class="foot-logo text-right" href="https://golee.it" target="_blank"
-              ><img width="120" src="{{site.data.manifest.subpath}}assets/img/logo-footer.png"
-            /></a>
-            <p class="white d-block d-sm-none pt-5">
-              © 2020 | <a href="#">Privacy Policy</a>
-            </p>
-          </div>
+      <!-- Powered by -->
+      <div>
+        <h4 class="foot-heading">Powered by</h4>
+        <div class="contact_info">
+          <a
+            class="foot-logo text-right"
+            href="https://golee.it"
+            target="_blank"
+            ><img
+              width="120"
+              src="{{site.data.manifest.subpath}}assets/img/logo-footer.png"
+          /></a>
         </div>
       </div>
     </div>
@@ -88,7 +90,10 @@
 
   <div class="copy py-3 d-flex align-items-center justify-content-center">
     <p class="white">
-      © Copyright Golee 2020 | <a href="https://golee.it/privacy-policy/" target="_blank">Privacy Policy</a>
+      © Copyright Golee 2020 |
+      <a href="https://golee.it/privacy-policy/" target="_blank"
+        >Privacy Policy</a
+      >
     </p>
   </div>
 </footer>
