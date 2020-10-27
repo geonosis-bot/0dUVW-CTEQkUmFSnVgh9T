@@ -33,7 +33,7 @@
             {% endif %}
 
             <div class="news-data">
-              <div class="news-info">
+              <div class="news-info hidden-xs hidden-sm">
                 <!-- Share -->
                 <div class="news-share">
                   <label>Condividi</label>
@@ -74,18 +74,64 @@
                 {% endif %}
               </div>
               <div class="news-content">{{ page.body | markdownify }}</div>
+              <div class="news-info hidden-md hidden-lg mt-40">
+                <!-- Share -->
+                <div class="news-share">
+                  <label>Condividi</label>
+                  <div class="social-links">
+                    <a onclick="shareOnFB()">
+                      <i class="lab la-facebook"></i>
+                    </a>
+
+                    <a onclick="shareOnTwitter()"
+                      ><i class="lab la-twitter"></i
+                    ></a>
+                    <a
+                      href="https://wa.me/?text={{site.data.manifest.club_name}} | {{page.title}} {{site.data.manifest.domain}}{{site.data.manifest.subpath}}news/{{page.slug}}"
+                      target="_blank"
+                      ><i class="lab la-whatsapp"></i
+                    ></a>
+
+                    <!-- <a href="{{tw}}" target="_blank"
+                      ><i class="las la-link"></i
+                    ></a> -->
+                  </div>
+                </div>
+
+                <!-- Author -->
+                {% if page.author %}
+                <div class="news-author">
+                  <label>Articolo di</label>
+                  <span>{{ page.author }}</span>
+                </div>
+                {% endif %}
+
+                <!-- Date -->
+                {% if page.publish_date %}
+                <div class="news-date">
+                  <label>Data di pubblicazione</label>
+                  <span>{{ page.publish_date.ddddDDMMMMYYYY }}</span>
+                </div>
+                {% endif %}
+              </div>
             </div>
           </div>
 
           <!-- "Paginator" -->
           <div class="news-paginator">
             {% if page.prev %}
-            <a class="btn btn-primary btn-3d prev" href="{{ site.data.manifest.subpath }}news/{{page.prev}}">
+            <a
+              class="btn btn-primary btn-3d prev"
+              href="{{ site.data.manifest.subpath }}news/{{page.prev}}"
+            >
               <!-- <i class="las la-angle-left"></i> -->
               Precedente
             </a>
             {% endif %} {% if page.next %}
-            <a class="btn btn-primary btn-3d next" href="{{ site.data.manifest.subpath }}news/{{page.next}}">
+            <a
+              class="btn btn-primary btn-3d next"
+              href="{{ site.data.manifest.subpath }}news/{{page.next}}"
+            >
               <!-- <i class="las la-angle-right"></i> -->
               Successiva
             </a>

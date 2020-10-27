@@ -18,18 +18,43 @@
   .footer-widgets {
     width: 100%;
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
+
+    h3.foot-heading {
+      font-size: 22px !important;
+      font-weight: $font_medium !important;
+      margin: 0 !important;
+    }
 
     > div {
       .foot-heading {
         font-size: 20px;
         color: $white_color;
         margin: 0 0 20px;
+        font-weight: $font_medium;
       }
 
       a {
         color: $white_color;
+      }
+
+      .social-links {
+        a {
+          margin: 0 10px 0 0;
+        }
+
+        @include respond-to(upto-sm) {
+          a {
+            margin: 0 30px 0 0;
+          }
+        }
+      }
+
+      ul {
+        > li {
+          margin: 5px 0;
+        }
       }
     }
 

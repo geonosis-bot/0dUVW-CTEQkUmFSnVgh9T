@@ -38,7 +38,6 @@ $intro_background_img: "{{site.data.manifest.modules.intro.background_url }}";
 @import "cource_details";
 @import "testimonial_part";
 @import "sections";
-@import "footer";
 
 @import "elements";
 @import "blog_part";
@@ -65,4 +64,6 @@ $intro_background_img: "{{site.data.manifest.modules.intro.background_url }}";
 @import "_partials/header";
 @import "_partials/utils";
 @import "_partials/socials";
+@import "_partials/footer";
+
 

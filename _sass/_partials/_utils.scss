@@ -22,3 +22,31 @@
 a {
   color: $base_color;
 }
+
+.hidden-xs {
+  @include respond-to(xs) {
+    display: none;
+  }
+}
+
+.hidden-sm {
+  @include respond-to(sm) {
+    display: none;
+  }
+}
+
+.hidden-md {
+  @include respond-to(md) {
+    display: none;
+  }
+}
+
+.hidden-lg {
+  @include respond-to(from-lg) {
+    display: none;
+  }
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
