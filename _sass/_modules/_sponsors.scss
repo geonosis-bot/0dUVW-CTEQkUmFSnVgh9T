@@ -30,6 +30,36 @@ section.sponsors {
     .sponsor {
       padding: 0;
     }
+
+    @include respond-to(xlg) {
+      &.primary {
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      &.secondary {
+        grid-template-columns: repeat(8, 1fr);
+      }
+    }
+
+    @include respond-to(sm) {
+      &.primary {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      &.secondary {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @include respond-to(xs) {
+      &.primary {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &.secondary {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
   }
 
   // TODO: bad but easy and quick
