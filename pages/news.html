@@ -11,7 +11,7 @@ permalink: /news
     <div class="news-grid">
       {% for item in site.data.manifest.modules.news %} {% if
       item.is_highlight == true and forloop.first %}
-      <a class="news-box highlight" href="{{ item.slug }}">
+      <a class="news-box highlight" href="{{ site.data.manifest.subpath }}news/{{ item.slug }}">
         <div
           class="news-background-img"
           style="background-image: url('{{ item.cover_url }}')"
@@ -31,7 +31,7 @@ permalink: /news
         </div>
       </a>
       {% endif %} {% if item.is_highlight != true or forloop.first != true %}
-      <a class="news-box" href="{{ item.slug }}">
+      <a class="news-box" href="{{ site.data.manifest.subpath }}news/{{ item.slug }}">
         <div
           class="news-img"
           style="background-image: url('{{ item.cover_url }}')"

@@ -1,7 +1,7 @@
 <header class="main_menu home_menu">
   <div class="container-fluid">
     <!-- Logo and name -->
-    <a class="identity" href="/">
+    <a class="identity" href="{{ site.data.manifest.subpath }}">
       <img src="{{ site.data.manifest.logo_url}}" width="300" alt="logo" />
       <span>{{ site.data.manifest.club_name }}</span>
     </a>
@@ -10,7 +10,7 @@
     <div class="menu">
       <ul>
         {% if site.data.manifest.modules.news %}
-        <li><a href="/news">NEWS</a></li>
+        <li><a href="{{ site.data.manifest.subpath }}news">NEWS</a></li>
         {% endif %}
       </ul>
     </div>
