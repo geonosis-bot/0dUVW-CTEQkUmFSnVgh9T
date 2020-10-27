@@ -16,7 +16,158 @@
         {% endif %}
       </ul>
     </div>
+
+    <div class="mobile-menu-open">
+      <i class="las la-bars"></i>
+    </div>
   </div>
 
-  <!-- TODO: mobile menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-toggle">
+      <div class="mobile-menu-close">
+        <i class="las la-times"></i>
+      </div>
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li><a href="{{ site.data.manifest.subpath }}">Società</a></li>
+        <li><a class="mobile-teams-menu-open">Squadre</a></li>
+        {% if site.data.manifest.modules.news %}
+        <li><a href="{{ site.data.manifest.subpath }}news">News</a></li>
+        {% endif %} {% if site.data.manifest.modules.sponsors %}
+        <li><a href="{{ site.data.manifest.subpath }}sponsors">Sponsors</a></li>
+        {% endif %}
+      </ul>
+    </div>
+
+    <div class="mobile-teams-menu">
+      <div>
+        <div class="left">
+          <div class="head">Squadre</div>
+          <div class="menu">
+            <ul>
+              <li class="submenu">
+                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
+                <ul>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="submenu">
+                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
+                <ul>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="submenu">
+                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
+                <ul>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="submenu">
+                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
+                <ul>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="submenu">
+                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
+                <ul>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="submenu">
+                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
+                <ul>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="submenu">
+                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
+                <ul>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="submenu">
+                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
+                <ul>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="submenu">
+                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
+                <ul>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="submenu">
+                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
+                <ul>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                  <li>
+                    <a>Serie D Nazionale A</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div class="mobile-teams-menu-close">
+            <i class="las la-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="club">{{ site.data.manifest.club_name }}</div>
+  </div>
 </header>

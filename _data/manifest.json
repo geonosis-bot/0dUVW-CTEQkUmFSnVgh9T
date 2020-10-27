@@ -1,217 +1,179 @@
 {
-  "club_name": "San Marino Calcio",
-  "first_color": "#3085C2",
-  "second_color": "#fff",
-  "text_on_first_color": "#fff",
-  "text_on_second_color": "#000",
-  "subpath": "/",
-  "domain": "https://localhost:4000",
+  "logo_url": "https://lh3.googleusercontent.com/HDXTezzIiVKEizARnUeTQVQVWoFseS84yZdGhT3gBSs4IwdVnyq-g_qk2YuykQfCXzAULVxNRYgaFNBtpAMSb8yE",
+  "club_name": "U.S.D. 1913 SEREGNO CALCIO SRL",
+  "first_color": "#114B5F",
+  "second_color": "#1A936F",
+  "text_on_first_color": "#88d498",
+  "text_on_second_color": "#88d498",
   "modules": {
     "intro": {
-      "background_url": "https://www.fsgc.sm/wp-content/uploads/2018/02/smc.jpg",
-      "title": "Siamo dei brocchi e non vinciamo una partita dal 1893",
-      "subtitle": "Pero prendiamo qualche milione nei diritti televisivi UEFA e FIFA"
-    },
-    "contacts": {
-      "phone": "3404003576",
-      "mobile": null,
-      "email": "sunofcdsettoregiovanile@yahoo.it"
-    },
-    "social": {
-      "linkFb": "a",
-      "linkIg": "a",
-      "linkTw": "a",
-      "linkYt": "a"
+      "background_url": "https://lh3.googleusercontent.com/jKokvxyeb59J9eHW5q4iEwM-rlTXycLjKWr2MoNW6sAcQ00ShcUKNi2zWn_OcaVpGTW--GlISnofcZwzNdHJAjI",
+      "title": "Benvenuto!",
+      "subtitle": "Benvenuto nel nuovo sito del Seregno"
     },
     "preenrolled": {
-      "url": "https://google.it",
-      "subtitle": "Culpa exercitation qui amet anim reprehenderit duis Lorem ullamco proident minim enim voluptate et officia",
-      "image_url": "https://www.corriereromagna.it/wp-content/uploads/2020/09/data10540663-750x488.jpg"
+      "image_url": "https://lh3.googleusercontent.com/4pykmvvP8oQAn-UT_WX3YtEaUBNEOkV3c6t189aDctvdfykAiCgb0wsoL4i3OzgfyBdEj2GQugCJ9xcPwlq8pmw",
+      "url": "https://preiscrizioni.golee.dev/u-s-d-1913-seregno-calcio-srl",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas fringilla felis tempus rhoncus. Phasellus laoreet, odio eget bibendum iaculis, augue massa consequat tortor, dignissim efficitur eros nibh vel magna. Vivamus sed commodo elit. Ut luctus elementum quam. Mauris in justo feugiat, vulputate ex non, interdum libero"
     },
-    "next_matches": [
-      {
-        "club_home": "San Marino",
-        "club_away": "Milan",
-        "championship_name": "Seria A Tim, Italia"
-      },
-      {
-        "club_home": "Rimini",
-        "club_away": "San Marino",
-        "championship_name": "Seria A Tim, Italia"
-      },
-      {
-        "club_home": "San Marino",
-        "club_away": "Milan",
-        "championship_name": "Seria A Tim, Italia"
-      },
-      {
-        "club_home": "San Marino",
-        "club_away": "Juventus",
-        "championship_name": "Seria A Tim, Italia"
-      },
-      {
-        "club_home": "Modena",
-        "club_away": "San Marino",
-        "championship_name": "Seria A Tim, Italia"
-      }
-    ],
+    "contacts": {
+      "phone": "0362 239818",
+      "mobile": null,
+      "email": "segreteria@seregnocalcio.com"
+    },
+    "social": {
+      "linkFb": "",
+      "linkIg": "",
+      "linkTw": "",
+      "linkYt": ""
+    },
     "news": [
       {
         "is_highlight": true,
-        "cover_url": "https://upload.wikimedia.org/wikipedia/it/a/a2/Davide_Gualtieri%2C_San_Marino-Inghilterra_1-7%2C_1993.jpg",
-        "author": "Griffith Gray",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
+        "is_draft": false,
+        "title": "In arrivo il lockdown",
+        "subtitle": "Arriva il lockdownn",
+        "category": "Società",
+        "cover_url": "https://lh3.googleusercontent.com/5y1cd4yVXVG0JoPmpi4W4ZuXqunLoEnj2a_4nFRfnGiRy5y-KyBexirt1avAlk_s3D63ErkPGoFskVXXxyAIr5o",
+        "author": "Toselli Gabriele",
+        "body": "__fdsnafkldanslaksdnfkldsafdsla__",
+        "slug": "In-arrivo-il-lockdown",
         "publish_date": {
-          "DDMMYYYY": "13/05/2016",
-          "ddddDDMMMMYYYY": "Friday, 14 February 2014"
+          "DDMMYYYY": "26/10/2020",
+          "ddddDDMMMMYYYY": "lunedì, 26 ottobre 2020"
         },
-        "category": "adipisicing",
-        "title": "Irure deserunt ex aliqua quis",
-        "slug": "ipsum-in",
-        "subtitle": "ex proident proident occaecat culpa reprehenderit amet culpa ex nulla ullamco culpa Lorem laboris reprehenderit",
-        "prev": "",
-        "next": ""
+        "next": "Nuovo-DPCM-pt2"
       },
       {
-        "is_highlight": false,
-        "cover_url": "https://upload.wikimedia.org/wikipedia/it/a/a2/Davide_Gualtieri%2C_San_Marino-Inghilterra_1-7%2C_1993.jpg",
-        "author": "Griffith Gray",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
+        "is_highlight": true,
+        "is_draft": false,
+        "title": "Nuovo DPCM pt2",
+        "subtitle": "Coronavirus, il Presidente Conte firma il Dpcm del 24 ottobre 2020",
+        "category": "Modulistica",
+        "cover_url": "https://lh3.googleusercontent.com/gWKd7Ltx9JODenVVBsycmee1a1cTkcMdYNL5Lm8jpkJn0yD4dT0ql-vVIORRXXNXNfnx5srNZQgk_zxtU7it0A",
+        "author": "Giuseppe Conte superhero",
+        "body": "Il Presidente del *Consiglio*, __Giuseppe Conte__, ha firmato il Dpcm 24 ottobre contenente le nuove misure per fronteggiare l'emergenza epidemiologica da Covid-19.\n\n![](https://lh3.googleusercontent.com/s51yFgSt3hKAfAeegmsT7lrFlbGtRrW8VooBMHss9va-baWKrBmCkxIQCPow0MpGtk5dvRbSdtkJXiVX-bIC29c)\n",
+        "slug": "Nuovo-DPCM-pt2",
         "publish_date": {
-          "DDMMYYYY": "13/05/2016",
-          "ddddDDMMMMYYYY": "Friday, 14 February 2014"
+          "DDMMYYYY": "26/10/2020",
+          "ddddDDMMMMYYYY": "lunedì, 26 ottobre 2020"
         },
-        "category": "adipisicing",
-        "title": "Irure deserunt ex aliqua quis",
-        "slug": "ipsum-in",
-        "subtitle": "ex proident proident occaecat culpa reprehenderit amet culpa ex nulla ullamco culpa Lorem laboris reprehenderit",
-        "prev": "",
-        "next": ""
+        "prev": "In-arrivo-il-lockdown"
+      },
+      {
+        "is_highlight": true,
+        "is_draft": false,
+        "title": "Nuovo DPCM pt2",
+        "subtitle": "Coronavirus, il Presidente Conte firma il Dpcm del 24 ottobre 2020",
+        "category": "Modulistica",
+        "cover_url": "https://lh3.googleusercontent.com/gWKd7Ltx9JODenVVBsycmee1a1cTkcMdYNL5Lm8jpkJn0yD4dT0ql-vVIORRXXNXNfnx5srNZQgk_zxtU7it0A",
+        "author": "Giuseppe Conte superhero",
+        "body": "Il Presidente del *Consiglio*, __Giuseppe Conte__, ha firmato il Dpcm 24 ottobre contenente le nuove misure per fronteggiare l'emergenza epidemiologica da Covid-19.\n\n![](https://lh3.googleusercontent.com/s51yFgSt3hKAfAeegmsT7lrFlbGtRrW8VooBMHss9va-baWKrBmCkxIQCPow0MpGtk5dvRbSdtkJXiVX-bIC29c)\n",
+        "slug": "Nuovo-DPCM-pt2",
+        "publish_date": {
+          "DDMMYYYY": "26/10/2020",
+          "ddddDDMMMMYYYY": "lunedì, 26 ottobre 2020"
+        },
+        "prev": "In-arrivo-il-lockdown"
+      },
+      {
+        "is_highlight": true,
+        "is_draft": false,
+        "title": "Nuovo DPCM pt2",
+        "subtitle": "Coronavirus, il Presidente Conte firma il Dpcm del 24 ottobre 2020",
+        "category": "Modulistica",
+        "cover_url": "https://lh3.googleusercontent.com/gWKd7Ltx9JODenVVBsycmee1a1cTkcMdYNL5Lm8jpkJn0yD4dT0ql-vVIORRXXNXNfnx5srNZQgk_zxtU7it0A",
+        "author": "Giuseppe Conte superhero",
+        "body": "Il Presidente del *Consiglio*, __Giuseppe Conte__, ha firmato il Dpcm 24 ottobre contenente le nuove misure per fronteggiare l'emergenza epidemiologica da Covid-19.\n\n![](https://lh3.googleusercontent.com/s51yFgSt3hKAfAeegmsT7lrFlbGtRrW8VooBMHss9va-baWKrBmCkxIQCPow0MpGtk5dvRbSdtkJXiVX-bIC29c)\n",
+        "slug": "Nuovo-DPCM-pt2",
+        "publish_date": {
+          "DDMMYYYY": "26/10/2020",
+          "ddddDDMMMMYYYY": "lunedì, 26 ottobre 2020"
+        },
+        "prev": "In-arrivo-il-lockdown"
+      },
+      {
+        "is_highlight": true,
+        "is_draft": false,
+        "title": "Nuovo DPCM pt2",
+        "subtitle": "Coronavirus, il Presidente Conte firma il Dpcm del 24 ottobre 2020",
+        "category": "Modulistica",
+        "cover_url": "https://lh3.googleusercontent.com/gWKd7Ltx9JODenVVBsycmee1a1cTkcMdYNL5Lm8jpkJn0yD4dT0ql-vVIORRXXNXNfnx5srNZQgk_zxtU7it0A",
+        "author": "Giuseppe Conte superhero",
+        "body": "Il Presidente del *Consiglio*, __Giuseppe Conte__, ha firmato il Dpcm 24 ottobre contenente le nuove misure per fronteggiare l'emergenza epidemiologica da Covid-19.\n\n![](https://lh3.googleusercontent.com/s51yFgSt3hKAfAeegmsT7lrFlbGtRrW8VooBMHss9va-baWKrBmCkxIQCPow0MpGtk5dvRbSdtkJXiVX-bIC29c)\n",
+        "slug": "Nuovo-DPCM-pt2",
+        "publish_date": {
+          "DDMMYYYY": "26/10/2020",
+          "ddddDDMMMMYYYY": "lunedì, 26 ottobre 2020"
+        },
+        "prev": "In-arrivo-il-lockdown"
       }
     ],
-    "sponsors": [
+    "sponsor": [
       {
-        "name": "sint",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
+        "_id": "5f96f6421e603c1bdf7e325b",
+        "name": "Toyota",
+        "link": "www.toyota.com",
+        "category": "SECONDARY",
+        "logo_url": "https://lh3.googleusercontent.com/FwgukWZPGKZTy21X0cSY2-krCiSx9eKIYRIDFzEyXoNX3ggqRbiOV8xCx_rkbAGagfyP2V9MPDKkNlN8piGUWic",
+        "club": 1,
+        "created_at": "16:16 26/10/2020",
+        "created_by": "86f9edb0-a3f6-11ea-a4ec-49cfacd85f2f",
+        "__v": 0,
+        "id": "5f96f6421e603c1bdf7e325b"
       },
       {
-        "name": "in",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
+        "_id": "5f96f6788e6407db83169dfb",
+        "name": "Macron",
+        "link": "www.macron.com",
+        "category": "PRIMARY",
+        "logo_url": "https://lh3.googleusercontent.com/V6UI7nQPMfYwPgE2ljI9pXmIs00TtXY3rJbfGYiFKnRBdrPFLXX1ZUgZH1G5HXznBkdkMSPTtUx4gnjqqg_vJwDf",
+        "club": 1,
+        "created_at": "16:16 26/10/2020",
+        "created_by": "86f9edb0-a3f6-11ea-a4ec-49cfacd85f2f",
+        "__v": 0,
+        "id": "5f96f6788e6407db83169dfb"
+      }
+    ],
+    "next_matches": [
+      {
+        "_id": 27,
+        "date": "2020-11-01T00:00:00.000Z",
+        "club_home": "U.S.D. 1913 SEREGNO CALCIO SRL",
+        "club_away": "s.s.d. mapello a r.l.",
+        "championship_name": "Allievi Under 17 Regionali"
       },
       {
-        "name": "fugiat",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
+        "_id": 86,
+        "date": "2020-10-31T00:00:00.000Z",
+        "club_home": "u.s. a.casati calcio arcore",
+        "club_away": "U.S.D. 1913 SEREGNO CALCIO SRL",
+        "championship_name": "Giovanissimi Under 14 Provinciali"
       },
       {
-        "name": "nisi",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
+        "_id": 37,
+        "date": "2020-11-01T00:00:00.000Z",
+        "club_home": "U.S.D. 1913 SEREGNO CALCIO SRL",
+        "club_away": "ssdrl \taccademia internazionale",
+        "championship_name": "Giovanissimi Under 15 Regionali"
       },
       {
-        "name": "excepteur",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
+        "_id": 68,
+        "date": "2020-10-30T00:00:00.000Z",
+        "club_home": "U.S.D. 1913 SEREGNO CALCIO SRL",
+        "club_away": "a.s.d. fiammamonza 1970",
+        "championship_name": "Juniores Under 19 Provinciali"
       },
       {
-        "name": "culpa",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
-      },
-      {
-        "name": "nisi",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
-      },
-      {
-        "name": "ut",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
-      },
-      {
-        "name": "tempor",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
-      },
-      {
-        "name": "id",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
-      },
-      {
-        "name": "velit",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "secondary"
-      },
-      {
-        "name": "minim",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
-      },
-      {
-        "name": "ullamco",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
-      },
-      {
-        "name": "consectetur",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
-      },
-      {
-        "name": "aute",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
-      },
-      {
-        "name": "culpa",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
-      },
-      {
-        "name": "non",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
-      },
-      {
-        "name": "irure",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
-      },
-      {
-        "name": "consectetur",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
-      },
-      {
-        "name": "commodo",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "primary"
+        "_id": 30,
+        "date": "2020-10-31T00:00:00.000Z",
+        "club_home": "u.s. \taldini s.s.d.ar.l.",
+        "club_away": "U.S.D. 1913 SEREGNO CALCIO SRL",
+        "championship_name": "Allievi Under 16 Regionali"
       }
     ]
   },
-  "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Federazione_Sammarinese_Giuoco_Calcio.svg/1200px-Federazione_Sammarinese_Giuoco_Calcio.svg.png",
-  "is_undermaintenance": false
+  "domain": "https://geonosis-bot.github.io",
+  "is_undermaintenance": false,
+  "subpath": "/"
 }

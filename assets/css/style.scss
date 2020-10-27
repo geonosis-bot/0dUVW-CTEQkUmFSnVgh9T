@@ -28,7 +28,6 @@ $intro_background_img: "{{site.data.manifest.modules.intro.background_url }}";
 @import "single_blog";
 
 // body scss
-@import "header";
 @import "menu";
 @import "our_service";
 @import "about_part";
@@ -63,6 +62,7 @@ $intro_background_img: "{{site.data.manifest.modules.intro.background_url }}";
 // Partials
 @import "_partials/sections";
 @import "_partials/buttons";
+@import "_partials/header";
 @import "_partials/utils";
 @import "_partials/socials";
 

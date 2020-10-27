@@ -1,0 +1,222 @@
+header.main_menu {
+  height: $header_height_full;
+  padding: 0 !important;
+  border-bottom: 2px solid $grey_color_light;
+
+  > div:not(.mobile-menu) {
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .identity {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > img {
+        height: 80px;
+        width: auto;
+      }
+
+      > span {
+        margin-left: 20px;
+        font-weight: $font_bold;
+        font-size: $font_size30;
+        color: $black_color;
+      }
+    }
+
+    .menu {
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        li {
+          a {
+            font-weight: $font_regular;
+            font-size: 15px;
+            padding: 0 20px;
+            color: $black_color;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-to(from-md) {
+    .mobile-menu-open {
+      display: none;
+    }
+    .mobile-menu {
+      display: none;
+    }
+  }
+
+  @include respond-to(upto-sm) {
+    height: $header_height;
+
+    .menu {
+      display: none;
+    }
+
+    .mobile-teams-menu-close,
+    .mobile-menu-close,
+    .mobile-menu-open {
+      cursor: pointer;
+      display: block;
+      i {
+        font-size: 30px;
+      }
+    }
+
+    .identity {
+      img {
+        height: 50px !important;
+      }
+      span {
+        font-size: 22px !important;
+      }
+    }
+
+    .mobile-menu {
+      .menu {
+        display: block;
+      }
+    }
+  }
+
+  .mobile-teams-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+
+    > div {
+      display: flex;
+      height: 100%;
+      width: 100%;
+
+      .left {
+        background-color: $back_dark;
+        width: calc(100% - 80px);
+        overflow: auto;
+
+        .head {
+          height: $header_height;
+          align-items: center;
+          color: $white_color;
+          display: flex;
+          padding-left: 40px;
+          font-size: 18px;
+        }
+
+        .menu {
+          ul {
+            li {
+              a {
+                color: $white_color;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 15px;
+
+                i {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .right {
+        background-color: $first_color;
+        width: 80px;
+
+        .mobile-teams-menu-close {
+          height: $header_height;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          i {
+            color: $text_on_first_color;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $first_color;
+    z-index: 99;
+
+    .menu {
+      margin-top: 40px;
+      padding-left: 40px;
+      ul {
+        li {
+          a {
+            padding: 15px 0;
+            font-size: 20px;
+            display: block;
+            color: $text_on_first_color;
+
+            &:hover {
+              color: lighten($text_on_first_color, 10) !important;
+            }
+          }
+
+          &.submenu {
+            > ul {
+              display: none;
+              padding: 0 0 0 20px;
+              > li > a {
+                font-size: 16px;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .club {
+      position: absolute;
+      bottom: 20px;
+      font-size: 16px;
+      color: lighten($first_color, 20);
+      width: 100%;
+      text-align: center;
+    }
+
+    .mobile-menu-toggle {
+      height: $header_height;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      justify-content: flex-end;
+
+      i {
+        color: $text_on_first_color;
+      }
+    }
+  }
+}
+
+html {
+  &.mobile-menu-open {
+    overflow: hidden;
+  }
+}

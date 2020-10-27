@@ -292,74 +292,74 @@
      });*/
 
   // Menu Sidebar Multi Level SPACE
-  $(document).ready(function () {
-    if ($(window).width() <= 1024) {
-      $("#menu-mobile").css("opacity", "1");
-      $("#menu-mobile").multilevelpushmenu({
-        //containersToPush: [$( '#menu-tools' )],
-        collapsed: true,
-        direction: "rtl",
-        fullCollapse: true,
-        backItemIcon: "fa fa-angle-left",
-        groupIcon: "fa fa-angle-right",
-        menuWidth: "80%", // '450px', '30em', '25%' will also work
-        menuHeight: 1000,
-        backText: "Indietro",
-        backItemClass: "menu-indietro",
-        preventItemClick: true,
-        onExpandMenuStart: function () {
-          console.log("menu si apre");
-          $(".multilevelpushmenu_inactive")
-            .removeClass("back-transp")
-            .addClass("back-black");
-        },
-        onGroupItemClick: function () {
-          console.log("Menu gruppo");
-          var clickedTagName = $(arguments[0].target).prop("tagName");
-          console.log(clickedTagName.toLowerCase());
-          if (clickedTagName.toLowerCase() === "a") return false;
-          return true;
-        },
-        onItemClick: function () {
-          // First argument is original event object
-          var event = arguments[0],
-            // Second argument is menu level object containing clicked item (<div> element)
-            $menuLevelHolder = arguments[1],
-            // Third argument is clicked item (<li> element)
-            $item = arguments[2],
-            // Fourth argument is instance settings/options object
-            options = arguments[3];
+  // $(document).ready(function () {
+  //   if ($(window).width() <= 1024) {
+  //     $("#menu-mobile").css("opacity", "1");
+  //     $("#menu-mobile").multilevelpushmenu({
+  //       //containersToPush: [$( '#menu-tools' )],
+  //       collapsed: true,
+  //       direction: "rtl",
+  //       fullCollapse: true,
+  //       backItemIcon: "fa fa-angle-left",
+  //       groupIcon: "fa fa-angle-right",
+  //       menuWidth: "80%", // '450px', '30em', '25%' will also work
+  //       menuHeight: 1000,
+  //       backText: "Indietro",
+  //       backItemClass: "menu-indietro",
+  //       preventItemClick: true,
+  //       onExpandMenuStart: function () {
+  //         console.log("menu si apre");
+  //         $(".multilevelpushmenu_inactive")
+  //           .removeClass("back-transp")
+  //           .addClass("back-black");
+  //       },
+  //       onGroupItemClick: function () {
+  //         console.log("Menu gruppo");
+  //         var clickedTagName = $(arguments[0].target).prop("tagName");
+  //         console.log(clickedTagName.toLowerCase());
+  //         if (clickedTagName.toLowerCase() === "a") return false;
+  //         return true;
+  //       },
+  //       onItemClick: function () {
+  //         // First argument is original event object
+  //         var event = arguments[0],
+  //           // Second argument is menu level object containing clicked item (<div> element)
+  //           $menuLevelHolder = arguments[1],
+  //           // Third argument is clicked item (<li> element)
+  //           $item = arguments[2],
+  //           // Fourth argument is instance settings/options object
+  //           options = arguments[3];
 
-          // You can do some cool stuff here before
-          // redirecting to href location
-          // like logging the event or even
-          // adding some parameters to href, etc...
+  //         // You can do some cool stuff here before
+  //         // redirecting to href location
+  //         // like logging the event or even
+  //         // adding some parameters to href, etc...
 
-          // Anchor href
-          var itemHref = $item.find("a:first").attr("href");
-          // Redirecting the page
-          location.href = itemHref;
-        },
-      });
-      $("#expand-menu").click(function () {
-        console.log("cliccato menu tool");
-        $("#collapse-menu").fadeIn(0);
-        $("#expand-menu").fadeOut(0);
-      });
-      $("#collapse-menu").click(function () {
-        $("#expand-menu").fadeIn(0);
-        $("#collapse-menu").fadeOut(0);
-      });
-      $("#expand-menu").click(function () {
-        $("#menu-mobile").multilevelpushmenu("expand");
-      });
-      $("#collapse-menu").click(function () {
-        $("#menu-mobile").multilevelpushmenu("collapse");
-      });
-    } else {
-      $("#menu-mobile").css("display", "none");
-    }
-  });
+  //         // Anchor href
+  //         var itemHref = $item.find("a:first").attr("href");
+  //         // Redirecting the page
+  //         location.href = itemHref;
+  //       },
+  //     });
+  //     $("#expand-menu").click(function () {
+  //       console.log("cliccato menu tool");
+  //       $("#collapse-menu").fadeIn(0);
+  //       $("#expand-menu").fadeOut(0);
+  //     });
+  //     $("#collapse-menu").click(function () {
+  //       $("#expand-menu").fadeIn(0);
+  //       $("#collapse-menu").fadeOut(0);
+  //     });
+  //     $("#expand-menu").click(function () {
+  //       $("#menu-mobile").multilevelpushmenu("expand");
+  //     });
+  //     $("#collapse-menu").click(function () {
+  //       $("#menu-mobile").multilevelpushmenu("collapse");
+  //     });
+  //   } else {
+  //     $("#menu-mobile").css("display", "none");
+  //   }
+  // });
 
   // pagina squadre The Space
   if ($("body").hasClass("squadre-dati") || $("body").hasClass("contatti")) {
@@ -581,16 +581,40 @@
   });
 
   // ------------------------------------------------
+  // mobile menu toggle
+  // ------------------------------------------------
+  $(".mobile-menu-open").on("click", function () {
+    $(".mobile-menu").fadeIn();
+    $("html").addClass("mobile-menu-open");
+  });
+
+  $(".mobile-menu-close").on("click", function () {
+    $(".mobile-menu").fadeOut();
+    $("html").removeClass("mobile-menu-open");
+  });
+
+  $(".mobile-teams-menu-open").on("click", function () {
+    $(".mobile-teams-menu").fadeIn();
+  });
+
+  $(".mobile-teams-menu-close").on("click", function () {
+    $(".mobile-teams-menu").fadeOut();
+  });
+
+  $("ul > li.submenu > a").on("click", function () {
+    console.log("click");
+    $(this).next("ul").slideToggle();
+  });
+
+  // ------------------------------------------------
   // next matches effect scroll
   // ------------------------------------------------
   $(".marquee").marquee({
-    //duration in milliseconds of the marquee
     duration: 20000,
-    //time in milliseconds before the marquee will start animating
     delayBeforeStart: 0,
-    //'left' or 'right'
     direction: "left",
-    //true or false - should the marquee be duplicated to show an effect of continues flow
+    startVisible: true,
+    pauseOnHover: true,
     duplicated: true,
   });
 
