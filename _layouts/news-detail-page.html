@@ -80,12 +80,12 @@
           <!-- "Paginator" -->
           <div class="news-paginator">
             {% if page.prev %}
-            <a class="btn btn-primary btn-3d prev" href="/news/{{page.prev}}">
+            <a class="btn btn-primary btn-3d prev" href="{{ site.data.manifest.subpath }}news/{{page.prev}}">
               <!-- <i class="las la-angle-left"></i> -->
               Precedente
             </a>
             {% endif %} {% if page.next %}
-            <a class="btn btn-primary btn-3d next" href="/news/{{page.next}}">
+            <a class="btn btn-primary btn-3d next" href="{{ site.data.manifest.subpath }}news/{{page.next}}">
               <!-- <i class="las la-angle-right"></i> -->
               Successiva
             </a>

@@ -640,7 +640,7 @@
     slidesToScroll: 1,
     focusOnSelect: true,
     infinite: true,
-    arrows: true,
+    arrows: false,
     centerMode: false,
     responsive: [
       {
