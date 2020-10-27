@@ -1,0 +1,21 @@
+<section class="next-matches first-color-bg">
+  <div class="container-fluid">
+    <h3 class="section-title">Prossime partite</h3>
+  </div>
+
+  <div class="events">
+    <div class="marquee">
+      <div>
+        {% for event in site.data.manifest.modules.next_matches %}
+        <div class="event">
+          <h2 class="teams">
+            <span class="home">{{ event.club_home }}</span
+            > - <span class="away">{{ event.club_away }}</span>
+          </h2>
+          <p class="championship">{{ event.championship_name }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,34 @@
+section.next-matches {
+  .events {
+    margin-top: 60px;
+  }
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+
+    > div {
+      display: flex;
+
+      .event {
+        display: inline-block;
+        border-left: 1px solid $text_on_first_color;
+        padding: 0 30px;
+
+        .teams {
+          font-weight: $font_light;
+          span {
+            font-weight: $font_regular;
+            &.active {
+              font-weight: $font_medium;
+            }
+          }
+        }
+
+        .championship {
+          font-size: 15px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

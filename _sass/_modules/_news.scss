@@ -1,8 +1,6 @@
 @import "./../_mixins/responsive";
 
 section.news {
-  margin-top: 50px;
-  margin-bottom: 50px;
   .news-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

@@ -1,5 +1,5 @@
 section {
-  padding: 40px 0;
+  padding: 80px 0;
 
   &.first-color {
     color: $first_color !important;
@@ -26,6 +26,6 @@ section {
 .section-title {
   color: $first_color;
   font-size: 36px;
-  font-weight: $font_medium;
+  font-weight: $font_regular;
   margin-bottom: 40px;
 }
