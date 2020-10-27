@@ -88,6 +88,128 @@
         "prev": "",
         "next": ""
       }
+    ],
+    "sponsors": [
+      {
+        "name": "sint",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "in",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "fugiat",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "nisi",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "excepteur",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "culpa",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "nisi",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "ut",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "tempor",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "id",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "velit",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "secondary"
+      },
+      {
+        "name": "minim",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "ullamco",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "consectetur",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "aute",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "culpa",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "non",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "irure",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "consectetur",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      },
+      {
+        "name": "commodo",
+        "logo_url": "https://via.placeholder.com/150",
+        "link": "https://google.it",
+        "category": "primary"
+      }
     ]
   },
   "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Federazione_Sammarinese_Giuoco_Calcio.svg/1200px-Federazione_Sammarinese_Giuoco_Calcio.svg.png",

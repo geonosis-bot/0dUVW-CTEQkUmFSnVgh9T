@@ -1,0 +1,41 @@
+section.sponsors {
+  .sponsor {
+    padding: 0 10px;
+    img {
+      width: 100%;
+      margin: 0 auto;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 16px;
+      text-align: center;
+      color: $black_color;
+    }
+  }
+
+  .sponsors-grid {
+    display: grid;
+    width: 100%;
+
+    &.primary {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &.secondary {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    grid-gap: 20px;
+
+    .sponsor {
+      padding: 0;
+    }
+  }
+
+  // TODO: bad but easy and quick
+  &.home {
+    .carousel-sponsor {
+      margin-top: 70px;
+    }
+  }
+}

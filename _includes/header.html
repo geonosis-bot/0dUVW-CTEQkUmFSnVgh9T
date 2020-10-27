@@ -11,6 +11,8 @@
       <ul>
         {% if site.data.manifest.modules.news %}
         <li><a href="{{ site.data.manifest.subpath }}news">NEWS</a></li>
+        {% endif %} {% if site.data.manifest.modules.sponsors %}
+        <li><a href="{{ site.data.manifest.subpath }}sponsors">SPONSORS</a></li>
         {% endif %}
       </ul>
     </div>
