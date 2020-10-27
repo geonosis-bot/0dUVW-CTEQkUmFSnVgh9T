@@ -607,16 +607,30 @@
   });
 
   // ------------------------------------------------
-  // next matches effect scroll
+  // next matches effect scroll / carousel
   // ------------------------------------------------
-  $(".marquee").marquee({
-    duration: 20000,
-    delayBeforeStart: 0,
-    direction: "left",
-    startVisible: true,
-    pauseOnHover: true,
-    duplicated: true,
-  });
+
+  if ($(window).width() > 767) {
+    $(".marquee").marquee({
+      duration: 20000,
+      delayBeforeStart: 0,
+      direction: "left",
+      startVisible: true,
+      pauseOnHover: true,
+      duplicated: true,
+    });
+  }
+
+  if ($(window).width() <= 767) {
+    $(".next-matches-carousel").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      focusOnSelect: false,
+      infinite: true,
+      arrows: false,
+      autoplay: true,
+    });
+  }
 
   // ------------------------------------------------
   // sponsor carousel

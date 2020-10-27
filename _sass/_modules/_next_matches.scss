@@ -8,26 +8,51 @@ section.next-matches {
 
     > div {
       display: flex;
+    }
+  }
 
-      .event {
-        display: inline-block;
-        border-left: 1px solid $text_on_first_color;
-        padding: 0 50px;
+  .event {
+    display: inline-block;
+    border-left: 1px solid $text_on_first_color;
+    padding: 0 50px;
 
-        .teams {
-          font-weight: $font_light;
-          span {
-            font-weight: $font_light;
-            &.strong {
-              font-weight: $font_medium;
-            }
-          }
+    .teams {
+      font-weight: $font_light;
+      span {
+        font-weight: $font_light;
+        &.strong {
+          font-weight: $font_medium;
         }
+      }
+    }
 
-        .championship {
-          font-size: 15px;
-          text-transform: uppercase;
-        }
+    .championship {
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  }
+
+  @include respond-to(xs) {
+    .marquee {
+      display: none;
+    }
+  }
+  @include respond-to(from-sm) {
+    .next-matches-carousel {
+      display: none;
+    }
+  }
+
+  .next-matches-carousel {
+    .event {
+      padding: 0 15px;
+      border: 0;
+
+      .teams {
+        font-size: 24px;
+      }
+      .championship {
+        font-size: 13px;
       }
     }
   }
