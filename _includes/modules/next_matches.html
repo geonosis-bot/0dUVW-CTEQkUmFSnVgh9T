@@ -9,8 +9,13 @@
         {% for event in site.data.manifest.modules.next_matches %}
         <div class="event">
           <h2 class="teams">
-            <span class="home">{{ event.club_home }}</span
-            > - <span class="away">{{ event.club_away }}</span>
+            <span class="home {% if event.club_home.bold %}strong{% endif %}"
+              >{{ event.club_home.value }}</span
+            >
+            -
+            <span class="away {% if event.club_away.bold %}strong{% endif %}"
+              >{{ event.club_away.value }}</span
+            >
           </h2>
           <p class="championship">{{ event.championship_name }}</p>
         </div>

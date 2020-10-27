@@ -17,8 +17,8 @@ section.next-matches {
         .teams {
           font-weight: $font_light;
           span {
-            font-weight: $font_regular;
-            &.active {
+            font-weight: $font_light;
+            &.strong {
               font-weight: $font_medium;
             }
           }

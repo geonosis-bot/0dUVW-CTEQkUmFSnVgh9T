@@ -1,6 +1,10 @@
 section {
   padding: 80px 0;
 
+  @include respond-to(xs) {
+    padding: 60px 0;
+  }
+
   &.first-color {
     color: $first_color !important;
   }
