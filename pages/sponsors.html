@@ -11,7 +11,7 @@ permalink: /sponsors
     <h3 class="section-title">Main sponsor</h3>
 
     {% assign primary_sponsors = site.data.manifest.modules.sponsors |
-    where:"category","primary" %}
+    where:"category","PRIMARY" %}
 
     <div class="sponsors-grid primary">
       {% for item in primary_sponsors %}
@@ -31,7 +31,7 @@ permalink: /sponsors
     <h3 class="section-title">Sponsor tecnici</h3>
 
     {% assign secondary_sponsors = site.data.manifest.modules.sponsors |
-    where:"category","secondary" %}
+    where:"category","SECONDARY" %}
 
     <div class="sponsors-grid secondary">
       {% for item in secondary_sponsors %}

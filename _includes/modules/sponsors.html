@@ -3,7 +3,7 @@
     <h3 class="section-title">Sponsor</h3>
 
     {% assign primary_sponsors = site.data.manifest.modules.sponsors |
-    where:"category","primary" %}
+    where:"category","PRIMARY" %}
 
     <div class="carousel-sponsor">
       {% for item in primary_sponsors %}
