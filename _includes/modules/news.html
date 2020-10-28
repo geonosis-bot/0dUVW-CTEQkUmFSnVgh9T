@@ -4,6 +4,7 @@
     <h3 class="section-title">News</h3>
 
     <!-- Grid -->
+    {% if site.data.manifest.modules.news.size > 0 %}
     <div class="news-grid">
       {% for item in site.data.manifest.modules.news limit:5 %} {% if
       item.is_highlight == true and forloop.first %}
@@ -59,5 +60,9 @@
     <div class="text-center">
       <a href="{{ site.data.manifest.subpath }}news" class="btn btn-primary btn-3d">Vedi tutte</a>
     </div>
+    {% else %}
+    <div>Non sono presenti news</div>
+    {% endif %}
+
   </div>
 </section>
