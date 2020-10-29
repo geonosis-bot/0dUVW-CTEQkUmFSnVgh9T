@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body class="page-{{ page.namespace }}">
+    {% if site.data.manifest.is_undermaintenance %} {% include maintenance.html
+    %} {% else %}
+
+    <!-- No maintenance, show website content -->
+
+    <!-- Header -->
+    {% include header.html %}
+
+    <!-- Content -->
+    <div class="content team">
+      <section class="team-detail">
+        <div class="header">
+          <div class="container-fluid">
+            <h1 class="section-title">{{ page.team_name }}</h1>
+
+            <!-- Tabs -->
+            <ul class="nav nav-tabs" id="tab-menu" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="team-tab"
+                  data-toggle="tab"
+                  href="#team"
+                  role="tab"
+                  aria-controls="team"
+                  aria-selected="true"
+                  >Rosa</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="calendar-tab"
+                  data-toggle="tab"
+                  href="#calendar"
+                  role="tab"
+                  aria-controls="calendar"
+                  aria-selected="false"
+                  >Calendario e Risultati</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="ranking-tab"
+                  data-toggle="tab"
+                  href="#ranking"
+                  role="tab"
+                  aria-controls="ranking"
+                  aria-selected="false"
+                  >Classifica</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab-content">
+          <div
+            class="tab-pane fade show active"
+            id="team"
+            role="tabpanel"
+            aria-labelledby="team-tab"
+          >
+            <!-- portieri -->
+            {% if page.athletes.POR and page.athletes.POR.size > 0 %}
+            <div class="team-section">
+              <div class="container-fluid">
+                <div class="team-section-header">
+                  <h3>Portieri</h3>
+                  <i class="las la-plus"></i>
+                </div>
+
+                <div class="people">
+                  <div>
+                    {% for item in page.athletes.POR %} {% include
+                    components/person.html item=item %} {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+
+            <!-- difensori -->
+            {% if page.athletes.DIF and page.athletes.DIF.size > 0 %}
+            <div class="team-section">
+              <div class="container-fluid">
+                <div class="team-section-header">
+                  <h3>Difensori</h3>
+                  <i class="las la-plus"></i>
+                </div>
+
+                <div class="people">
+                  <div>
+                    {% for item in page.athletes.DIF %} {% include
+                    components/person.html item=item %} {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+
+            <!-- centrocampisti -->
+            {% if page.athletes.CEN and page.athletes.CEN.size > 0 %}
+            <div class="team-section">
+              <div class="container-fluid">
+                <div class="team-section-header">
+                  <h3>Centrocampisti</h3>
+                  <i class="las la-plus"></i>
+                </div>
+
+                <div class="people">
+                  <div>
+                    {% for item in page.athletes.CEN %} {% include
+                    components/person.html item=item %} {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+
+            <!-- attaccanti -->
+            {% if page.athletes.ATT and page.athletes.ATT.size > 0 %}
+            <div class="team-section">
+              <div class="container-fluid">
+                <div class="team-section-header">
+                  <h3>Attaccanti</h3>
+                  <i class="las la-plus"></i>
+                </div>
+
+                <div class="people">
+                  <div>
+                    {% for item in page.athletes.ATT %} {% include
+                    components/person.html item=item %} {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+
+            <!-- staff tecnico -->
+            {% if page.tech_staffs.size > 0 %}
+            <div class="team-section">
+              <div class="container-fluid">
+                <div class="team-section-header">
+                  <h3>Staff tecnico</h3>
+                  <i class="las la-plus"></i>
+                </div>
+
+                <div class="people">
+                  <div>
+                    {% for item in page.tech_staffs %} {% include
+                    components/person.html item=item %} {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+          </div>
+          <div
+            class="tab-pane fade"
+            id="calendar"
+            role="tabpanel"
+            aria-labelledby="calendar-tab"
+          >
+            <div class="container-fluid">Calendario e risultati</div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="ranking"
+            role="tabpanel"
+            aria-labelledby="ranking-tab"
+          >
+            <div class="container-fluid">Classifica</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+    <!-- Scripts -->
+    {% include scripts.html %}
+
+    <!-- End -->
+    {% endif %}
+  </body>
+</html>

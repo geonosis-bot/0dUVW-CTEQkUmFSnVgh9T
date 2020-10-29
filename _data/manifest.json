@@ -1,7 +1,7 @@
 {
   "club_name": "1924 suno f.c.d.",
   "first_color": "#111",
-  "second_color": "#111",
+  "second_color": "#F48025",
   "text_on_first_color": "#fff",
   "text_on_second_color": "#fff",
   "modules": {
@@ -249,10 +249,64 @@
           "show_standing": true
         },
         "athletes": {
+          "POR": [
+            {
+              "name": "Tommaso",
+              "surname": "Guerra",
+              "birthdate": "21/10/2020"
+            }
+          ],
           "CEN": [
             {
-              "name": "LLHHSS99S55F925O",
-              "surname": "LLHHSS99S55F925O",
+              "name": "Matteo",
+              "surname": "Collina",
+              "birthdate": "21/10/2020"
+            },
+            {
+              "name": "Gabriele",
+              "surname": "Toselli",
+              "birthdate": "21/10/2020"
+            },
+            {
+              "name": "Damian",
+              "surname": "Dominella",
+              "birthdate": "21/10/2020"
+            },
+            {
+              "name": "Roberto",
+              "surname": "Colombo",
+              "birthdate": "21/10/2020"
+            },
+            {
+              "name": "Marco",
+              "surname": "Morri",
+              "birthdate": "21/10/2020"
+            }
+          ],
+          "ATT": [
+            {
+              "name": "Matteo",
+              "surname": "Collina",
+              "birthdate": "21/10/2020"
+            },
+            {
+              "name": "Gabriele",
+              "surname": "Toselli",
+              "birthdate": "21/10/2020"
+            },
+            {
+              "name": "Damian",
+              "surname": "Dominella",
+              "birthdate": "21/10/2020"
+            },
+            {
+              "name": "Roberto",
+              "surname": "Colombo",
+              "birthdate": "21/10/2020"
+            },
+            {
+              "name": "Marco",
+              "surname": "Morri",
               "birthdate": "21/10/2020"
             }
           ]

@@ -1,0 +1,26 @@
+<div class="person">
+  {% if item.avatar_url %}
+  <img src="{{ item.avatar_url }}" />
+  {% else %}
+  <img src="{{ site.data.manifest.logo_url }}" />
+  {% endif %}
+
+  <!-- name -->
+  {% if item.name and item.surname %}
+  <p class="name">{{ item.name }} {{ item.surname }}</p>
+  {% endif %} {% if item.name and item.surname == null %}
+  <p class="name">{{ item.name }}</p>
+  {% endif %} {% if item.name == null and item.surname %}
+  <p class="name">{{ item.surname }}</p>
+  {% endif %}
+
+  <!-- role -->
+  {% if item.role %}
+  <p class="role">{{ item.role }}</p>
+  {% endif %}
+
+  <!-- date -->
+  {% if item.birthdate %}
+  <p class="date">{{ item.birthdate }}</p>
+  {% endif %}
+</div>

@@ -2,6 +2,17 @@ header.main_menu {
   height: $header_height_full;
   padding: 0 !important;
   border-bottom: 2px solid $grey_color_light;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  top: 0;
+  transition: all 1s;
+
+  &.menu-temporary {
+    top: -100%;
+  }
 
   > div:first-child {
     height: 100%;
@@ -288,5 +299,14 @@ header.main_menu {
 html {
   &.o-hidden {
     overflow: hidden !important;
+  }
+}
+
+.content {
+  @include respond-to(from-md) {
+    padding-top: $header_height_full;
+  }
+  @include respond-to(upto-sm) {
+    padding-top: $header_height;
   }
 }

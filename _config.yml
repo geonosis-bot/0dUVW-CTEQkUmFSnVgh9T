@@ -24,3 +24,10 @@ page_gen:
     dir: "news" # directory where filenames will be generated
     title: "title" # field used to generate the page title
     extension: "html" # extension used to generate the filename
+
+  - data: "manifest.modules.teams" # name of a data set in _data
+    template: "team-detail-page" #name of template in _layouts: will be used to render pages
+    name: "team_slug" # field used to generate the filename
+    dir: "teams" # directory where filenames will be generated
+    title: "team_name" # field used to generate the page title
+    extension: "html" # extension used to generate the filename

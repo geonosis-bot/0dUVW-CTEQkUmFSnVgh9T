@@ -1,0 +1,134 @@
+.team-detail {
+  padding-top: 0;
+  .header {
+    padding-top: 80px;
+    @include respond-to(xs) {
+      padding: 60px 0 0;
+    }
+
+    background-color: $grey_color_super_light;
+    border-bottom: 1px solid $grey_color_light;
+
+    .nav-tabs {
+      border-bottom: none;
+
+      .nav-link {
+        border: none;
+        border-bottom: 3px solid transparent;
+        background: transparent;
+        margin-right: 40px;
+        font-size: 18px;
+        font-weight: $font_light;
+
+        &.active {
+          color: $black_color;
+          border-bottom-color: $first_color;
+        }
+      }
+
+      @include respond-to(upto-sm) {
+        margin: 0 -15px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .nav-link {
+          font-size: 14px;
+          padding: 10px 15px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .team-section {
+    border-bottom: 1px solid $grey_color_light;
+
+    // &:hover {
+    //   background-color: $grey_color_super_light;
+    //   transition: background-color 0.4s;
+    // }
+
+    div.team-section-header {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 140px;
+
+      h3 {
+        margin: 0;
+        font-weight: $font_light;
+      }
+
+      i {
+        font-size: 26px;
+        color: $first_color;
+      }
+
+      @include respond-to(upto-sm) {
+        height: 100px;
+        h3 {
+          font-size: 20px;
+        }
+      }
+    }
+
+    div.people {
+      display: none;
+
+      > div {
+        display: grid;
+        grid-gap: 0;
+        padding-bottom: 40px;
+
+        .person {
+          border: 1px solid $grey_color_light;
+          padding: 20px;
+
+          img {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+
+          .name {
+            color: $black_color;
+            font-weight: $font_regular;
+            font-size: 18px;
+          }
+
+          .role,
+          .date {
+            font-size: 15px;
+            margin-bottom: 0;
+            font-weight: $font_light;
+          }
+        }
+
+        @include respond-to(upto-sm) {
+          grid-template-columns: repeat(2, 1fr);
+          .person {
+            .name {
+              font-size: 16px;
+            }
+            .role,
+            .date {
+              font-size: 14px;
+            }
+          }
+        }
+
+        @include respond-to(md) {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        @include respond-to(lg) {
+          grid-template-columns: repeat(5, 1fr);
+        }
+        @include respond-to(xlg) {
+          grid-template-columns: repeat(6, 1fr);
+        }
+      }
+    }
+  }
+}

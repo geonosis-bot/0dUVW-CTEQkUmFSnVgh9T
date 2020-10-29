@@ -3,17 +3,8 @@
   {% include head.html %}
 
   <body class="page-{{ page.namespace }}">
-    {% if site.data.manifest.is_undermaintenance %}
-    <!-- Under maintenance  -->
-
-    <div id="maintenance">
-      <div>
-        <h1>{{site.data.manifest.club_name}}</h1>
-        <p>Sito in manutenzione, riprova più tardi.</p>
-      </div>
-    </div>
-
-    {% else %}
+    {% if site.data.manifest.is_undermaintenance %} {% include maintenance.html
+    %} {% else %}
 
     <!-- No maintenance, show website content -->
 

@@ -72,16 +72,6 @@
     $("select").niceSelect();
   });
 
-  // menu fixed js code
-  $(window).scroll(function () {
-    var window_top = $(window).scrollTop() + 1;
-    if (window_top > 50) {
-      $(".main_menu").addClass("menu_fixed animated fadeInDown");
-    } else {
-      $(".main_menu").removeClass("menu_fixed animated fadeInDown");
-    }
-  });
-
   //   $(document).ready(function(){
 
   //     var owl_1 = $('#owl-1');
@@ -582,6 +572,25 @@
   });
 
   // ------------------------------------------------
+  // menu slide
+  // ------------------------------------------------
+  // menu fixed js code
+  if ($(window).width() > 991) {
+    $(window).scroll(function () {
+      var window_top = $(window).scrollTop() + 1;
+      if (window_top > 100) {
+        $(".main_menu").addClass("menu-temporary");
+
+        if (window_top > 600) {
+          $(".main_menu").removeClass("menu-temporary");
+        }
+      } else {
+        $(".main_menu").removeClass("menu-temporary");
+      }
+    });
+  }
+
+  // ------------------------------------------------
   // mobile menu toggle
   // ------------------------------------------------
   $(".mobile-menu-open").on("click", function () {
@@ -615,6 +624,20 @@
   $("ul > li.submenu > a").on("click", function () {
     console.log("click");
     $(this).next("ul").slideToggle();
+  });
+
+  $(".team-section-header").on("click", function () {
+    $(this).next(".people").slideToggle();
+
+    var icon = $(this).find("i");
+
+    if (!!icon) {
+      if (icon.hasClass("la-plus")) {
+        icon.removeClass("la-plus").addClass("la-minus");
+      } else {
+        icon.removeClass("la-minus").addClass("la-plus");
+      }
+    }
   });
 
   // ------------------------------------------------
