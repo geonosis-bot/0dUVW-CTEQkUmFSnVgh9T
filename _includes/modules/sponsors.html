@@ -3,9 +3,7 @@
     <h3 class="section-title">Sponsor</h3>
 
     {% assign primary_sponsors = site.data.manifest.modules.sponsors |
-    where:"category","PRIMARY" %}
-
-    {% if site.data.manifest.modules.sponsors.size > 0 %}
+    where:"category","PRIMARY" %} {% if primary_sponsors.size > 0 %}
     <div class="carousel-sponsor">
       {% for item in primary_sponsors %}
       <a class="sponsor" href="{{item.link}}" target="_blank">

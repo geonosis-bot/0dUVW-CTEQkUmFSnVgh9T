@@ -9,9 +9,18 @@
     <!-- Menu -->
     <div class="menu">
       <ul>
+        <!-- news -->
         {% if site.data.manifest.modules.news %}
         <li><a href="{{ site.data.manifest.subpath }}news">NEWS</a></li>
-        {% endif %} {% if site.data.manifest.modules.sponsors %}
+        {% endif %}
+
+        <!-- teams -->
+        {% if site.data.manifest.modules.teams_for_menu %}
+        <li><a class="teams-menu-open">SQUADRE</a></li>
+        {% endif %}
+
+        <!-- sponsors -->
+        {% if site.data.manifest.modules.sponsors %}
         <li><a href="{{ site.data.manifest.subpath }}sponsors">SPONSORS</a></li>
         {% endif %}
       </ul>
@@ -22,6 +31,7 @@
     </div>
   </div>
 
+  <!-- Mobile menu -->
   <div class="mobile-menu">
     <div class="mobile-menu-toggle">
       <div class="mobile-menu-close">
@@ -31,132 +41,49 @@
 
     <div class="menu">
       <ul>
-        <li><a href="{{ site.data.manifest.subpath }}">Società</a></li>
+        <!-- <li><a href="{{ site.data.manifest.subpath }}">Società</a></li> -->
+
+        <!-- teams -->
+        {% if site.data.manifest.modules.teams_for_menu %}
         <li><a class="mobile-teams-menu-open">Squadre</a></li>
+        {% endif %}
+
+        <!-- news -->
         {% if site.data.manifest.modules.news %}
         <li><a href="{{ site.data.manifest.subpath }}news">News</a></li>
-        {% endif %} {% if site.data.manifest.modules.sponsors %}
+        {% endif %}
+
+        <!-- sponsors -->
+        {% if site.data.manifest.modules.sponsors %}
         <li><a href="{{ site.data.manifest.subpath }}sponsors">Sponsors</a></li>
         {% endif %}
       </ul>
     </div>
 
+    <!-- Mobile teams menu -->
     <div class="mobile-teams-menu">
       <div>
         <div class="left">
           <div class="head">Squadre</div>
           <div class="menu">
             <ul>
+              {% for item in site.data.manifest.modules.teams_for_menu %}
               <li class="submenu">
-                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
+                <a href="#"
+                  >{{ item.category_name }} <i class="las la-angle-down"></i
+                ></a>
                 <ul>
+                  {% for subitem in item.teams %}
                   <li>
-                    <a>Serie D Nazionale A</a>
+                    <a
+                      href="{{ site.data.manifest.subpath }}teams/{{subitem.slug}}"
+                      >{{ subitem.name }}</a
+                    >
                   </li>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
+                  {% endfor %}
                 </ul>
               </li>
-              <li class="submenu">
-                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
-                <ul>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
-                <ul>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
-                <ul>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
-                <ul>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
-                <ul>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
-                <ul>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
-                <ul>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
-                <ul>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="#">Prima squadra <i class="las la-angle-down"></i></a>
-                <ul>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                  <li>
-                    <a>Serie D Nazionale A</a>
-                  </li>
-                </ul>
-              </li>
+              {% endfor %}
             </ul>
           </div>
         </div>
@@ -169,5 +96,31 @@
     </div>
 
     <div class="club">{{ site.data.manifest.club_name }}</div>
+  </div>
+
+  <!-- Teams menu -->
+  <div class="teams-menu">
+    <div class="container-fluid">
+      <div class="teams-menu-close">
+        <i class="las la-times"></i>
+      </div>
+    </div>
+    <div class="container-fluid menu-wrapper">
+      {% for item in site.data.manifest.modules.teams_for_menu %} {% if
+      item.teams.size > 0 %}
+      <div class="submenu">
+        <h3>{{ item.category_name }}</h3>
+        <ul>
+          {% for subitem in item.teams %}
+          <li>
+            <a href="{{ site.data.manifest.subpath }}teams/{{subitem.slug}}"
+              >{{ subitem.name }}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
   </div>
 </header>

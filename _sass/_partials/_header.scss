@@ -3,7 +3,7 @@ header.main_menu {
   padding: 0 !important;
   border-bottom: 2px solid $grey_color_light;
 
-  > div:not(.mobile-menu) {
+  > div:first-child {
     height: 100%;
     padding-top: 0;
     padding-bottom: 0;
@@ -214,10 +214,79 @@ header.main_menu {
       }
     }
   }
+
+  .teams-menu {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: $header_height_full;
+    left: 0;
+    z-index: 99;
+    background-color: $first_color;
+    color: $text_on_first_color;
+    overflow: auto;
+
+    > div:first-child {
+      position: relative;
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .teams-menu-close {
+        cursor: pointer;
+        i {
+          font-size: 30px;
+          color: $text_on_first_color !important;
+        }
+      }
+    }
+
+    > div.menu-wrapper {
+      min-height: 900px;
+      padding-bottom: 40px;
+      padding-top: 40px;
+      display: grid;
+      grid-gap: 50px;
+      grid-template-rows: max-content;
+      grid-template-columns: repeat(4, 1fr);
+
+      .submenu {
+        h3,
+        a {
+          color: $text_on_first_color;
+        }
+        h3 {
+          margin-bottom: 20px;
+        }
+
+        a {
+          font-weight: $font_light;
+          font-size: 16px;
+          display: block;
+          padding: 5px 0;
+          &:hover {
+            color: $text_on_first_color !important;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    @include respond-to(upto-sm) {
+      display: none !important;
+    }
+
+    @include respond-to(md) {
+      > div.menu-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
 }
 
 html {
-  &.mobile-menu-open {
-    overflow: hidden;
+  &.o-hidden {
+    overflow: hidden !important;
   }
 }

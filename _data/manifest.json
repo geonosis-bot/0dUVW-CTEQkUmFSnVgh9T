@@ -1,16 +1,14 @@
 {
-  "club_name": "Golee With a long name of a cool society",
-  "first_color": "#F5423A",
-  "second_color": "#FFFFFF",
-  "text_on_first_color": "#FFFFFF",
-  "text_on_second_color": "#000000",
-  "subpath": "/",
-  "domain": "https://localhost:4000",
+  "club_name": "1924 suno f.c.d.",
+  "first_color": "#111",
+  "second_color": "#111",
+  "text_on_first_color": "#fff",
+  "text_on_second_color": "#fff",
   "modules": {
     "intro": {
-      "background_url": "https://www.fsgc.sm/wp-content/uploads/2018/02/smc.jpg",
-      "title": "Golee Football Club",
-      "subtitle": "Lorem ipsum dolor sit amet"
+      "background_url": "https://www.investireoggi.it/economia/wp-content/uploads/sites/11/2020/04/calcio-coronavirus-soldi.jpg",
+      "title": "fsdfsd",
+      "subtitle": "ciao ciao \"sono un figlio di puttana\" ///||||\\\\\\\\'ciao'🧅"
     },
     "contacts": {
       "phone": "3404003576",
@@ -18,208 +16,559 @@
       "email": "sunofcdsettoregiovanile@yahoo.it"
     },
     "social": {
-      "linkFb": "a",
-      "linkIg": "a",
-      "linkTw": "a",
-      "linkYt": "a"
+      "linkFb": "",
+      "linkIg": "",
+      "linkTw": "",
+      "linkYt": ""
     },
     "preenrolled": {
-      "url": "https://google.it",
-      "subtitle": "Culpa exercitation qui amet anim reprehenderit duis Lorem ullamco proident minim enim voluptate et officia",
-      "image_url": "https://www.corriereromagna.it/wp-content/uploads/2020/09/data10540663-750x488.jpg"
+      "url": "https://google.it"
     },
-    "next_matches": [
-      {
-        "club_home": {
-          "value": "San Marino",
-          "bold": false
-        },
-        "club_away": {
-          "value": "San Marino",
-          "bold": true
-        },
-        "championship_name": "Seria A Tim, Italia"
-      },
-      {
-        "club_home": {
-          "value": "San Marino",
-          "bold": true
-        },
-        "club_away": {
-          "value": "San Marino",
-          "bold": false
-        },
-        "championship_name": "Seria C2 Tim, Italia"
-      },
-      {
-        "club_home": {
-          "value": "San Marino",
-          "bold": false
-        },
-        "club_away": {
-          "value": "San Marino",
-          "bold": true
-        },
-        "championship_name": "Seria B Tim, Italia"
-      }
-    ],
     "news": [
       {
         "is_highlight": true,
-        "cover_url": "https://www.calcioefinanza.it/wp-content/uploads/2020/08/Golee-Logo-bianco.png",
-        "author": "Griffith Gray",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
+        "is_draft": false,
+        "title": "Nuovo DPCM pt2",
+        "subtitle": "Coronavirus, il Presidente Conte firma il Dpcm del 24 ottobre 2020",
+        "category": "Modulistica",
+        "cover_url": "https://lh3.googleusercontent.com/gWKd7Ltx9JODenVVBsycmee1a1cTkcMdYNL5Lm8jpkJn0yD4dT0ql-vVIORRXXNXNfnx5srNZQgk_zxtU7it0A",
+        "author": "Giuseppe Conte",
+        "body": "Il Presidente del *Consiglio*, __Giuseppe Conte__, ha firmato il Dpcm 24 ottobre contenente le nuove misure per fronteggiare l'emergenza epidemiologica da Covid-19.\n\n![](https://lh3.googleusercontent.com/s51yFgSt3hKAfAeegmsT7lrFlbGtRrW8VooBMHss9va-baWKrBmCkxIQCPow0MpGtk5dvRbSdtkJXiVX-bIC29c)\n",
+        "slug": "Nuovo-DPCM-pt2",
         "publish_date": {
-          "DDMMYYYY": "13/05/2016",
-          "ddddDDMMMMYYYY": "Friday, 14 February 2014"
+          "DDMMYYYY": "26/10/2020",
+          "ddddDDMMMMYYYY": "lunedì, 26 ottobre 2020"
         },
-        "category": "adipisicing",
-        "title": "Irure deserunt ex aliqua quis",
-        "slug": "ipsum-in",
-        "subtitle": "ex proident proident occaecat culpa reprehenderit amet culpa ex nulla ullamco culpa Lorem laboris reprehenderit",
-        "prev": "",
-        "next": ""
+        "next": "aaa"
       },
       {
         "is_highlight": false,
-        "cover_url": "https://upload.wikimedia.org/wikipedia/it/a/a2/Davide_Gualtieri%2C_San_Marino-Inghilterra_1-7%2C_1993.jpg",
-        "author": "Griffith Gray",
-        "body": "Mollit officia in id quis ea dolor amet non mollit enim elit minim aliquip. Nostrud Lorem exercitation dolore reprehenderit adipisicing anim cupidatat mollit laboris excepteur aliqua. Qui et sunt ad est id voluptate nisi commodo et laborum laboris ullamco minim tempor. Lorem aliqua aliqua officia qui non mollit ea elit officia consequat ad. Esse id proident culpa amet qui non in proident fugiat enim culpa aute. Aliquip sint dolore nostrud aute velit do et sint aute commodo aliquip voluptate. Ut esse adipisicing nulla ad sunt magna occaecat. Duis mollit consectetur cillum commodo anim reprehenderit esse exercitation incididunt deserunt officia deserunt dolore do. Culpa officia minim commodo in proident pariatur aute excepteur aliqua dolor reprehenderit excepteur do. Sunt elit reprehenderit exercitation tempor excepteur non.",
+        "is_draft": false,
+        "category": "Società",
+        "body": "# Dpcm di oggi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas faucibus nibh vehicula fermentum. Donec ultrices lacinia felis. Nulla metus sapien, gravida vitae diam eu, imperdiet ultricies nibh. Nam vehicula elit lacinia, facilisis sapien at, tempus neque. Nulla lorem leo, volutpat a orci nec, sollicitudin ullamcorper nisi. Suspendisse a ligula aliquam, bibendum nisi sed, vestibulum nisi. Aliquam eget viverra dui. Phasellus vulputate ligula quis felis aliquet, sed facilisis tortor viverra. Quisque a laoreet felis, ut porta lorem. Proin sollicitudin facilisis maximus. Praesent et velit a leo tincidunt dignissim. Phasellus imperdiet mi lacinia placerat hendrerit. In nec egestas nibh. Fusce eros justo, auctor in orci et, laoreet feugiat diam. ![Conte](https://i0.wp.com/www.linkiesta.it/wp-content/uploads/2020/06/giuseppe-conte.jpg?fit=1200,801&ssl=1)",
+        "title": "aaa",
+        "subtitle": "Ecco cosa ha detto conte oggi",
+        "author": "Giuseppe Conte",
+        "cover_url": "https://www.nursetimes.org/wp-content/uploads/2020/09/EC8C2A3B-593B-45F0-85F2-7F03D5CD21F6.jpeg",
+        "slug": "aaa",
         "publish_date": {
-          "DDMMYYYY": "13/05/2016",
-          "ddddDDMMMMYYYY": "Friday, 14 February 2014"
+          "DDMMYYYY": "26/10/2020",
+          "ddddDDMMMMYYYY": "lunedì, 26 ottobre 2020"
         },
-        "category": "adipisicing",
-        "title": "Irure deserunt ex aliqua quis",
-        "slug": "ipsum-in",
-        "subtitle": "ex proident proident occaecat culpa reprehenderit amet culpa ex nulla ullamco culpa Lorem laboris reprehenderit",
-        "prev": "",
-        "next": ""
+        "prev": "Nuovo-DPCM-pt2"
       }
     ],
     "sponsors": [
       {
-        "name": "sint",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "_id": "5f993cec86bde1001346033a",
+        "category": "PRIMARY",
+        "club": 1,
+        "name": "Toyota",
+        "link": "https://www.toyota.it",
+        "logo_url": "https://caucho.com/wp-content/uploads/2017/01/Toyota-Logo-1024x895.jpg",
+        "created_at": "09:42 28/10/2020",
+        "created_by": "86f9edb0-a3f6-11ea-a4ec-49cfacd85f2f",
+        "__v": 0,
+        "id": "5f993cec86bde1001346033a"
       },
       {
-        "name": "in",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "_id": "5f99428286bde1001346033b",
+        "category": "PRIMARY",
+        "club": 1,
+        "name": "Toyota",
+        "link": "https://www.toyota.itdsa",
+        "logo_url": "https://caucho.com/wp-content/uploads/2017/01/Toyota-Logo-1024x895.jpg",
+        "created_at": "10:05 28/10/2020",
+        "created_by": "86f9edb0-a3f6-11ea-a4ec-49cfacd85f2f",
+        "__v": 0,
+        "id": "5f99428286bde1001346033b"
+      }
+    ],
+    "next_matches": [],
+    "teams_for_menu": [
+      {
+        "category_name": "Esordienti",
+        "teams": [
+          {
+            "name": "Esordienti Primo Anno ",
+            "slug": "esordienti-primo-anno",
+            "category": "Esordienti"
+          },
+          {
+            "name": "Esordienti Secondo Anno (a 9) ",
+            "slug": "esordienti-secondo-anno-(a-9)",
+            "category": "Esordienti"
+          }
+        ]
       },
       {
-        "name": "fugiat",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "category_name": "Primi Calci",
+        "teams": [
+          {
+            "name": "Primi Calci Primo Anno B",
+            "slug": "primi-calci-primo-anno",
+            "category": "Primi Calci"
+          },
+          {
+            "name": "Primi Calci Primo Anno ",
+            "slug": "primi-calci-primo-anno",
+            "category": "Primi Calci"
+          },
+          {
+            "name": "Primi Calci Secondo Anno B",
+            "slug": "primi-calci-secondo-anno",
+            "category": "Primi Calci"
+          },
+          {
+            "name": "Primi Calci Secondo Anno ",
+            "slug": "primi-calci-secondo-anno",
+            "category": "Primi Calci"
+          }
+        ]
       },
       {
-        "name": "nisi",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "category_name": "Piccoli Amici",
+        "teams": [
+          {
+            "name": "Piccoli Amici ",
+            "slug": "piccoli-amici",
+            "category": "Piccoli Amici"
+          }
+        ]
       },
       {
-        "name": "excepteur",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "category_name": "Prima Squadra",
+        "teams": [
+          {
+            "name": "Serie A Femminile B",
+            "slug": "serie-a-femminile",
+            "category": "Prima Squadra"
+          },
+          {
+            "name": "Serie B Femminile ",
+            "slug": "serie-b-femminile",
+            "category": "Prima Squadra"
+          },
+          {
+            "name": "Serie B Femminile E",
+            "slug": "serie-b-femminile",
+            "category": "Prima Squadra"
+          },
+          {
+            "name": "Serie A Femminile F",
+            "slug": "serie-a-femminile",
+            "category": "Prima Squadra"
+          },
+          {
+            "name": "Serie D ",
+            "slug": "serie-d",
+            "category": "Prima Squadra"
+          }
+        ]
       },
       {
-        "name": "culpa",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "category_name": "Extra lega",
+        "teams": []
       },
       {
-        "name": "nisi",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "category_name": "Giovanissimi",
+        "teams": [
+          {
+            "name": "Giovanissimi Under 15 Provinciali ",
+            "slug": "giovanissimi-under-15-provinciali",
+            "category": "Giovanissimi"
+          },
+          {
+            "name": "Giovanissimi Under 15 Regionali ",
+            "slug": "giovanissimi-under-15-regionali",
+            "category": "Giovanissimi"
+          },
+          {
+            "name": "Giovanissimi Under 14 Provinciali ",
+            "slug": "giovanissimi-under-14-provinciali",
+            "category": "Giovanissimi"
+          }
+        ]
       },
       {
-        "name": "ut",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "category_name": "Juniores",
+        "teams": [
+          {
+            "name": "Juniores Under 19 Nazionali ",
+            "slug": "juniores-under-19-nazionali",
+            "category": "Juniores"
+          },
+          {
+            "name": "Juniores Under 19 Provinciali ",
+            "slug": "juniores-under-19-provinciali",
+            "category": "Juniores"
+          }
+        ]
       },
       {
-        "name": "tempor",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "category_name": "Allievi",
+        "teams": [
+          {
+            "name": "Allievi Under 17 Regionali ",
+            "slug": "allievi-under-17-regionali",
+            "category": "Allievi"
+          },
+          {
+            "name": "Allievi Under 16 Regionali ",
+            "slug": "allievi-under-16-regionali",
+            "category": "Allievi"
+          }
+        ]
       },
       {
-        "name": "id",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "category_name": "Pulcini",
+        "teams": [
+          {
+            "name": "Pulcini Secondo Anno ",
+            "slug": "pulcini-secondo-anno",
+            "category": "Pulcini"
+          },
+          {
+            "name": "Pulcini Primo Anno ",
+            "slug": "pulcini-primo-anno",
+            "category": "Pulcini"
+          }
+        ]
+      }
+    ],
+    "teams": [
+      {
+        "team_name": "Esordienti Primo Anno ",
+        "team_label": null,
+        "team_slug": "esordienti-primo-anno",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "athletes": {
+          "CEN": [
+            {
+              "name": "LLHHSS99S55F925O",
+              "surname": "LLHHSS99S55F925O",
+              "birthdate": "21/10/2020"
+            }
+          ]
+        },
+        "tech_staffs": [
+          {
+            "name": "Tiberio",
+            "surname": "Chiari",
+            "birthdate": "22/03/1992",
+            "role": "Allenatore"
+          }
+        ]
       },
       {
-        "name": "velit",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "SECONDARY"
+        "team_name": "Primi Calci Primo Anno B",
+        "team_label": null,
+        "team_slug": "primi-calci-primo-anno",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
       },
       {
-        "name": "minim",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "team_name": "Piccoli Amici ",
+        "team_label": null,
+        "team_slug": "piccoli-amici",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
       },
       {
-        "name": "ullamco",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "team_name": "Serie A Femminile B",
+        "team_label": null,
+        "team_slug": "serie-a-femminile",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
       },
       {
-        "name": "consectetur",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "team_name": "Serie B Femminile ",
+        "team_label": null,
+        "team_slug": "serie-b-femminile",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
       },
       {
-        "name": "aute",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "team_name": "Serie B Femminile E",
+        "team_label": null,
+        "team_slug": "serie-b-femminile",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
       },
       {
-        "name": "culpa",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "team_name": "Serie A Femminile F",
+        "team_label": null,
+        "team_slug": "serie-a-femminile",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
       },
       {
-        "name": "non",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "team_name": "Prova1",
+        "team_label": null,
+        "team_slug": "prova1",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
       },
       {
-        "name": "irure",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "team_name": "matteteam",
+        "team_label": null,
+        "team_slug": "matteteam",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
       },
       {
-        "name": "consectetur",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "team_name": "Giovanissimi Under 15 Provinciali ",
+        "team_label": null,
+        "team_slug": "giovanissimi-under-15-provinciali",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
       },
       {
-        "name": "commodo",
-        "logo_url": "https://via.placeholder.com/150",
-        "link": "https://google.it",
-        "category": "PRIMARY"
+        "team_name": "Primi Calci Primo Anno ",
+        "team_label": null,
+        "team_slug": "primi-calci-primo-anno",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
+      },
+      {
+        "team_name": "Primi Calci Secondo Anno B",
+        "team_label": null,
+        "team_slug": "primi-calci-secondo-anno",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
+      },
+      {
+        "team_name": "Primi Calci Secondo Anno ",
+        "team_label": null,
+        "team_slug": "primi-calci-secondo-anno",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
+      },
+      {
+        "team_name": "Serie D ",
+        "team_label": null,
+        "team_slug": "serie-d",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
+      },
+      {
+        "team_name": "Juniores Under 19 Nazionali ",
+        "team_label": null,
+        "team_slug": "juniores-under-19-nazionali",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
+      },
+      {
+        "team_name": "Allievi Under 17 Regionali ",
+        "team_label": null,
+        "team_slug": "allievi-under-17-regionali",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
+      },
+      {
+        "team_name": "Allievi Under 16 Regionali ",
+        "team_label": null,
+        "team_slug": "allievi-under-16-regionali",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
+      },
+      {
+        "team_name": "Giovanissimi Under 15 Regionali ",
+        "team_label": null,
+        "team_slug": "giovanissimi-under-15-regionali",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
+      },
+      {
+        "team_name": "Giovanissimi Under 14 Provinciali ",
+        "team_label": null,
+        "team_slug": "giovanissimi-under-14-provinciali",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
+      },
+      {
+        "team_name": "Esordienti Secondo Anno (a 9) ",
+        "team_label": null,
+        "team_slug": "esordienti-secondo-anno-a-9",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
+      },
+      {
+        "team_name": "Pulcini Secondo Anno ",
+        "team_label": null,
+        "team_slug": "pulcini-secondo-anno",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
+      },
+      {
+        "team_name": "Pulcini Primo Anno ",
+        "team_label": null,
+        "team_slug": "pulcini-primo-anno",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
+      },
+      {
+        "team_name": "Juniores Under 19 Provinciali ",
+        "team_label": null,
+        "team_slug": "juniores-under-19-provinciali",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
+      },
+      {
+        "team_name": "RobyTeam",
+        "team_label": null,
+        "team_slug": "robyteam",
+        "permissions": {
+          "name": "NAMESURNAME",
+          "birthdate": "FULL",
+          "show_calendar": true,
+          "show_result": true,
+          "show_standing": true
+        },
+        "tech_staffs": []
       }
     ]
   },
-  "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Federazione_Sammarinese_Giuoco_Calcio.svg/1200px-Federazione_Sammarinese_Giuoco_Calcio.svg.png",
-  "is_undermaintenance": false
+  "logo_url": "https://lh3.googleusercontent.com/HlHb_drf-JOLKjE5nvEQU74sGQzRXkt7o8-FM3PeI0Umb4O52As6OTviPzO2jFx1kKfW_BE_Psl2oxbDw_KL_w",
+  "domain": "https://geonosis-bot.github.io",
+  "is_undermaintenance": false,
+  "subpath": "/"
 }

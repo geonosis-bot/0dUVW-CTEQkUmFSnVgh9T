@@ -71,6 +71,7 @@
   $(document).ready(function () {
     $("select").niceSelect();
   });
+
   // menu fixed js code
   $(window).scroll(function () {
     var window_top = $(window).scrollTop() + 1;
@@ -585,12 +586,12 @@
   // ------------------------------------------------
   $(".mobile-menu-open").on("click", function () {
     $(".mobile-menu").fadeIn();
-    $("html").addClass("mobile-menu-open");
+    $("html").addClass("o-hidden");
   });
 
   $(".mobile-menu-close").on("click", function () {
     $(".mobile-menu").fadeOut();
-    $("html").removeClass("mobile-menu-open");
+    $("html").removeClass("o-hidden");
   });
 
   $(".mobile-teams-menu-open").on("click", function () {
@@ -599,6 +600,16 @@
 
   $(".mobile-teams-menu-close").on("click", function () {
     $(".mobile-teams-menu").fadeOut();
+  });
+
+  $(".teams-menu-open").on("click", function () {
+    $("html").toggleClass("o-hidden");
+    $(".teams-menu").fadeToggle();
+  });
+
+  $(".teams-menu-close").on("click", function () {
+    $("html").removeClass("o-hidden");
+    $(".teams-menu").fadeOut();
   });
 
   $("ul > li.submenu > a").on("click", function () {
