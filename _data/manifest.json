@@ -33,29 +33,13 @@
         "category": "Modulistica",
         "cover_url": "https://lh3.googleusercontent.com/gWKd7Ltx9JODenVVBsycmee1a1cTkcMdYNL5Lm8jpkJn0yD4dT0ql-vVIORRXXNXNfnx5srNZQgk_zxtU7it0A",
         "author": "Giuseppe Conte",
-        "body": "Il Presidente del *Consiglio*, __Giuseppe Conte__, ha firmato il Dpcm 24 ottobre contenente le nuove misure per fronteggiare l'emergenza epidemiologica da Covid-19.\n\n![](https://lh3.googleusercontent.com/s51yFgSt3hKAfAeegmsT7lrFlbGtRrW8VooBMHss9va-baWKrBmCkxIQCPow0MpGtk5dvRbSdtkJXiVX-bIC29c)\n",
+        "body": "<h1>Sono stanco</h1><h2>Oggi ho lavorato davvero troppo</h2><p><strong>Non ce la faccio più</strong></p><ol><li><strong>ho sonno</strong></li><li><em>sono stanco</em></li><li><s>voglio la doccia</s></li></ol><p class=\"ql-align-center\"><img src=\"https://lh3.googleusercontent.com/Ybo8_pN82nyTQeaip71PhE4lx_sYkgNpHsyehTW87V7uYAW1eUPBAf_ex5r8JSXtNahC8tn6PrbThd86sIbkKw\"></p><p><span style=\"color: rgb(230, 0, 0);\">rosso</span></p><p><br></p><p class=\"ql-align-right\"><span style=\"background-color: rgb(0, 102, 204); color: rgb(255, 255, 255);\">mare</span></p>",
         "slug": "Nuovo-DPCM-pt2",
         "publish_date": {
           "DDMMYYYY": "26/10/2020",
           "ddddDDMMMMYYYY": "lunedì, 26 ottobre 2020"
         },
         "next": "aaa"
-      },
-      {
-        "is_highlight": false,
-        "is_draft": false,
-        "category": "Società",
-        "body": "# Dpcm di oggi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas faucibus nibh vehicula fermentum. Donec ultrices lacinia felis. Nulla metus sapien, gravida vitae diam eu, imperdiet ultricies nibh. Nam vehicula elit lacinia, facilisis sapien at, tempus neque. Nulla lorem leo, volutpat a orci nec, sollicitudin ullamcorper nisi. Suspendisse a ligula aliquam, bibendum nisi sed, vestibulum nisi. Aliquam eget viverra dui. Phasellus vulputate ligula quis felis aliquet, sed facilisis tortor viverra. Quisque a laoreet felis, ut porta lorem. Proin sollicitudin facilisis maximus. Praesent et velit a leo tincidunt dignissim. Phasellus imperdiet mi lacinia placerat hendrerit. In nec egestas nibh. Fusce eros justo, auctor in orci et, laoreet feugiat diam. ![Conte](https://i0.wp.com/www.linkiesta.it/wp-content/uploads/2020/06/giuseppe-conte.jpg?fit=1200,801&ssl=1)",
-        "title": "aaa",
-        "subtitle": "Ecco cosa ha detto conte oggi",
-        "author": "Giuseppe Conte",
-        "cover_url": "https://www.nursetimes.org/wp-content/uploads/2020/09/EC8C2A3B-593B-45F0-85F2-7F03D5CD21F6.jpeg",
-        "slug": "aaa",
-        "publish_date": {
-          "DDMMYYYY": "26/10/2020",
-          "ddddDDMMMMYYYY": "lunedì, 26 ottobre 2020"
-        },
-        "prev": "Nuovo-DPCM-pt2"
       }
     ],
     "sponsors": [
