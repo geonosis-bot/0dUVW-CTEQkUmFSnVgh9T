@@ -8,10 +8,10 @@ header.main_menu {
   width: 100%;
   background-color: #ffffff;
   top: 0;
-  transition: all 1s;
+  transition: top 0.2s ease-in-out;
 
-  &.menu-temporary {
-    top: -100%;
+  &.up {
+    top: -#{$header_height_full};
   }
 
   > div:first-child {

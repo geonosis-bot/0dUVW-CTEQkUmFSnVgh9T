@@ -574,20 +574,44 @@
   // ------------------------------------------------
   // menu slide
   // ------------------------------------------------
-  // menu fixed js code
   if ($(window).width() > 991) {
-    $(window).scroll(function () {
-      var window_top = $(window).scrollTop() + 1;
-      if (window_top > 100) {
-        $(".main_menu").addClass("menu-temporary");
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = 140;
 
-        if (window_top > 600) {
-          $(".main_menu").removeClass("menu-temporary");
-        }
-      } else {
-        $(".main_menu").removeClass("menu-temporary");
-      }
+    $(window).scroll(function (event) {
+      didScroll = true;
     });
+
+    setInterval(function () {
+      if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+      }
+    }, 250);
+
+    function hasScrolled() {
+      var st = $(window).scrollTop();
+
+      // Make sure they scroll more than delta
+      if (Math.abs(lastScrollTop - st) <= delta) return;
+
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down
+        $(".main_menu").addClass("up");
+      } else {
+        // Scroll Up
+        if (st + $(window).height() < $(document).height()) {
+          $(".main_menu").removeClass("up");
+        }
+      }
+
+      lastScrollTop = st;
+    }
   }
 
   // ------------------------------------------------
