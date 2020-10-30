@@ -255,7 +255,7 @@ section.news-detail {
   }
 }
 
-.news-box {
+.news-box:not(.news-detail-box) {
   min-height: 620px;
   position: relative;
   border: 1px solid $grey_color_light;

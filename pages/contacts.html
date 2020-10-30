@@ -7,7 +7,137 @@ permalink: /contacts
 ---
 
 <section class="contacts">
-  <div class="container-fluid">
-    <h1 class="section-title">Contatti</h1>
+  <div class="left">
+    <div class="container-fluid">
+      <h3 class="club">{{ site.data.manifest.club_name }}</h3>
+      <div class="value">
+        <label>Sede</label>
+        <span>0172 12310412</span>
+      </div>
+      <div class="value">
+        <label>Mario Rossi Cel.</label>
+        <span>366 3521317</span>
+      </div>
+      <div class="value">
+        <label>Fax Sede</label>
+        <span>0172 12310412</span>
+      </div>
+
+      <!-- Email -->
+      {% if site.data.manifest.modules.contacts.email %}
+      <div class="value">
+        <label>Email</label>
+        <span>{{ site.data.manifest.modules.contacts.email }}</span>
+      </div>
+      {% endif %}
+
+      <!-- Social link -->
+      {% if site.data.manifest.modules.social %}
+      <div class="value">
+        <label>Social</label>
+
+        <!-- Assign to avoid write always long name -->
+        {% assign fb = site.data.manifest.modules.social.linkFb %} {% assign ig
+        = site.data.manifest.modules.social.linkIg %} {% assign tw =
+        site.data.manifest.modules.social.linkTw %} {% assign yt =
+        site.data.manifest.modules.social.linkYt %}
+
+        <div class="social-links">
+          {% if fb and fb != "" %}
+          <a href="{{fb}}" target="_blank"><i class="lab la-facebook"></i></a>
+          {% endif %} {% if ig and ig != "" %}
+          <a href="{{ig}}" target="_blank">
+            <i class="lab la-instagram"></i>
+          </a>
+          {% endif %} {% if tw and tw != "" %}
+          <a href="{{tw}}" target="_blank"><i class="lab la-twitter"></i></a>
+
+          {% endif %} {% if yt and yt != "" %}
+          <a href="{{yt}}" target="_blank"><i class="lab la-youtube"></i></a>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="right">
+    <div class="container-fluid">
+      <div class="contact-form">
+        <h3>Invia un messaggio</h3>
+
+        <div class="form mt-40 mb-40">
+          <form action="#" method="post">
+            <input
+              type="hidden"
+              id="Scope"
+              name="scope"
+              value="Supporto clienti"
+            />
+            <input
+              type="hidden"
+              id="Recipient"
+              name="recipient"
+              value="supporto"
+            />
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <!-- Firstname -->
+                <div class="form-group text-box">
+                  <input type="text" name="firstname" placeholder="Nome *" />
+                </div>
+
+                <!-- Firstname -->
+                <div class="form-group text-box">
+                  <input type="text" name="lastname" placeholder="Cognome *" />
+                </div>
+
+                <!-- Email -->
+                <div class="form-group text-box">
+                  <input type="text" name="email" placeholder="Email *" />
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group text-box">
+                  <input type="text" name="phone" placeholder="Telefono *" />
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="form-group text-box message-box">
+                  <textarea name="message" placeholder="Messaggio"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="actions">
+              <div class="checkbox-wrapper privacy">
+                <label>
+                  I dati inviati saranno utilizzati esclusivamente per fornire
+                  il supporto e le informazioni richieste. Dichiaro di aver
+                  letto e accettato i termini della
+                  <a
+                    href="https://storage.googleapis.com/gle-assets/privacy/privacy-policy.pdf"
+                    target="_blank"
+                    class="_primary"
+                  >
+                    Privacy policy</a
+                  >
+                  <input type="checkbox" name="privacy" />
+                  <small class="invalid-feedback">Campo richiesto</small>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-3d">
+                Invia messaggio
+              </button>
+            </div>
+          </form>
+
+          <!-- <div id="error" class="alert alert-danger mt-50 hidden">
+            Si è verificato un errore
+          </div> -->
+        </div>
+      </div>
+    </div>
   </div>
 </section>

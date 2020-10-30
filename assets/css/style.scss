@@ -58,12 +58,14 @@ $intro_background_img: "{{site.data.manifest.modules.intro.background_url }}";
 @import "_modules/next_matches";
 @import "_modules/sponsors";
 @import "_modules/teams";
+@import "_modules/contacts";
 
 // Partials
 @import "_partials/sections";
 @import "_partials/buttons";
 @import "_partials/header";
 @import "_partials/utils";
+@import "_partials/forms";
 @import "_partials/socials";
 @import "_partials/footer";
 @import "_partials/not_found";
