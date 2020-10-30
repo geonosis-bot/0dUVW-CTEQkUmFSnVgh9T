@@ -680,4 +680,14 @@
       },
     ],
   });
+
+  function openSponsor(link) {
+    event.preventDefault();
+    window.open(link, "_blank");
+  }
+
+  $("div.sponsor").on("click", function (event) {
+    event.preventDefault();
+    window.open($(this).attr("data-link"), "_blank");
+  });
 })(jQuery);

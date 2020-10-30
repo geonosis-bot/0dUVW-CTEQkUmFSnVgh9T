@@ -1,5 +1,6 @@
 section.sponsors {
   .sponsor {
+    cursor: pointer;
     padding: 0 10px;
     img {
       width: 100%;
@@ -15,7 +16,7 @@ section.sponsors {
 
   .sponsors-grid {
     display: grid;
-    grid-template-rows: 200px;
+    grid-template-rows: max-content;
     width: 100%;
 
     &.primary {

@@ -47,6 +47,17 @@ a {
   }
 }
 
+.hidden-sm-down {
+  @include respond-to(upto-sm) {
+    display: none;
+  }
+}
+.hidden-md-up {
+  @include respond-to(from-md) {
+    display: none;
+  }
+}
+
 .mt-40 {
   margin-top: 40px;
 }

@@ -20,6 +20,7 @@
 
             <!-- Tabs -->
             <ul class="nav nav-tabs" id="tab-menu" role="tablist">
+              {% if page.athletes or page.tech_staffs %}
               <li class="nav-item">
                 <a
                   class="nav-link active"
@@ -32,6 +33,10 @@
                   >Rosa</a
                 >
               </li>
+              {% endif %}
+
+              <!-- Results tab toggle -->
+              {% if page.results and page.results.size > 0 %}
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -44,6 +49,10 @@
                   >Calendario e Risultati</a
                 >
               </li>
+              {% endif %}
+
+              <!-- Standing tab toggle -->
+              {% if page.standing %}
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -56,20 +65,20 @@
                   >Classifica</a
                 >
               </li>
+              {% endif %}
             </ul>
           </div>
         </div>
 
         <div class="tab-content" id="tab-content">
+          <!-- Team TAB -->
+          {% if page.athletes or page.tech_staffs %}
           <div
             class="tab-pane fade show active"
             id="team"
             role="tabpanel"
             aria-labelledby="team-tab"
           >
-            {% if (page.athletes and page.athletes.size > 0) or
-            (page.tech_staffs and page.tech_staffs.size > 0)%}
-
             <!-- portieri -->
             {% if page.athletes.POR and page.athletes.POR.size > 0 %}
             <div class="team-section">
@@ -163,20 +172,19 @@
                 </div>
               </div>
             </div>
-            {% endif %} {% else %}
-
-            <!-- If no athletes or tech staff -->
-            <div class="container-fluid mt-5">La rosa non è disponibile</div>
             {% endif %}
           </div>
+          {% endif %}
+
+          <!-- Results TAB -->
+          {% if page.results and page.results.size > 0 %}
           <div
             class="tab-pane fade"
             id="calendar"
             role="tabpanel"
             aria-labelledby="calendar-tab"
           >
-            {% if page.results and page.results.size > 0 %} {% for item in
-            page.results %}
+            {% for item in page.results %}
             <div class="calendar-section">
               <div class="container-fluid">
                 <div class="calendar-section-header">
@@ -196,14 +204,22 @@
                           <!-- <img src="..."/> -->
                           <span>{{ res.club_home }}</span>
                         </div>
+                        {% if res.result.home %}
                         <div class="score">{{ res.result.home }}</div>
+                        {% else %}
+                        <div class="score">-</div>
+                        {% endif %}
                       </div>
                       <div class="away">
                         <div class="info">
                           <!-- <img src="..."/> -->
                           <span>{{ res.club_away }}</span>
                         </div>
+                        {% if res.result.away %}
                         <div class="score">{{ res.result.away }}</div>
+                        {% else %}
+                        <div class="score">-</div>
+                        {% endif %}
                       </div>
                     </div>
                     {% endfor %}
@@ -211,24 +227,79 @@
                 </div>
               </div>
             </div>
-            {% endfor %} {% else %}
-            <div class="container-fluid mt-5">
-              Il calendario non è disponibile
-            </div>
-            {% endif %}
+            {% endfor %}
           </div>
+          {% endif %}
+
+          <!-- Standings TAB -->
+          {% if page.standing %}
           <div
             class="tab-pane fade"
             id="ranking"
             role="tabpanel"
             aria-labelledby="ranking-tab"
           >
-            {% if page.ranking and page.results.size > 0 %} s{% else %}
-            <div class="container-fluid mt-5">
-              La classifica non è disponibile
+            <div class="container-fluid">
+              <div class="standings">
+                <div class="header">
+                  <h3>{{ page.standing.competition_name }}</h3>
+                </div>
+                <div class="table-responsive-xs table-responsive-sm">
+                  <table class="table standings-table">
+                    <thead>
+                      <tr>
+                        <th class="hidden-sm-down text-left">Pos.</th>
+                        <th class="text-left">Squadra</th>
+                        <th class="hidden-sm-down">Punti</th>
+                        <th class="hidden-sm-down">G</th>
+                        <th class="hidden-sm-down">V</th>
+                        <th class="hidden-sm-down">P</th>
+                        <th class="hidden-sm-down">S</th>
+                        <th class="hidden-sm-down">GF</th>
+                        <th class="hidden-sm-down">GS</th>
+                        <th class="hidden-sm-down">DR</th>
+                        <th class="hidden-sm-down text-right last-5">
+                          Ultimi 5 risultati
+                        </th>
+
+                        <!-- Only mobile -->
+                        <th class="hidden-md-up">G</th>
+                        <th class="hidden-md-up">DR</th>
+                        <th class="hidden-md-up">P</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for team in page.standing.teams %}
+                      <tr>
+                        <td class="hidden-sm-down text-left">
+                          {{ forloop.index }}
+                        </td>
+                        <td class="text-left">{{ team.club_name }}</td>
+                        <td class="hidden-sm-down">{{ team.points }}</td>
+                        <td class="hidden-sm-down">{{ team.played }}</td>
+                        <td class="hidden-sm-down">{{ team.won }}</td>
+                        <td class="hidden-sm-down">{{ team.drawn }}</td>
+                        <td class="hidden-sm-down">{{ team.lost }}</td>
+                        <td class="hidden-sm-down">{{ team.gf }}</td>
+                        <td class="hidden-sm-down">{{ team.ga }}</td>
+                        <td class="hidden-sm-down">{{ team.gd }}</td>
+                        <td class="hidden-sm-down text-right last-5">
+                          {{ team.form }}
+                        </td>
+
+                        <!-- Only mobile -->
+                        <td class="hidden-md-up">{{ team.played }}</td>
+                        <td class="hidden-md-up">{{ team.gd }}</td>
+                        <td class="hidden-md-up">{{ team.points }}</td>
+                      </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
-            {% endif %}
           </div>
+          {% endif %}
         </div>
       </section>
     </div>
