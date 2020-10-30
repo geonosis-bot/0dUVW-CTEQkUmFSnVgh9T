@@ -157,64 +157,6 @@
     $(this).ekkoLightbox();
   });
 
-  // $(".store-products").slick({
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   //asNavFor: '.slider',
-  //   focusOnSelect: true,
-  //   infinite: true,
-  //   arrows: true,
-  //   //dots: true,
-  //   //prevArrow: '',
-  //   //nextArrow: '',
-  //   centerMode: false,
-  //   responsive: [
-  //     {
-  //       breakpoint: 769,
-  //       settings: {
-  //         slidesToShow: 3,
-  //         centerMode: false,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         centerMode: true,
-  //       },
-  //     },
-  //   ],
-  // });
-
-  $(".home-sponsor").slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    //asNavFor: '.slider',
-    focusOnSelect: true,
-    infinite: true,
-    arrows: true,
-    //dots: true,
-    //prevArrow: '',
-    //nextArrow: '',
-    centerMode: false,
-    responsive: [
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 3,
-          centerMode: false,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          centerMode: false,
-        },
-      },
-    ],
-  });
-
   if ($(window).width() > 480) {
     // $(".carousel-sponsor").slick({
     //   slidesToShow: 4,
@@ -698,22 +640,25 @@
     slidesToScroll: 1,
     focusOnSelect: true,
     infinite: true,
-    arrows: false,
+    arrows: true,
     centerMode: false,
     responsive: [
       {
+        arrows: true,
         breakpoint: 1024,
         settings: {
           slidesToShow: 4,
         },
       },
       {
+        arrows: true,
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
         },
       },
       {
+        arrows: true,
         breakpoint: 480,
         settings: {
           slidesToShow: 2,

@@ -9,13 +9,19 @@ permalink: /news
 <section class="news">
   <div class="container-fluid">
     <div class="news-grid">
-      {% for item in site.data.manifest.modules.news %} {% if
-      item.is_highlight == true and forloop.first %}
+      {% for item in site.data.manifest.modules.news %} {% if item.is_highlight
+      == true and forloop.first %}
 
-      <a class="news-box highlight" href="{{ site.data.manifest.subpath }}news/{{ item.slug }}">
+      <a
+        class="news-box highlight"
+        href="{{ site.data.manifest.subpath }}news/{{ item.slug }}"
+      >
+        {% if item.cover_url %} {% assign news_image = item.cover_url %} {% else
+        %} {% assign news_image = site.data.manifest.logo_url %} {% endif %}
+
         <div
           class="news-background-img"
-          style="background-image: url('{{ item.cover_url }}')"
+          style="background-image: url('{{ news_image }}')"
         >
           <div class="overlay"></div>
           <div class="news-info">
@@ -32,10 +38,16 @@ permalink: /news
         </div>
       </a>
       {% endif %} {% if item.is_highlight != true or forloop.first != true %}
-      <a class="news-box" href="{{ site.data.manifest.subpath }}news/{{ item.slug }}">
+      <a
+        class="news-box"
+        href="{{ site.data.manifest.subpath }}news/{{ item.slug }}"
+      >
+        {% if item.cover_url %} {% assign news_image = item.cover_url %} {% else
+        %} {% assign news_image = site.data.manifest.logo_url %} {% endif %}
+
         <div
           class="news-img"
-          style="background-image: url('{{ item.cover_url }}')"
+          style="background-image: url('{{ news_image }}')"
         ></div>
 
         <h3 class="news-title">{{ item.title }}</h3>

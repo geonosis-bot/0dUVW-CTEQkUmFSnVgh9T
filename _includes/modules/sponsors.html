@@ -5,12 +5,8 @@
     {% assign primary_sponsors = site.data.manifest.modules.sponsors |
     where:"category","PRIMARY" %} {% if primary_sponsors.size > 0 %}
     <div class="carousel-sponsor">
-      {% for item in primary_sponsors %}
-      <a class="sponsor" href="{{item.link}}" target="_blank">
-        <img src="{{item.logo_url}}" alt="{{item.name}}" />
-        <p>{{item.name}}</p>
-      </a>
-      {% endfor %}
+      {% for item in primary_sponsors %} {% include components/sponsor.html
+      item=item %} {% endfor %}
     </div>
     {% else %}
     <div>Non sono presenti sponsor</div>

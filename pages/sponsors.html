@@ -14,12 +14,8 @@ where:"category","PRIMARY" %}
     <h3 class="section-title">Main sponsor</h3>
 
     <div class="sponsors-grid primary">
-      {% for item in primary_sponsors %}
-      <a class="sponsor" href="{{item.link}}" target="_blank">
-        <img src="{{item.logo_url}}" alt="{{item.name}}" />
-        <p>{{item.name}}</p>
-      </a>
-      {% endfor %}
+      {% for item in primary_sponsors %} {% include components/sponsor.html
+      item=item %} {% endfor %}
     </div>
   </div>
 </section>
@@ -33,12 +29,8 @@ where:"category","SECONDARY" %} {% if secondary_sponsors.size > 0 %}
     <h3 class="section-title">Sponsor tecnici</h3>
 
     <div class="sponsors-grid secondary">
-      {% for item in secondary_sponsors %}
-      <a class="sponsor" href="{{item.link}}" target="_blank">
-        <img src="{{item.logo_url}}" alt="{{item.name}}" />
-        <p>{{item.name}}</p>
-      </a>
-      {% endfor %}
+      {% for item in secondary_sponsors %} {% include components/sponsor.html
+      item=item %} {% endfor %}
     </div>
   </div>
 </section>

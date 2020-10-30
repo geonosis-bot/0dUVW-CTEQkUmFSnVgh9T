@@ -7,7 +7,9 @@
     {% if site.data.manifest.modules.news.size > 0 %}
     <div class="news-grid">
       {% for item in site.data.manifest.modules.news limit:5 %} {% if
-      item.is_highlight == true and forloop.first %}
+      item.is_highlight == true and forloop.first %} {% if item.cover_url %} {%
+      assign news_image = item.cover_url %} {% else %} {% assign news_image =
+      site.data.manifest.logo_url %} {% endif %}
 
       <a
         class="news-box highlight"
@@ -15,7 +17,7 @@
       >
         <div
           class="news-background-img"
-          style="background-image: url('{{ item.cover_url }}')"
+          style="background-image: url('{{ news_image }}')"
         >
           <div class="overlay"></div>
           <div class="news-info">
@@ -36,10 +38,13 @@
         class="news-box"
         href="{{ site.data.manifest.subpath }}news/{{ item.slug }}"
       >
+        {% if item.cover_url %} {% assign news_image = item.cover_url %} {% else
+        %} {% assign news_image = site.data.manifest.logo_url %} {% endif %}
+
         <span class="ti-arrow-top-right space-arrow"></span>
         <div
           class="news-img"
-          style="background-image: url('{{ item.cover_url }}')"
+          style="background-image: url('{{ news_image }}')"
         >
           <div class="overlay"></div>
         </div>
@@ -58,11 +63,14 @@
 
     <!-- See more -->
     <div class="text-center">
-      <a href="{{ site.data.manifest.subpath }}news" class="btn btn-primary btn-3d">Vedi tutte</a>
+      <a
+        href="{{ site.data.manifest.subpath }}news"
+        class="btn btn-primary btn-3d"
+        >Vedi tutte</a
+      >
     </div>
     {% else %}
     <div>Non sono presenti news</div>
     {% endif %}
-
   </div>
 </section>

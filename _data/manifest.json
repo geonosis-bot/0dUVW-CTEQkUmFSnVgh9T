@@ -40,6 +40,21 @@
           "ddddDDMMMMYYYY": "lunedì, 26 ottobre 2020"
         },
         "next": "aaa"
+      },
+      {
+        "is_highlight": false,
+        "is_draft": false,
+        "title": "Nuovo DPCM pt2",
+        "subtitle": "Coronavirus, il Presidente Conte firma il Dpcm del 24 ottobre 2020",
+        "category": "Modulistica",
+        "author": "Giuseppe Conte",
+        "body": "<h1>Sono stanco</h1><h2>Oggi ho lavorato davvero troppo</h2><p><strong>Non ce la faccio più</strong></p><ol><li><strong>ho sonno</strong></li><li><em>sono stanco</em></li><li><s>voglio la doccia</s></li></ol><p class=\"ql-align-center\"><img src=\"https://lh3.googleusercontent.com/Ybo8_pN82nyTQeaip71PhE4lx_sYkgNpHsyehTW87V7uYAW1eUPBAf_ex5r8JSXtNahC8tn6PrbThd86sIbkKw\"></p><p><span style=\"color: rgb(230, 0, 0);\">rosso</span></p><p><br></p><p class=\"ql-align-right\"><span style=\"background-color: rgb(0, 102, 204); color: rgb(255, 255, 255);\">mare</span></p>",
+        "slug": "Nuovo-DPCM-pt2",
+        "publish_date": {
+          "DDMMYYYY": "26/10/2020",
+          "ddddDDMMMMYYYY": "lunedì, 26 ottobre 2020"
+        },
+        "next": "aaa"
       }
     ],
     "sponsors": [
@@ -49,7 +64,6 @@
         "club": 1,
         "name": "Toyota",
         "link": "https://www.toyota.it",
-        "logo_url": "https://caucho.com/wp-content/uploads/2017/01/Toyota-Logo-1024x895.jpg",
         "created_at": "09:42 28/10/2020",
         "created_by": "86f9edb0-a3f6-11ea-a4ec-49cfacd85f2f",
         "__v": 0,

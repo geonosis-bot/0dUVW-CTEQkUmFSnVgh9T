@@ -305,6 +305,7 @@ html {
 .content {
   @include respond-to(from-md) {
     padding-top: $header_height_full;
+    min-height: 800px;
   }
   @include respond-to(upto-sm) {
     padding-top: $header_height;
