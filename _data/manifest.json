@@ -316,6 +316,152 @@
             "birthdate": "22/03/1992",
             "role": "Allenatore"
           }
+        ],
+        "results": [
+          {
+            "step": 1,
+            "date": "01/07/2000",
+            "results": [
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 1,
+                  "away": 2
+                }
+              },
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 1,
+                  "away": 2
+                }
+              },
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 1,
+                  "away": 2
+                }
+              },
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 1,
+                  "away": 2
+                }
+              },
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 1,
+                  "away": 2
+                }
+              },
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 1,
+                  "away": 2
+                }
+              },
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 3,
+                  "away": 0
+                }
+              },
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 3,
+                  "away": 0
+                }
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "date": "01/07/2000",
+            "results": [
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 1,
+                  "away": 2
+                }
+              },
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 3,
+                  "away": 0
+                }
+              },
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 3,
+                  "away": 0
+                }
+              }
+            ]
+          },
+          {
+            "step": 3,
+            "date": "01/07/2000",
+            "results": [
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 1,
+                  "away": 2
+                }
+              },
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 3,
+                  "away": 0
+                }
+              },
+              {
+                "club_home": "Milan",
+                "club_logo": "https",
+                "club_away": "Inter",
+                "result": {
+                  "home": 3,
+                  "away": 0
+                }
+              }
+            ]
+          }
         ]
       },
       {

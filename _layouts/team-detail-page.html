@@ -67,6 +67,9 @@
             role="tabpanel"
             aria-labelledby="team-tab"
           >
+            {% if (page.athletes and page.athletes.size > 0) or
+            (page.tech_staffs and page.tech_staffs.size > 0)%}
+
             <!-- portieri -->
             {% if page.athletes.POR and page.athletes.POR.size > 0 %}
             <div class="team-section">
@@ -160,6 +163,10 @@
                 </div>
               </div>
             </div>
+            {% endif %} {% else %}
+
+            <!-- If no athletes or tech staff -->
+            <div class="container-fluid mt-5">La rosa non è disponibile</div>
             {% endif %}
           </div>
           <div
@@ -168,7 +175,47 @@
             role="tabpanel"
             aria-labelledby="calendar-tab"
           >
-            <div class="container-fluid">Calendario e risultati</div>
+            {% if page.results and page.results.size > 0 %} {% for item in
+            page.results %}
+            <div class="calendar-section">
+              <div class="container-fluid">
+                <div class="calendar-section-header">
+                  <h3>
+                    {{ item.step }}° Giornata
+                    <small class="date">{{ item.date }}</small>
+                  </h3>
+                  <i class="las la-plus"></i>
+                </div>
+
+                <div class="calendar">
+                  <div>
+                    {% for res in item.results %}
+                    <div class="match">
+                      <div class="home">
+                        <div class="info">
+                          <!-- <img src="..."/> -->
+                          <span>{{ res.club_home }}</span>
+                        </div>
+                        <div class="score">{{ res.result.home }}</div>
+                      </div>
+                      <div class="away">
+                        <div class="info">
+                          <!-- <img src="..."/> -->
+                          <span>{{ res.club_away }}</span>
+                        </div>
+                        <div class="score">{{ res.result.away }}</div>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %} {% else %}
+            <div class="container-fluid mt-5">
+              Il calendario non è disponibile
+            </div>
+            {% endif %}
           </div>
           <div
             class="tab-pane fade"
@@ -176,7 +223,11 @@
             role="tabpanel"
             aria-labelledby="ranking-tab"
           >
-            <div class="container-fluid">Classifica</div>
+            {% if page.ranking and page.results.size > 0 %} s{% else %}
+            <div class="container-fluid mt-5">
+              La classifica non è disponibile
+            </div>
+            {% endif %}
           </div>
         </div>
       </section>

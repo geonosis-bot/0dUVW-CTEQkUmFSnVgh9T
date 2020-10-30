@@ -42,6 +42,7 @@
     }
   }
 
+  .calendar-section,
   .team-section {
     border-bottom: 1px solid $grey_color_light;
 
@@ -50,6 +51,7 @@
     //   transition: background-color 0.4s;
     // }
 
+    div.calendar-section-header,
     div.team-section-header {
       cursor: pointer;
       display: flex;
@@ -72,6 +74,14 @@
         h3 {
           font-size: 20px;
         }
+      }
+    }
+
+    div.calendar-section-header {
+      .date {
+        margin-left: 20px;
+        font-size: 14px;
+        color: $grey_color_dark;
       }
     }
 
@@ -127,6 +137,86 @@
         }
         @include respond-to(xlg) {
           grid-template-columns: repeat(6, 1fr);
+        }
+      }
+    }
+
+    div.calendar {
+      display: none;
+
+      > div {
+        display: grid;
+        grid-gap: 0;
+        padding-bottom: 40px;
+        grid-template-columns: repeat(2, 1fr);
+
+        .match {
+          > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            padding: 0 30px;
+
+            .info {
+              span {
+                font-size: 16px;
+              }
+            }
+            .score {
+              font-size: 16px;
+            }
+          }
+          border: 1px solid $grey_color_light;
+
+          &:nth-child(odd) {
+            border-left: none;
+          }
+          &:nth-child(even) {
+            border-right: none;
+            border-left: none;
+          }
+
+          &:nth-child(n + 3) {
+            border-top: none;
+          }
+        }
+
+        @include respond-to(upto-sm) {
+          grid-template-columns: 1fr;
+          .match {
+            border-left: none;
+            border-right: none;
+            &:not(:first-child) {
+              border-top: none;
+            }
+          }
+        }
+
+        @include respond-to(from-lg) {
+          grid-template-columns: repeat(3, 1fr);
+          .match {
+            border: 1px solid $grey_color_light !important;
+
+            &:nth-child(3n + 1) {
+              border-left: none !important;
+            }
+            &:nth-child(3n + 2) {
+              border-left: none !important;
+              border-right: none !important;
+
+              &:last-child {
+                border-right: 1px solid $grey_color_light !important;
+              }
+            }
+            &:nth-child(3n + 3) {
+              border-right: none !important;
+            }
+
+            &:nth-child(n + 4) {
+              border-top: none !important;
+            }
+          }
         }
       }
     }

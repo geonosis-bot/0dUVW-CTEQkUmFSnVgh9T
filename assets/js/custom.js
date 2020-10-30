@@ -606,6 +606,20 @@
     }
   });
 
+  $(".calendar-section-header").on("click", function () {
+    $(this).next(".calendar").slideToggle();
+
+    var icon = $(this).find("i");
+
+    if (!!icon) {
+      if (icon.hasClass("la-plus")) {
+        icon.removeClass("la-plus").addClass("la-minus");
+      } else {
+        icon.removeClass("la-minus").addClass("la-plus");
+      }
+    }
+  });
+
   // ------------------------------------------------
   // next matches effect scroll / carousel
   // ------------------------------------------------
