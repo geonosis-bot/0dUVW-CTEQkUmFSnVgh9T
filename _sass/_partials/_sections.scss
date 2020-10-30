@@ -32,4 +32,8 @@ section {
   font-size: 36px;
   font-weight: $font_regular;
   margin-bottom: 40px;
+
+  @include respond-to(xs) {
+    font-size: 28px;
+  }
 }

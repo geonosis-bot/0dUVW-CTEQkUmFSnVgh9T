@@ -1,14 +1,14 @@
 {
-  "club_name": "Seregno",
+  "club_name": "Golee Football Club",
   "first_color": "#fc0303",
-  "second_color": "#ffffff",
+  "second_color": "#9adada",
   "text_on_first_color": "#ffffff",
-  "text_on_second_color": "#fc0303",
+  "text_on_second_color": "#000000",
   "modules": {
     "intro": {
       "background_url": "https://www.investireoggi.it/economia/wp-content/uploads/sites/11/2020/04/calcio-coronavirus-soldi.jpg",
-      "title": "fsdfsd",
-      "subtitle": "ciao ciao \"sono un figlio di puttana\" ///||||\\\\\\\\'ciao'🧅"
+      "title": "Welcome to the Golee Football Club Official Website",
+      "subtitle": ""
     },
     "contacts": {
       "phone": "3404003576",
@@ -16,13 +16,15 @@
       "email": "sunofcdsettoregiovanile@yahoo.it"
     },
     "social": {
-      "linkFb": "",
-      "linkIg": "",
-      "linkTw": "",
-      "linkYt": ""
+      "linkFb": "https://facebook.com/golee",
+      "linkIg": "https://instagram.com/golee",
+      "linkTw": "https://twitter.com/golee",
+      "linkYt": "https://youtube.com/golee"
     },
     "preenrolled": {
-      "url": "https://google.it"
+      "url": "https://google.it",
+      "subtitle": "Coronavirus, il Presidente Conte firma il Dpcm del 24 ottobre 2020",
+      "image_url": "https://www.investireoggi.it/economia/wp-content/uploads/sites/11/2020/04/calcio-coronavirus-soldi.jpg"
     },
     "news": [
       {
@@ -698,7 +700,7 @@
             "results": [
               {
                 "club_home": {
-                  "name": "Milan",
+                  "club_name": "Milan",
                   "bold": true
                 },
                 "club_away": "a.s.d. leo team",
