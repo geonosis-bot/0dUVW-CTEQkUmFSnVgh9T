@@ -700,7 +700,10 @@
             "date": "26/09/2020",
             "results": [
               {
-                "club_home": "asd.c. base 96 seveso",
+                "club_home": {
+                  "name": "Milan",
+                  "bold": true
+                },
                 "club_away": "a.s.d. leo team",
                 "step": 1,
                 "type": "CAMP",
@@ -7109,6 +7112,7 @@
             {
               "club_name": "A.S.D.  UNIVERSAL SOLARO",
               "out": false,
+              "bold": true,
               "club_logo": "23505.png",
               "points": 9,
               "penalty_points": 0,
