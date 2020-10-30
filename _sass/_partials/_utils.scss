@@ -25,36 +25,36 @@ a {
 
 .hidden-xs {
   @include respond-to(xs) {
-    display: none;
+    display: none !important;
   }
 }
 
 .hidden-sm {
   @include respond-to(sm) {
-    display: none;
+    display: none !important;
   }
 }
 
 .hidden-md {
   @include respond-to(md) {
-    display: none;
+    display: none !important;
   }
 }
 
 .hidden-lg {
   @include respond-to(from-lg) {
-    display: none;
+    display: none !important;
   }
 }
 
 .hidden-sm-down {
   @include respond-to(upto-sm) {
-    display: none;
+    display: none !important;
   }
 }
 .hidden-md-up {
   @include respond-to(from-md) {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -76,25 +76,32 @@ button.slick-prev {
     color: $base_color;
     font-weight: 700;
   }
-  @media #{$desktop} {
-    position: absolute;
-    top: -90px;
-    right: 80px;
-  }
-  @media #{$smartphone} {
-    right: 50px;
-    margin: 0;
-    width: 10%;
-    position: absolute;
-    top: -55px;
-  }
-  @media #{$tablet_port} {
-    right: 50px;
-    margin: 0;
-    width: 10%;
-    position: absolute;
-    top: -90px;
-  }
+
+  right: 50px;
+  margin: 0;
+  width: 10%;
+  position: absolute;
+  top: -68px;
+
+  // @media #{$desktop} {
+  //   position: absolute;
+  //   top: -90px;
+  //   right: 80px;
+  // }
+  // @media #{$smartphone} {
+  //   right: 50px;
+  //   margin: 0;
+  //   width: 10%;
+  //   position: absolute;
+  //   top: -68px;
+  // }
+  // @media #{$tablet_port} {
+  //   right: 50px;
+  //   margin: 0;
+  //   width: 10%;
+  //   position: absolute;
+  //   top: -90px;
+  // }
 }
 
 button.slick-next {
@@ -111,23 +118,31 @@ button.slick-next {
     color: $base_color;
     font-weight: 700;
   }
-  @media #{$desktop} {
-    position: absolute;
-    top: -90px;
-    right: 0;
-  }
-  @media #{$smartphone} {
-    right: 0px;
-    margin: 0;
-    width: 10%;
-    position: absolute;
-    top: -55px;
-  }
-  @media #{$tablet_port} {
-    right: 0px;
-    margin: 0;
-    width: 10%;
-    position: absolute;
-    top: -90px;
-  }
+
+  position: absolute;
+  right: 0px;
+  margin: 0;
+  width: 10%;
+  position: absolute;
+  top: -68px;
+
+  // @media #{$desktop} {
+  //   position: absolute;
+  //   top: -90px;
+  //   right: 0;
+  // }
+  // @media #{$smartphone} {
+  //   right: 0px;
+  //   margin: 0;
+  //   width: 10%;
+  //   position: absolute;
+  //   top: -68px;
+  // }
+  // @media #{$tablet_port} {
+  //   right: 0px;
+  //   margin: 0;
+  //   width: 10%;
+  //   position: absolute;
+  //   top: -90px;
+  // }
 }

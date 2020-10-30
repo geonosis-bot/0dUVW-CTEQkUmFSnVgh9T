@@ -63,13 +63,6 @@ section.sponsors {
       }
     }
   }
-
-  // TODO: bad but easy and quick
-  &.home {
-    .carousel-sponsor {
-      margin-top: 70px;
-    }
-  }
 }
 
 .sponsor {
@@ -83,7 +76,7 @@ section.sponsors {
     img {
       max-width: 100%;
       width: auto !important;
-      height: 200px;
+      max-height: 200px;
       transition: all 0.5s;
     }
   }

@@ -647,12 +647,27 @@
   }
 
   // ------------------------------------------------
+  // news carousel
+  // ------------------------------------------------
+  if ($(window).width() <= 767) {
+    $(".news-carousel").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: false,
+      focusOnSelect: false,
+      infinite: true,
+      arrows: true,
+      autoplay: false,
+    });
+  }
+
+  // ------------------------------------------------
   // sponsor carousel
   // ------------------------------------------------
   $(".carousel-sponsor").slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    focusOnSelect: true,
+    focusOnSelect: false,
     infinite: true,
     arrows: true,
     centerMode: false,
@@ -680,11 +695,6 @@
       },
     ],
   });
-
-  function openSponsor(link) {
-    event.preventDefault();
-    window.open(link, "_blank");
-  }
 
   $("div.sponsor").on("click", function (event) {
     event.preventDefault();
