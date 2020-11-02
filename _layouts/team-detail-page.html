@@ -200,18 +200,18 @@
                     {% for res in item.results %}
 
                     <!-- home bold -->
-                    {% if res.club_home.bold %} {% assign home_class = "bold" %}
+                    {% if res.home.bold %} {% assign home_class = "bold" %}
                     {% else %} {% assign home_class = "" %} {% endif %}
 
                     <!-- away bold -->
-                    {% if res.club_away.bold %} {% assign away_class = "bold" %}
+                    {% if res.away.bold %} {% assign away_class = "bold" %}
                     {% else %} {% assign away_class = "" %} {% endif %}
 
                     <div class="match">
                       <div class="home {{home_class}}">
                         <div class="info">
                           <!-- <img src="..."/> -->
-                          <span>{{ res.club_home.club_name }}</span>
+                          <span>{{ res.home.club_name }}</span>
                         </div>
                         {% if res.result.home %}
                         <div class="score">{{ res.result.home }}</div>
@@ -222,7 +222,7 @@
                       <div class="away {{away_class}}">
                         <div class="info">
                           <!-- <img src="..."/> -->
-                          <span>{{ res.club_away.club_name }}</span>
+                          <span>{{ res.away.club_name }}</span>
                         </div>
                         {% if res.result.away %}
                         <div class="score">{{ res.result.away }}</div>
