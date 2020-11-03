@@ -10,18 +10,22 @@ permalink: /contacts
   <div class="left">
     <div class="container-fluid">
       <h3 class="club">{{ site.data.manifest.club_name }}</h3>
+
+      <!-- Phone -->
+      {% if site.data.manifest.modules.contacts.phone %}
       <div class="value">
-        <label>Sede</label>
-        <span>0172 12310412</span>
+        <label>Telefono</label>
+        <span>{{ site.data.manifest.modules.contacts.phone }}</span>
       </div>
+      {% endif %}
+
+      <!-- Phone -->
+      {% if site.data.manifest.modules.contacts.mobile %}
       <div class="value">
-        <label>Mario Rossi Cel.</label>
-        <span>366 3521317</span>
+        <label>Cellulare</label>
+        <span>{{ site.data.manifest.modules.contacts.mobile }}</span>
       </div>
-      <div class="value">
-        <label>Fax Sede</label>
-        <span>0172 12310412</span>
-      </div>
+      {% endif %}
 
       <!-- Email -->
       {% if site.data.manifest.modules.contacts.email %}
@@ -128,11 +132,11 @@ permalink: /contacts
             </div>
           </form>
         </div>
-        <div id="form-error" class="alert alert-danger mt-50 hidden">
+        <div id="form-error" class="alert alert-danger mt-5 hidden">
           Si è verificato un errore
         </div>
 
-        <div id="form-success" class="alert alert-success mt-50 hidden">
+        <div id="form-success" class="alert alert-success mt-5 hidden">
           Messaggio inviato correttamente
         </div>
       </div>
