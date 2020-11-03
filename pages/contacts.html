@@ -65,7 +65,7 @@ permalink: /contacts
       <div class="contact-form">
         <h3>Invia un messaggio</h3>
 
-        <div class="form mt-40 mb-40">
+        <div class="form mt-40 mb-40" id="contactFormSupport">
           <form action="#" method="post">
             <input
               type="hidden"
@@ -81,14 +81,9 @@ permalink: /contacts
             />
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <!-- Firstname -->
+                <!-- Name -->
                 <div class="form-group text-box">
-                  <input type="text" name="firstname" placeholder="Nome *" />
-                </div>
-
-                <!-- Firstname -->
-                <div class="form-group text-box">
-                  <input type="text" name="lastname" placeholder="Cognome *" />
+                  <input type="text" name="name" placeholder="Nome *" />
                 </div>
 
                 <!-- Email -->
@@ -132,10 +127,13 @@ permalink: /contacts
               </button>
             </div>
           </form>
+        </div>
+        <div id="form-error" class="alert alert-danger mt-50 hidden">
+          Si è verificato un errore
+        </div>
 
-          <!-- <div id="error" class="alert alert-danger mt-50 hidden">
-            Si è verificato un errore
-          </div> -->
+        <div id="form-success" class="alert alert-success mt-50 hidden">
+          Messaggio inviato correttamente
         </div>
       </div>
     </div>
