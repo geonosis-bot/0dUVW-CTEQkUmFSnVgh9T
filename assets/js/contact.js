@@ -6,13 +6,8 @@ const submitFormURL =
 
 // Base rules used in every form
 const baseRules = {
-  firstname: {
+  name: {
     required: true,
-    minlength: 2,
-  },
-  lastname: {
-    required: true,
-    minlength: 2,
   },
   email: {
     required: true,
@@ -29,13 +24,8 @@ const baseRules = {
 
 // Base validation messages used in every form
 const baseValidationMsg = {
-  firstname: {
+  name: {
     required: "Campo obbligatorio",
-    minlength: "Sono richiesti almeno 2 caratteri",
-  },
-  lastname: {
-    required: "Campo obbligatorio",
-    minlength: "Sono richiesti almeno 2 caratteri",
   },
   email: {
     required: "Campo obbligatorio",
