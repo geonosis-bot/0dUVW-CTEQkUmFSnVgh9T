@@ -21,7 +21,10 @@
   <meta name="twitter:card" value="summary" />
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="{{ page.title }} | {{ site.data.manifest.club_name }}" />
+  <meta
+    property="og:title"
+    content="{{ page.title }} | {{ site.data.manifest.club_name }}"
+  />
   <meta property="og:type" content="article" />
   <meta
     property="og:url"
@@ -33,6 +36,18 @@
     content="{{ page.body | markdownify | strip_html | truncatewords: 100 }}"
   />
   {% endif %}
+
+  <!-- themify CSS -->
+  <link
+    rel="stylesheet"
+    href="{{site.data.manifest.subpath}}assets/css/themify-icons.css"
+  />
+
+  <!-- flaticon CSS -->
+  <!-- <link
+    rel="stylesheet"
+    href="{{site.data.manifest.subpath}}assets/css/flaticon.css"
+  /> -->
 
   <!-- Favicon -->
   <link
@@ -46,36 +61,19 @@
     rel="stylesheet"
     href="{{site.data.manifest.subpath}}assets/css/bootstrap.min.css"
   />
+
   <!-- animate CSS -->
-  <link
+  <!-- <link
     rel="stylesheet"
     href="{{site.data.manifest.subpath}}assets/css/animate.css"
-  />
-  <!-- owl carousel CSS -->
-  <link
-    rel="stylesheet"
-    href="{{site.data.manifest.subpath}}assets/css/owl.carousel.min.css"
-  />
-  <!-- themify CSS -->
-  <link
-    rel="stylesheet"
-    href="{{site.data.manifest.subpath}}assets/css/themify-icons.css"
-  />
-  <!-- flaticon CSS -->
-  <link
-    rel="stylesheet"
-    href="{{site.data.manifest.subpath}}assets/css/flaticon.css"
-  />
-  <!-- font awesome CSS -->
-  <link
-    rel="stylesheet"
-    href="{{site.data.manifest.subpath}}assets/css/magnific-popup.css"
-  />
-  <!-- swiper CSS -->
+  /> -->
+
+  <!-- slick CSS -->
   <link
     rel="stylesheet"
     href="{{site.data.manifest.subpath}}assets/css/slick.css"
   />
+
   <!-- style CSS -->
   <link
     rel="stylesheet"
@@ -86,11 +84,13 @@
     rel="stylesheet"
     href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css"
   />
+
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic-ext,latin-ext,cyrillic"
     rel="stylesheet"
     type="text/css"
   />
+
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet"
