@@ -1,9 +1,11 @@
 <div class="person">
-  {% if item.avatar_url %}
-  <img src="{{ item.avatar_url }}" />
-  {% else %}
-  <img src="{{ site.data.manifest.logo_url }}" />
-  {% endif %}
+  <div class="img-wrap">
+    {% if item.avatar_url %}
+    <img src="{{item.avatar_url}}" />
+    {% else %}
+    <img src="{{site.data.manifest.logo_url}}" />
+    {% endif %}
+  </div>
 
   <!-- name -->
   {% if item.name and item.surname %}
