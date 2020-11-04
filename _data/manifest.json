@@ -187,7 +187,67 @@
         "id": "5f9ae43546a68e002c880296"
       }
     ],
-    "next_matches": [],
+    "next_matches": [{
+      "_id": 68,
+      "date": "07/11/2020",
+      "club_home": {
+          "value": "U.S.D. SEREGNO CALCIO SRL",
+          "bold": true
+      },
+      "club_away": {
+          "value": "A.C. Monza S.p.A.",
+          "bold": false
+      },
+      "championship_name": "Juniores Under 19 Provinciali"
+  }, {
+      "_id": 27,
+      "date": "07/11/2020",
+      "club_home": {
+          "value": "u.s. citta di dalmine a.s.d.",
+          "bold": false
+      },
+      "club_away": {
+          "value": "U.S.D. SEREGNO CALCIO SRL",
+          "bold": true
+      },
+      "championship_name": "Allievi Under 17 Regionali"
+  }, {
+      "_id": 86,
+      "date": "07/11/2020",
+      "club_home": {
+          "value": "U.S.D. SEREGNO CALCIO SRL",
+          "bold": true
+      },
+      "club_away": {
+          "value": "a.s.d. la dominante",
+          "bold": false
+      },
+      "championship_name": "Giovanissimi Under 14 Provinciali"
+  }, {
+      "_id": 37,
+      "date": "07/11/2020",
+      "club_home": {
+          "value": "U.S.D. SEREGNO CALCIO SRL",
+          "bold": true
+      },
+      "club_away": {
+          "value": "F.C.D. \tRhodense",
+          "bold": false
+      },
+      "championship_name": "Giovanissimi Under 15 Regionali"
+  }, {
+      "_id": 30,
+      "date": "07/11/2020",
+      "club_home": {
+          "value": "U.S.D. SEREGNO CALCIO SRL",
+          "bold": true
+      },
+      "club_away": {
+          "value": "ssdsrl \t sempione half 1919",
+          "bold": false
+      },
+      "championship_name": "Allievi Under 16 Regionali"
+  }],
     "teams_for_menu": [
       {
         "category_name": "Esordienti",
