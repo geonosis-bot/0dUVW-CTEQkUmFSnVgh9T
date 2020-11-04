@@ -194,6 +194,7 @@
 
             &.bold {
               font-weight: $font_medium !important;
+              color: $first_color;
             }
             &:not(.bold) {
               font-weight: $font_light !important;

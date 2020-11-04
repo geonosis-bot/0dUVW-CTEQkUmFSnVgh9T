@@ -200,7 +200,11 @@ section.news-detail {
           font-family: monospace !important;
         }
 
-        b, sup, sub, u, del {
+        b,
+        sup,
+        sub,
+        u,
+        del {
           color: $black_color;
         }
       }
@@ -303,6 +307,7 @@ section.news-detail {
   }
 
   .news-img {
+    background-color: $first_color;
     background-size: cover;
     background-position: center;
     width: 100%;

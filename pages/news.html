@@ -17,13 +17,15 @@ permalink: /news
         href="{{ site.data.manifest.subpath }}news/{{ item.slug }}"
       >
         {% if item.cover_url %} {% assign news_image = item.cover_url %} {% else
-        %} {% assign news_image = site.data.manifest.logo_url %} {% endif %}
+        %} {% assign news_image = null %} {% endif %}
 
         <div
           class="news-background-img"
           style="background-image: url('{{ news_image }}')"
         >
+          {% if news_image %}
           <div class="overlay"></div>
+          {% endif %}
           <div class="news-info">
             <span class="news-category">{{ item.category }}</span>
             <span class="news-date">{{ item.publish_date.DDMMYYYY }}</span>
@@ -43,7 +45,7 @@ permalink: /news
         href="{{ site.data.manifest.subpath }}news/{{ item.slug }}"
       >
         {% if item.cover_url %} {% assign news_image = item.cover_url %} {% else
-        %} {% assign news_image = site.data.manifest.logo_url %} {% endif %}
+        %} {% assign news_image = null %} {% endif %}
 
         <div
           class="news-img"

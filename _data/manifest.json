@@ -13,13 +13,13 @@
     "contacts": {
       "phone": "3404003576",
       "mobile": null,
-      "email": "sunofcdsettoregiovanile@yahoo.it"
+      "email": "dodo@golee.it"
     },
     "social": {
-      "linkFb": "https://facebook.com/golee",
-      "linkIg": "https://instagram.com/golee",
-      "linkTw": "https://twitter.com/golee",
-      "linkYt": "https://youtube.com/golee"
+      "linkFb": "asdsa",
+      "linkIg": "",
+      "linkTw": "",
+      "linkYt": ""
     },
     "preenrolled": {
       "url": "https://google.it",
@@ -83,7 +83,6 @@
         "title": "aaa",
         "subtitle": "Ecco cosa ha detto conte oggi",
         "author": "Giuseppe Conte",
-        "cover_url": "https://www.nursetimes.org/wp-content/uploads/2020/09/EC8C2A3B-593B-45F0-85F2-7F03D5CD21F6.jpeg",
         "slug": "aaa",
         "publish_date": {
           "DDMMYYYY": "26/10/2020",
@@ -371,6 +370,23 @@
             {
               "name": "LLHHSS99S55F925O",
               "surname": "LLHHSS99S55F925O",
+              "avatar_url": "https://via.placeholder.com/150",
+              "birthdate": "21/10/2020"
+            },
+            {
+              "name": "LLHHSS99S55F925O",
+              "surname": "LLHHSS99S55F925O",
+              "birthdate": "21/10/2020"
+            },
+            {
+              "name": "LLHHSS99S55F925O",
+              "surname": "LLHHSS99S55F925O",
+              "birthdate": "21/10/2020"
+            },
+            {
+              "name": "LLHHSS99S55F925O",
+              "surname": "LLHHSS99S55F925O",
+              "avatar_url": "https://via.placeholder.com/350",
               "birthdate": "21/10/2020"
             },
             {
@@ -396,22 +412,8 @@
             {
               "name": "LLHHSS99S55F925O",
               "surname": "LLHHSS99S55F925O",
-              "birthdate": "21/10/2020"
-            },
-            {
-              "name": "LLHHSS99S55F925O",
-              "surname": "LLHHSS99S55F925O",
-              "birthdate": "21/10/2020"
-            },
-            {
-              "name": "LLHHSS99S55F925O",
-              "surname": "LLHHSS99S55F925O",
-              "birthdate": "21/10/2020"
-            },
-            {
-              "name": "LLHHSS99S55F925O",
-              "surname": "LLHHSS99S55F925O",
-              "birthdate": "21/10/2020"
+              "birthdate": "21/10/2020",
+              "avatar_url": "https://via.placeholder.com/500x100"
             }
           ]
         },

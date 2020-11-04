@@ -40,6 +40,10 @@
         site.data.manifest.modules.social.linkTw %} {% assign yt =
         site.data.manifest.modules.social.linkYt %}
 
+        <!-- Check if at least one -->
+
+        {% if fb != "" or ig != "" or tw != "" or yt != ""%}
+
         <h4 class="foot-heading">Social</h4>
         <div class="social-links">
           {% if fb and fb != "" %}
@@ -55,7 +59,7 @@
           <a href="{{yt}}" target="_blank"><i class="lab la-youtube"></i></a>
           {% endif %}
         </div>
-        {% endif %}
+        {% endif %} {% endif %}
       </div>
 
       <!-- Powered by -->

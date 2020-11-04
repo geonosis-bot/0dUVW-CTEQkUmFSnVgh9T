@@ -77,13 +77,15 @@ section.sponsors {
       max-width: 100%;
       width: auto !important;
       max-height: 200px;
+    }
+    p {
       transition: all 0.5s;
     }
   }
 
   &:hover {
-    img {
-      transform: scale(1.1);
+    p {
+      color: $first_color !important;
     }
   }
 }

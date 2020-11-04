@@ -53,6 +53,12 @@ header.main_menu {
             padding: 0 20px;
             color: $black_color;
           }
+
+          &.active {
+            a {
+              color: $first_color;
+            }
+          }
         }
       }
     }
@@ -141,6 +147,10 @@ header.main_menu {
                 i {
                   font-size: 20px;
                 }
+
+                &:hover {
+                  color: $white_color !important;
+                }
               }
             }
           }
@@ -191,6 +201,13 @@ header.main_menu {
           }
 
           &.submenu {
+            i {
+              transition: transform 0.5s;
+              &.rotate {
+                transform: rotate(180deg);
+              }
+            }
+
             > ul {
               display: none;
               padding: 0 0 0 20px;
@@ -246,49 +263,52 @@ header.main_menu {
     z-index: 99;
     background-color: $first_color;
     color: $text_on_first_color;
-    overflow: auto;
+    overflow: hidden;
 
     > div:first-child {
-      position: relative;
-      padding-top: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
+      overflow: auto;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      max-height: calc(100vh - #{$header_height_full});
+
       .teams-menu-close {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-bottom: 20px;
         cursor: pointer;
         i {
           font-size: 30px;
           color: $text_on_first_color !important;
         }
       }
-    }
 
-    > div.menu-wrapper {
-      min-height: 900px;
-      padding-bottom: 40px;
-      padding-top: 40px;
-      display: grid;
-      grid-gap: 50px;
-      grid-template-rows: max-content;
-      grid-template-columns: repeat(4, 1fr);
+      .menu-wrapper {
+        display: grid;
+        grid-gap: 40px;
+        grid-auto-rows: max-content;
+        grid-template-columns: repeat(4, 1fr);
 
-      .submenu {
-        h3,
-        a {
-          color: $text_on_first_color;
-        }
-        h3 {
-          margin-bottom: 20px;
-        }
+        .submenu {
+          // max-height: 250px;
+          margin-bottom: 30px;
+          h3,
+          a {
+            color: $text_on_first_color;
+          }
+          h3 {
+            margin-bottom: 20px;
+          }
 
-        a {
-          font-weight: $font_light;
-          font-size: 16px;
-          display: block;
-          padding: 5px 0;
-          &:hover {
-            color: $text_on_first_color !important;
-            text-decoration: underline;
+          a {
+            font-weight: $font_light;
+            font-size: 16px;
+            display: block;
+            padding: 5px 0;
+            &:hover {
+              color: $text_on_first_color !important;
+              text-decoration: underline;
+            }
           }
         }
       }

@@ -423,17 +423,34 @@
 
   $(".teams-menu-open").on("click", function () {
     $("html").toggleClass("o-hidden");
+    $("header .menu > ul > li").removeClass("active");
+    $("li#teams").addClass("active");
     $(".teams-menu").fadeToggle();
   });
 
   $(".teams-menu-close").on("click", function () {
     $("html").removeClass("o-hidden");
+    $("li#teams").removeClass("active");
+
+    $(`li#${currentActivePage}`).addClass("active");
+
     $(".teams-menu").fadeOut();
   });
 
   $("ul > li.submenu > a").on("click", function () {
-    console.log("click");
-    $(this).next("ul").slideToggle();
+    $("ul > li.submenu > a + ul").slideUp();
+    $("ul > li.submenu > a > i").removeClass("rotate");
+
+    var icon = $(this).find("i");
+    var el = $(this).next("ul");
+
+    if (el.is(":visible")) {
+      el.slideUp();
+      icon.removeClass("rotate");
+    } else {
+      el.slideDown();
+      icon.addClass("rotate");
+    }
   });
 
   $(".team-section-header").on("click", function () {

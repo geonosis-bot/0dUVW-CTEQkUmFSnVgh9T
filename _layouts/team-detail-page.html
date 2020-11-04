@@ -259,7 +259,7 @@
                       <tr>
                         <th class="hidden-sm-down text-left">Pos.</th>
                         <th class="text-left">Squadra</th>
-                        <th class="hidden-sm-down">Punti</th>
+                        <th class="hidden-sm-down points">Punti</th>
                         <th class="hidden-sm-down">G</th>
                         <th class="hidden-sm-down">V</th>
                         <th class="hidden-sm-down">P</th>
@@ -274,7 +274,7 @@
                         <!-- Only mobile -->
                         <th class="hidden-md-up">G</th>
                         <th class="hidden-md-up">DR</th>
-                        <th class="hidden-md-up">P</th>
+                        <th class="hidden-md-up points">P</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -289,7 +289,7 @@
                           {{ forloop.index }}
                         </td>
                         <td class="text-left">{{ team.club_name }}</td>
-                        <td class="hidden-sm-down">{{ team.points }}</td>
+                        <td class="hidden-sm-down points">{{ team.points }}</td>
                         <td class="hidden-sm-down">{{ team.played }}</td>
                         <td class="hidden-sm-down">{{ team.won }}</td>
                         <td class="hidden-sm-down">{{ team.drawn }}</td>
@@ -304,7 +304,7 @@
                         <!-- Only mobile -->
                         <td class="hidden-md-up">{{ team.played }}</td>
                         <td class="hidden-md-up">{{ team.gd }}</td>
-                        <td class="hidden-md-up">{{ team.points }}</td>
+                        <td class="hidden-md-up points">{{ team.points }}</td>
                       </tr>
                       {% endfor %}
                     </tbody>
