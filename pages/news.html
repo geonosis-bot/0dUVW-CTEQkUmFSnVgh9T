@@ -37,7 +37,7 @@ permalink: /news
             <h3 class="news-title">{{ item.title }}</h3>
             <hr />
             <div class="news-content">
-              {{ item.body | markdownify | strip_html | truncatewords: 25 }}
+              {{ item.body | markdownify | strip_html | truncatewords: 20 }}
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@ permalink: /news
 
         <h3 class="news-title">{{ item.title }}</h3>
         <div class="news-content">
-          {{ item.body | markdownify | strip_html | truncatewords: 25 }}
+          {{ item.body | markdownify | strip_html | truncatewords: 20 }}
         </div>
         <div class="news-info">
           <span class="news-category">{{ item.category }}</span>

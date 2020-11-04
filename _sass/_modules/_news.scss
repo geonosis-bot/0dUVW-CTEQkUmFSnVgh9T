@@ -27,7 +27,7 @@ section.news {
     }
 
     @include respond-to(xlg) {
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 
