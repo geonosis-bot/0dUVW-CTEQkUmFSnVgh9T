@@ -6,8 +6,11 @@ namespace: sponsors
 permalink: /sponsors
 ---
 
-{% if site.data.manifest.sponsors.size > 0 %} {% assign primary_sponsors =
-site.data.manifest.modules.sponsors | where:"category","PRIMARY" %}
+{% if site.data.manifest.modules.sponsors.size > 0 %}
+
+<!-- If there are some sponsors -->
+{% assign primary_sponsors = site.data.manifest.modules.sponsors |
+where:"category","PRIMARY" %}
 
 <section class="sponsors">
   <div class="container-fluid">
