@@ -199,6 +199,10 @@ section.news-detail {
         .ql-font-monospace {
           font-family: monospace !important;
         }
+
+        b, sup, sub, u, del {
+          color: $black_color;
+        }
       }
     }
 
