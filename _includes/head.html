@@ -10,15 +10,15 @@
     else %} {{ site.data.manifest.club_name }} {% endif %}
   </title>
 
+   <!-- Twitter Card data -->
+   <meta name="twitter:card" value="summary" />
+
   <!-- Meta tags for news detail -->
   {% if page.slug %}
   <meta
     name="description"
     content="{{ page.body | markdownify | strip_html | truncatewords: 100 }}"
   />
-
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" value="summary" />
 
   <!-- Open Graph data -->
   <meta
@@ -34,6 +34,29 @@
   <meta
     property="og:description"
     content="{{ page.body | markdownify | strip_html | truncatewords: 100 }}"
+  />
+
+  {% else %}
+
+  <meta
+    name="description"
+    content="{{ site.data.manifest.modules.intro.title }}"
+  />
+
+  <!-- Open Graph data -->
+  <meta
+    property="og:title"
+    content="{{ site.data.manifest.club_name }}"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:url"
+    content="{{site.data.manifest.domain}}{{site.data.manifest.subpath}}"
+  />
+  <meta property="og:image" content="{{site.data.manifest.logo_url}}" />
+  <meta
+    property="og:description"
+    content="{{ site.data.manifest.modules.intro.title }}"
   />
   {% endif %}
 
