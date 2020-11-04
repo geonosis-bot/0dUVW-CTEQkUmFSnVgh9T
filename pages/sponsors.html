@@ -6,8 +6,8 @@ namespace: sponsors
 permalink: /sponsors
 ---
 
-{% assign primary_sponsors = site.data.manifest.modules.sponsors |
-where:"category","PRIMARY" %}
+{% if site.data.manifest.sponsors.size > 0 %} {% assign primary_sponsors =
+site.data.manifest.modules.sponsors | where:"category","PRIMARY" %}
 
 <section class="sponsors">
   <div class="container-fluid">
@@ -34,4 +34,21 @@ where:"category","SECONDARY" %} {% if secondary_sponsors.size > 0 %}
     </div>
   </div>
 </section>
+
+{% endif %} {% else %}
+
+<!-- If empty sponsors -->
+<section class="sponsors">
+  <div class="container-fluid">
+    <h3 class="section-title">Sponsor</h3>
+    <p>Non sono presenti sponsor</p>
+
+    <div class="mt-5">
+      <a class="btn btn-3d btn-primary" href="{{site.data.manifest.subpath}}"
+        >Torna alla home</a
+      >
+    </div>
+  </div>
+</section>
+
 {% endif %}

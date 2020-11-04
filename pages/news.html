@@ -8,6 +8,9 @@ permalink: /news
 
 <section class="news">
   <div class="container-fluid">
+    {% if site.data.manifest.modules.news.size > 0 %}
+
+    <!-- If news -->
     <div class="news-grid">
       {% for item in site.data.manifest.modules.news %} {% if item.is_highlight
       == true and forloop.first %}
@@ -63,5 +66,19 @@ permalink: /news
       </a>
       {% endif %} {% endfor %}
     </div>
+
+    {% else %}
+
+    <!-- If empty news -->
+    <h3 class="section-title">News</h3>
+    <p>Non sono presenti news in questo momento</p>
+
+    <div class="mt-5">
+      <a class="btn btn-3d btn-primary" href="{{site.data.manifest.subpath}}"
+        >Torna alla home</a
+      >
+    </div>
+
+    {% endif %}
   </div>
 </section>
