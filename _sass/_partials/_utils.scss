@@ -56,6 +56,7 @@ a {
     display: none !important;
   }
 }
+
 .hidden-md-up {
   @include respond-to(from-md) {
     display: none !important;

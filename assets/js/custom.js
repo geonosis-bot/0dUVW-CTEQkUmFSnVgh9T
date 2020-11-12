@@ -512,7 +512,7 @@
   // ------------------------------------------------
   // news carousel
   // ------------------------------------------------
-  if ($(window).width() <= 767) {
+  if ($(window).width() <= 991) {
     $(".news-carousel").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
