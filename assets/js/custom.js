@@ -432,7 +432,9 @@
     $("html").removeClass("o-hidden");
     $("li#teams").removeClass("active");
 
-    $(`li#${currentActivePage}`).addClass("active");
+    if (!!currentActivePage) {
+      $(`li#${currentActivePage}`).addClass("active");
+    }
 
     $(".teams-menu").fadeOut();
   });
