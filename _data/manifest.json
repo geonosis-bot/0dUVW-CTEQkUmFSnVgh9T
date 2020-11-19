@@ -11305,8 +11305,10 @@
           "competition_name": "Giovanissimi Under 14 Provinciali Monza e della Brianza",
           "teams": [
             {
+              "position": 1,
               "club_name": "a.s.d. la dominante B",
               "out": false,
+              "bold": true,
               "club_logo": "6543.png",
               "points": 0,
               "penalty_points": 0,
@@ -11316,9 +11318,11 @@
               "lost": 0,
               "gf": 0,
               "ga": 0,
-              "gd": 0
+              "gd": 0,
+              "form": "V P P V P"
             },
             {
+              "position": "FC",
               "club_name": "u.s. a.casati calcio arcore",
               "out": false,
               "club_logo": "6524.png",
