@@ -432,7 +432,9 @@
     $("html").removeClass("o-hidden");
     $("li#teams").removeClass("active");
 
-    $(`li#${currentActivePage}`).addClass("active");
+    if (!!currentActivePage) {
+      $(`li#${currentActivePage}`).addClass("active");
+    }
 
     $(".teams-menu").fadeOut();
   });
@@ -510,7 +512,7 @@
   // ------------------------------------------------
   // news carousel
   // ------------------------------------------------
-  if ($(window).width() <= 767) {
+  if ($(window).width() <= 991) {
     $(".news-carousel").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -559,6 +561,7 @@
 
   $("div.sponsor").on("click", function (event) {
     event.preventDefault();
-    window.open($(this).attr("data-link"), "_blank");
+    let link = $(this).attr("data-link");
+    link && window.open(link, "_blank");
   });
 })(jQuery);
