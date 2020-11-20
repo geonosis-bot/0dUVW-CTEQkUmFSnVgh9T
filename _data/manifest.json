@@ -97,7 +97,7 @@
         "category": "PRIMARY",
         "club": 1,
         "name": "Toyota",
-        "link": "https://www.toyota.it",
+        "link": null,
         "logo_url": "https://via.placeholder.com/150",
         "created_at": "09:42 28/10/2020",
         "created_by": "86f9edb0-a3f6-11ea-a4ec-49cfacd85f2f",
