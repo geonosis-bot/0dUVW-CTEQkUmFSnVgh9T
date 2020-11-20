@@ -561,6 +561,7 @@
 
   $("div.sponsor").on("click", function (event) {
     event.preventDefault();
-    window.open($(this).attr("data-link"), "_blank");
+    let link = $(this).attr("data-link");
+    link && window.open(link, "_blank");
   });
 })(jQuery);
