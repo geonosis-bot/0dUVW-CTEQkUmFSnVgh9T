@@ -1,7 +1,9 @@
 <div class="person">
   <div class="img-wrap">
     {% if item.avatar_url %}
-    <img src="{{item.avatar_url}}" />
+    <!-- <img src="{{item.avatar_url}}=w600-h600-pp-b3-c0xff034694" /> -->
+    <img src="{{item.avatar_url}}=w600-h600-pp" />
+
     {% else %}
     <img src="{{site.data.manifest.subpath}}assets/img/player.svg" />
     {% endif %}
