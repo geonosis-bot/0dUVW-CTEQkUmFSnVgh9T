@@ -14,22 +14,7 @@
     <!-- Content -->
     <div class="content news">
       <section class="news-detail">
-        <!-- If image -->
-        {% if page.cover_url %}
-        <div
-          class="news-header"
-          style="background-image: url('{{page.cover_url}}=s1200');"
-        >
-          <div class="overlay"></div>
-          <div class="container-fluid">
-            <h5 class="news-category">{{ page.category }}</h5>
-            <h1 class="news-title">{{ page.title }}</h1>
-          </div>
-        </div>
-
-        {% else %}
-
-        <!-- If no image -->
+       
         <div class="container-fluid news-intro">
           <h5 class="news-category">{{ page.category }}</h5>
           <h1 class="news-title">{{ page.title }}</h1>
@@ -38,7 +23,6 @@
           <h3 class="news-subtitle">{{ page.subtitle }}</h3>
           {% endif %}
         </div>
-        {% endif %}
 
         <div class="container-fluid">
           <div class="news-box news-detail-box">
@@ -84,9 +68,6 @@
                 {% endif %}
               </div>
               <div class="news-content">
-                {% if page.cover_url and page.subtitle %} 
-                <h3 class="news-subtitle text-black">{{ page.subtitle }}</h3>
-                {% endif %} 
                 {{ page.body }}
               </div>
               <div class="news-info hidden-md hidden-lg mt-40">
