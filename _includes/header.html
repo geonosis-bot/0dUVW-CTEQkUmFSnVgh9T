@@ -9,10 +9,18 @@
     <!-- Menu -->
     <div class="menu">
       <ul>
+        <!-- society -->
+        {% if site.data.manifest.modules.club %}
+          {% if page.namespace == "club" %}
+            <li class="active" id="club"><a href="{{ site.data.manifest.subpath }}club">SOCIETÀ</a></li>
+            {% else %}
+            <li id="club"><a href="{{ site.data.manifest.subpath }}club">SOCIETÀ</a></li>
+          {% endif %}
+        {% endif %}
+
         <!-- news -->
         {% if site.data.manifest.modules.news %}
-          <!-- TODO: change active check -->
-          {% if page.namespace == "news" or page.author %}
+          {% if page.namespace == "news" %}
           <li class="active" id="news"><a href="{{ site.data.manifest.subpath }}news">NEWS</a></li>
           {% else %}
           <li id="news"><a href="{{ site.data.manifest.subpath }}news">NEWS</a></li>
@@ -69,7 +77,10 @@
 
     <div class="menu">
       <ul>
-        <!-- <li><a href="{{ site.data.manifest.subpath }}">Società</a></li> -->
+        <!-- society -->
+        {% if site.data.manifest.modules.club %}
+        <li><a class="mobile-teams-menu-open">Società</a></li>
+        {% endif %}
 
         <!-- teams -->
         {% if site.data.manifest.modules.teams_for_menu %}

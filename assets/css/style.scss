@@ -59,6 +59,7 @@ $intro_background_img: "{{site.data.manifest.modules.intro.background_url }}";
 @import "_modules/sponsors";
 @import "_modules/teams";
 @import "_modules/contacts";
+@import "_modules/club";
 
 // Partials
 @import "_partials/sections";
@@ -70,5 +71,6 @@ $intro_background_img: "{{site.data.manifest.modules.intro.background_url }}";
 @import "_partials/footer";
 @import "_partials/not_found";
 @import "_partials/tables";
+@import "_partials/people";
 
 

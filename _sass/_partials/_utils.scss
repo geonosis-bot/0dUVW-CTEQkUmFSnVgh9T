@@ -4,11 +4,30 @@
 .second-color {
   color: $second_color !important;
 }
+.black-color {
+  color: $black_color !important;
+}
+.white-color {
+  color: $white_color !important;
+}
 .first-color-bg {
   background-color: $first_color !important;
 }
 .second-color-bg {
   background-color: $second_color !important;
+}
+
+.font-light {
+  font-weight: $font_light !important;
+}
+.font-regular {
+  font-weight: $font_regular !important;
+}
+.font-medium {
+  font-weight: $font_medium !important;
+}
+.font-bold {
+  font-weight: $font_bold !important;
 }
 
 .nopadding {

@@ -1,0 +1,74 @@
+div.people {
+  display: none;
+
+  > div {
+    display: grid;
+    grid-gap: 0;
+    padding-bottom: 40px;
+
+    .person {
+      border: 1px solid $grey_color_light;
+      padding: 20px;
+
+      .img-wrap {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          max-width: 100%;
+          width: auto !important;
+          max-height: 200px;
+          transition: all 0.5s;
+        }
+      }
+
+      .name {
+        color: $black_color;
+        font-weight: $font_regular;
+        font-size: 18px;
+      }
+
+      .role,
+      .date {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 0;
+        font-weight: $font_light;
+      }
+    }
+
+    @include respond-to(upto-sm) {
+      grid-template-columns: 50% 50%;
+
+      .person {
+        padding: 15px;
+
+        .img-wrap {
+          height: 180px;
+        }
+
+        .name {
+          font-size: 14px;
+        }
+        .role,
+        .date {
+          font-size: 12px;
+        }
+      }
+    }
+
+    @include respond-to(md) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include respond-to(lg) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    @include respond-to(xlg) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}

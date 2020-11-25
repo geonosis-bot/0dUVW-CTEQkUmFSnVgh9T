@@ -14,15 +14,18 @@
     <!-- Content -->
     <div class="content news">
       <section class="news-detail">
+       
+        <div class="container-fluid news-intro">
+          <h5 class="news-category">{{ page.category }}</h5>
+          <h1 class="news-title">{{ page.title }}</h1>
+
+          {% if page.subtitle %}
+          <h3 class="news-subtitle">{{ page.subtitle }}</h3>
+          {% endif %}
+        </div>
+
         <div class="container-fluid">
           <div class="news-box news-detail-box">
-            <h5 class="news-category">{{ page.category }}</h5>
-            <h1 class="news-title">{{ page.title }}</h1>
-
-            {% if page.subtitle %}
-            <h3 class="news-subtitle">{{ page.subtitle }}</h3>
-            {% endif %}
-
             <div class="news-data">
               <div class="news-info hidden-xs hidden-sm">
                 <!-- Share -->
@@ -64,7 +67,9 @@
                 </div>
                 {% endif %}
               </div>
-              <div class="news-content">{{ page.body }}</div>
+              <div class="news-content">
+                {{ page.body }}
+              </div>
               <div class="news-info hidden-md hidden-lg mt-40">
                 <!-- Share -->
                 <div class="news-share">
