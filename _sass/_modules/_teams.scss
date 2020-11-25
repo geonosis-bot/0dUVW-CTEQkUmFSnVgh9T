@@ -197,5 +197,13 @@
         font-weight: $font_light;
       }
     }
+    .club-logo {
+      width: 35px;
+      margin-right: 20px;
+
+      @include respond-to(xs) {
+        width: 20px;
+      }
+    }
   }
 }

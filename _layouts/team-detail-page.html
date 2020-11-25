@@ -288,7 +288,7 @@
                         <td class="hidden-sm-down text-left">
                           {{ team.position }}
                         </td>
-                        <td class="text-left">{{ team.club_name }} {% if team.penalty_points > 0 %} <strong>(-{{team.penalty_points}})</strong>{% endif %}</td>
+                        <td class="text-left"><img class="club-logo" src="{%if team.club_logo %}{{team.club_logo}}{% else %}https://storage.googleapis.com/gle-assets/no-logo.png{% endif %}"/>{{ team.club_name }} {% if team.penalty_points > 0 %} <strong>(-{{team.penalty_points}})</strong>{% endif %}</td>
                         <td class="hidden-sm-down points">{{ team.points }}</td>
                         <td class="hidden-sm-down">{{ team.played }}</td>
                         <td class="hidden-sm-down">{{ team.won }}</td>
