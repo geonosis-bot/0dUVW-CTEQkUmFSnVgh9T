@@ -138,6 +138,14 @@
           &:nth-child(n + 3) {
             border-top: none;
           }
+          .club-logo {
+            width: 25px;
+            margin-right: 15px;
+      
+            @include respond-to(xs) {
+              width: 20px;
+            }
+          }
         }
 
         @include respond-to(upto-sm) {

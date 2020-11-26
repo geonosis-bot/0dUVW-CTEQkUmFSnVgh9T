@@ -210,7 +210,7 @@
                     <div class="match">
                       <div class="home {{home_class}}">
                         <div class="info">
-                          <!-- <img src="..."/> -->
+                          <img class="club-logo" src="{%if res.home.club_logo %}{{res.home.club_logo}}{% else %}https://storage.googleapis.com/gle-assets/no-logo.png{% endif %}"/>
                           <span>{{ res.home.club_name }}</span>
                         </div>
                         {% if res.result.home %}
@@ -221,7 +221,7 @@
                       </div>
                       <div class="away {{away_class}}">
                         <div class="info">
-                          <!-- <img src="..."/> -->
+                          <img class="club-logo" src="{%if res.away.club_logo %}{{res.away.club_logo}}{% else %}https://storage.googleapis.com/gle-assets/no-logo.png{% endif %}"/>
                           <span>{{ res.away.club_name }}</span>
                         </div>
                         {% if res.result.away %}
