@@ -155,6 +155,25 @@
             </div>
             {% endif %}
 
+            <!-- giocatori -->
+            {% if page.athletes.GIO and page.athletes.GIO.size > 0 %}
+            <div class="team-section">
+              <div class="container-fluid">
+                <div class="team-section-header">
+                  <h3>Giocatori</h3>
+                  <i class="las la-plus"></i>
+                </div>
+
+                <div class="people">
+                  <div>
+                    {% for item in page.athletes.GIO %} {% include
+                    components/person.html item=item %} {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+
             <!-- staff tecnico -->
             {% if page.tech_staffs.size > 0 %}
             <div class="team-section">

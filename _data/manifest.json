@@ -217,6 +217,11 @@
         "category_name": "Giovanissimi",
         "teams": [
           {
+            "name": "Giovanissimi Under 15 Regionali",
+            "slug": "giovanissimi-under-15-elite",
+            "category": "Giovanissimi"
+          },
+          {
             "name": "Giovanissimi Under 15 Provinciali",
             "slug": "giovanissimi-under-15-provinciali",
             "category": "Giovanissimi"
@@ -272,19 +277,47 @@
           "show_standing": true
         },
         "athletes": {
-          "CEN": [
+          "GIO": [
             {
-              "name": "Alberto",
-              "surname": "Di Bari",
-              "birthdate": "05/11/2006",
-              "avatar_url": null
+              "name": "ZXLQHJ97H49D333A",
+              "surname": "ZXLQHJ97H49D333A",
+              "birthdate": "13/10/2020",
+              "role": "POR"
             },
             {
-              "name": "Tommaso Luca",
-              "surname": "Calzavara ",
-              "birthdate": "20/05/2006",
-              "avatar_url": null
-            }
+              "name": "LZJSYG32E11C675Y",
+              "surname": "LZJSYG32E11C675Y",
+              "birthdate": "13/10/2020",
+              "role": "CEN"
+            },
+            {
+              "name": "LLHHSS99S55F925O",
+              "surname": "LLHHSS99S55F925O",
+              "birthdate": "21/10/2020",
+              "role": "CEN"
+            },
+            {
+              "name": "Gianni",
+              "surname": "Scarletts",
+              "birthdate": "21/10/2020",
+              "role": "CEN"
+            },
+            {
+              "name": "andrea",
+              "surname": "crepa",
+              "birthdate": "02/12/1990",
+              "role": "ATT"
+            },
+            {
+              "name": "alex",
+              "surname": "rossi",
+              "birthdate": "22/03/1990"
+            },
+            {
+              "name": "mario",
+              "surname": "gialli",
+              "birthdate": "11/01/1980"
+            },
           ]
         }
       },
