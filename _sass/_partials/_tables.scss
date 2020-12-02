@@ -27,6 +27,20 @@
           color: $first_color;
         }
       }
+
+      &.out {
+        td {
+          border-top: 2px solid $grey_color_dark !important;
+          background: $grey_color_light;
+          color: $grey_color_dark !important;
+        }
+
+        +.out {
+          td {
+            border-top: none !important;
+          }
+        }
+      }
     }
   }
 

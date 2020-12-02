@@ -27178,8 +27178,8 @@
             },
             {
               "club_name": "a.s.d. accademia rudianese",
-              "out": false,
-              "position": "10",
+              "out": true,
+              "position": "FC",
               "club_logo": null,
               "points": 0,
               "penalty_points": 0,
