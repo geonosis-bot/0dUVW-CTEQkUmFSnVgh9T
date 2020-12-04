@@ -317,7 +317,7 @@
               "name": "mario",
               "surname": "gialli",
               "birthdate": "11/01/1980"
-            },
+            }
           ]
         }
       },
@@ -27409,19 +27409,19 @@
         "id": "5fa2d525b2eaa22d0140a833"
       }
     ],
-    "club": {
-      "staff": [
-        {
-          "name": "Fabio",
-          "surname": "Greco",
-          "birthdate": null,
-          "role": "Allenatore",
-          "avatar_url": null
-        }
-      ],
+    "club_history": {
       "body": "<p>I nerazzurri sono tornati subito al lavoro questa mattina al Centro Bortolotti di Zingonia in vista del match di UEFA Champions League contro il Liverpool in programma martedì sera al Gewiss Stadium di Bergamo. La squadra ha lavorato divisa in due gruppi in base al minutaggio nella partita con il Crotone. Terapie per de Roon, Gosens, Hateboer, Romero e Toloi.</p><p><br></p><p>Domani, lunedì 2 novembre, al Centro Bortolotti si terrà alle 13.30 la conferenza stampa di vigilia (con svolgimento in remoto per i media) a cui parteciperanno Gian Piero Gasperini e Duvàn Zapata, mentre alle 15.30 è in programma l’allenamento (non accessibile ai media).</p>",
       "image_url": "https://lh3.googleusercontent.com/8NFR89smR1Nuw5BdMx1gBbye3haXEEMDnb4ZAGjZMDXO40a-NTeOnm0aQwKICLqRg6mDN5q8H0ftGgWMRzBIq-YX"
-    }
+    },
+    "management_staff": [
+      {
+        "name": "Fabio",
+        "surname": "Greco",
+        "birthdate": null,
+        "role": "Allenatore",
+        "avatar_url": null
+      }
+    ]
   },
   "is_undermaintenance": false,
   "text_on_second_color": "#034694",

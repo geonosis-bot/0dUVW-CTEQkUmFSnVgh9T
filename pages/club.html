@@ -8,12 +8,12 @@ permalink: /club
 
 <div class="club">
   <!-- Handle img not available -->
-  {% if site.data.manifest.modules.club.image_url %} {% assign content_class =
+  {% if site.data.manifest.modules.club_history.image_url %} {% assign content_class =
   "left" %} {% else %} {% assign content_class = "left full" %} {% endif %}
 
   <!-- Pre -->
-  {% if site.data.manifest.modules.club.body or
-  site.data.manifest.modules.club.image_url %}
+  {% if site.data.manifest.modules.club_history.body or
+  site.data.manifest.modules.club_history.image_url %}
   <section class="info">
     <div class="container-fluid d-flex">
       <div class="{{content_class}}">
@@ -21,14 +21,14 @@ permalink: /club
           {{ site.data.manifest.club_name }}
         </h1>
         <div class="club-content">
-          {{ site.data.manifest.modules.club.body | markdownify }}
+          {{ site.data.manifest.modules.club_history.body | markdownify }}
         </div>
       </div>
 
-      {% if site.data.manifest.modules.club.image_url %}
+      {% if site.data.manifest.modules.club_history.image_url %}
       <div class="right">
         <div class="img-wrap">
-          <img src="{{ site.data.manifest.modules.club.image_url }}" />
+          <img src="{{ site.data.manifest.modules.club_history.image_url }}" />
         </div>
       </div>
       {% endif %}
@@ -36,19 +36,20 @@ permalink: /club
   </section>
   {% endif %}
 
-  {% if (site.data.manifest.modules.club.body or
-    site.data.manifest.modules.club.image_url) and site.data.manifest.modules.club.staff %}
+  {% if (site.data.manifest.modules.club_history.body or
+    site.data.manifest.modules.club_history.image_url) and site.data.manifest.modules.management_staff %}
   <hr />
   {% endif %}
 
   <!--  Staff -->
   <section class="staff">
     <div class="container-fluid">
-      {% if site.data.manifest.modules.club.staff %}
       <h3 class="black-color font-regular">Dirigenti</h3>
+
+      {% if site.data.manifest.modules.management_staff and site.data.manifest.modules.management_staff.size > 0 %}
       <div class="people d-block">
         <div>
-          {% for item in site.data.manifest.modules.club.staff %} {% include
+          {% for item in site.data.manifest.modules.management_staff %} {% include
           components/person.html item=item %} {% endfor %}
         </div>
       </div>
