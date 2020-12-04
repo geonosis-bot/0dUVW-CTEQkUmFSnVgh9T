@@ -303,7 +303,10 @@
                       {% if team.bold %} {% assign row_class = "bold" %}
                       {%else%} {% assign row_class = "" %} {% endif %}
 
-                      <tr class="{{row_class}}">
+                      {% if team.out %} {% assign row_out_class = "out" %}
+                      {%else%} {% assign row_out_class = "" %} {% endif %}
+
+                      <tr class="{{row_class}} {{row_out_class}}">
                         <td class="hidden-sm-down text-left">
                           {{ team.position }}
                         </td>
