@@ -16,7 +16,10 @@
       <section class="team-detail">
         <div class="header">
           <div class="container-fluid">
-            <h1 class="section-title">{{ page.team_name }}</h1>
+            <h1 class="section-title">
+              {% if page.team_label and page.team_label != "" %} {{ page.team_label }} {% else %} {{
+              page.team_name }} {% endif %}
+            </h1>
 
             <!-- Tabs -->
             <ul class="nav nav-tabs" id="tab-menu" role="tablist">
@@ -219,17 +222,20 @@
                     {% for res in item.results %}
 
                     <!-- home bold -->
-                    {% if res.home.bold %} {% assign home_class = "bold" %}
-                    {% else %} {% assign home_class = "" %} {% endif %}
+                    {% if res.home.bold %} {% assign home_class = "bold" %} {%
+                    else %} {% assign home_class = "" %} {% endif %}
 
                     <!-- away bold -->
-                    {% if res.away.bold %} {% assign away_class = "bold" %}
-                    {% else %} {% assign away_class = "" %} {% endif %}
+                    {% if res.away.bold %} {% assign away_class = "bold" %} {%
+                    else %} {% assign away_class = "" %} {% endif %}
 
                     <div class="match">
                       <div class="home {{home_class}}">
                         <div class="info">
-                          <img class="club-logo" src="{%if res.home.club_logo %}{{res.home.club_logo}}{% else %}https://storage.googleapis.com/gle-assets/no-logo.png{% endif %}"/>
+                          <img
+                            class="club-logo"
+                            src="{%if res.home.club_logo %}{{res.home.club_logo}}{% else %}https://storage.googleapis.com/gle-assets/no-logo.png{% endif %}"
+                          />
                           <span>{{ res.home.club_name }}</span>
                         </div>
                         {% if res.result.home %}
@@ -240,7 +246,10 @@
                       </div>
                       <div class="away {{away_class}}">
                         <div class="info">
-                          <img class="club-logo" src="{%if res.away.club_logo %}{{res.away.club_logo}}{% else %}https://storage.googleapis.com/gle-assets/no-logo.png{% endif %}"/>
+                          <img
+                            class="club-logo"
+                            src="{%if res.away.club_logo %}{{res.away.club_logo}}{% else %}https://storage.googleapis.com/gle-assets/no-logo.png{% endif %}"
+                          />
                           <span>{{ res.away.club_name }}</span>
                         </div>
                         {% if res.result.away %}
@@ -301,16 +310,22 @@
 
                       <!-- home bold -->
                       {% if team.bold %} {% assign row_class = "bold" %}
-                      {%else%} {% assign row_class = "" %} {% endif %}
-
-                      {% if team.out %} {% assign row_out_class = "out" %}
-                      {%else%} {% assign row_out_class = "" %} {% endif %}
+                      {%else%} {% assign row_class = "" %} {% endif %} {% if
+                      team.out %} {% assign row_out_class = "out" %} {%else%} {%
+                      assign row_out_class = "" %} {% endif %}
 
                       <tr class="{{row_class}} {{row_out_class}}">
                         <td class="hidden-sm-down text-left">
                           {{ team.position }}
                         </td>
-                        <td class="text-left"><img class="club-logo" src="{%if team.club_logo %}{{team.club_logo}}{% else %}https://storage.googleapis.com/gle-assets/no-logo.png{% endif %}"/>{{ team.club_name }} {% if team.penalty_points > 0 %} <strong>(-{{team.penalty_points}})</strong>{% endif %}</td>
+                        <td class="text-left">
+                          <img
+                            class="club-logo"
+                            src="{%if team.club_logo %}{{team.club_logo}}{% else %}https://storage.googleapis.com/gle-assets/no-logo.png{% endif %}"
+                          />{{ team.club_name }} {% if team.penalty_points > 0
+                          %} <strong>(-{{team.penalty_points}})</strong>{% endif
+                          %}
+                        </td>
                         <td class="hidden-sm-down points">{{ team.points }}</td>
                         <td class="hidden-sm-down">{{ team.played }}</td>
                         <td class="hidden-sm-down">{{ team.won }}</td>
