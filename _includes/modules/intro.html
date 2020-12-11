@@ -1,8 +1,22 @@
+{% if site.data.manifest.modules.affiliation and
+site.data.manifest.modules.affiliation.logo and
+site.data.manifest.modules.affiliation.link %} {% assign show_affiliate = true
+%}{% endif %}
+
 <section class="intro section-right-image">
   <div>
     <div class="left container-fluid">
       <div class="top">
-        <!-- <h3 class="first-color section-title">Società</h3> -->
+        {% if show_affiliate %}
+        <div class="affiliation">
+          <a
+            href="{{site.data.manifest.modules.affiliation.link}}"
+            target="_blank"
+          >
+            <img src="{{site.data.manifest.modules.affiliation.logo}}" />
+          </a>
+        </div>
+        {% endif %}
       </div>
       <div class="bottom">
         <h1>{{ site.data.manifest.modules.intro.title }}</h1>
@@ -17,12 +31,22 @@
   </div>
 
   <!-- Mobile -->
-  <div
-    class="mobile-intro"
-    style="background-image: url('{{ site.data.manifest.modules.intro.background_url}}=s1200')"
-  >
-    <div class="overlay"></div>
-    <h1>{{ site.data.manifest.modules.intro.title }}</h1>
-    <a href="#" class="ti-arrow-top-right space-arrow"></a>
+  <div class="mobile-intro">
+    {% if show_affiliate %}
+    <div class="mobile-affiliation">
+      <a href="{{site.data.manifest.modules.affiliation.link}}" target="_blank">
+        <img src="{{site.data.manifest.modules.affiliation.logo}}" />
+      </a>
+    </div>
+    {% endif %}
+    <div
+      class="intro"
+      style="background-image: url('{{ site.data.manifest.modules.intro.background_url}}=s1200')"
+    >
+      <div class="overlay"></div>
+
+      <h1>{{ site.data.manifest.modules.intro.title }}</h1>
+      <a href="#" class="ti-arrow-top-right space-arrow"></a>
+    </div>
   </div>
 </section>

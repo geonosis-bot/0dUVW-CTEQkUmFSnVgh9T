@@ -3,7 +3,24 @@
     <div class="footer-widgets">
       <!-- Club name -->
       <div>
-        <h3 class="foot-heading">{{ site.data.manifest.club_name }}</h3>
+        <h4 class="foot-heading club-name">
+          {{ site.data.manifest.club_name }}
+        </h4>
+
+        {% if site.data.manifest.modules.affiliation and
+        site.data.manifest.modules.affiliation.name and
+        site.data.manifest.modules.affiliation.link %}
+        <div class="affiliation">
+          Società affiliata a
+          <a
+            href="{{site.data.manifest.modules.affiliation.link}}"
+            target="_blank"
+          >
+            {{site.data.manifest.modules.affiliation.name}}
+          </a>
+        </div>
+
+        {% endif %}
       </div>
 
       <!-- Contacts -->
