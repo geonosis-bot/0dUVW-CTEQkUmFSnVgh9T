@@ -1,0 +1,52 @@
+name: Build site and publish
+on: push
+jobs:
+  jekyll:
+    runs-on: ubuntu-16.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v1
+        id: "cache"
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      # Standard usage
+      - uses: helaili/jekyll-action@2.0.4
+        id: "build"
+        env:
+          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+        with:
+          jekyll_src: "./"
+          target_branch: "build"
+
+      - name: Dump steps context
+        env:
+          STEPS_CONTEXT: ${{ toJson(steps) }}
+        run: echo "$STEPS_CONTEXT"
+
+      - name: Call Hook PROD success
+        uses: distributhor/workflow-webhook@v1
+        if: ${{ always() }}
+        env:
+          webhook_url: ${{ secrets.WEBHOOK_URL_PROD }}
+          webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
+          data: ${{ toJson(steps) }}
+
+      - name: Call Hook STAGING success
+        uses: distributhor/workflow-webhook@v1
+        if: ${{ always() }}
+        env:
+          webhook_url: ${{ secrets.WEBHOOK_URL_STAGING }}
+          webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
+          data: ${{ toJson(steps) }}
+
+      - name: Call Hook LOCAL success
+        uses: distributhor/workflow-webhook@v1
+        if: ${{ always() }}
+        env:
+          webhook_url: ${{ secrets.WEBHOOK_URL_LOCAL }}
+          webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
+          data: ${{ toJson(steps) }}
