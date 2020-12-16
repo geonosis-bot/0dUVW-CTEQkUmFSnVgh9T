@@ -37,6 +37,7 @@ jobs:
 
       - name: Call Hook STAGING success
         uses: distributhor/workflow-webhook@v1
+        continue-on-error: true
         if: ${{ always() }}
         env:
           webhook_url: ${{ secrets.WEBHOOK_URL_STAGING }}
@@ -45,6 +46,7 @@ jobs:
 
       - name: Call Hook LOCAL success
         uses: distributhor/workflow-webhook@v1
+        continue-on-error: true
         if: ${{ always() }}
         env:
           webhook_url: ${{ secrets.WEBHOOK_URL_LOCAL }}
