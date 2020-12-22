@@ -32,14 +32,16 @@ section.intro {
         }
 
         h1 {
-          font-size: 60px;
+          font-size: 50px;
+          overflow: hidden;
+          word-break: break-word;
 
           @include respond-to(md) {
-            font-size: 50px;
+            font-size: 45px;
           }
 
           @include respond-to(sm) {
-            font-size: 40px;
+            font-size: 38px;
           }
           @include respond-to(xs) {
             font-size: 32px;
