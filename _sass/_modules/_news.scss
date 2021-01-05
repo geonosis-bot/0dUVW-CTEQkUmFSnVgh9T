@@ -398,6 +398,7 @@ section.news-detail {
   .news-content {
     font-size: 15px;
     color: $black_color;
+    word-break: break-word;
   }
 
   &.highlight {
