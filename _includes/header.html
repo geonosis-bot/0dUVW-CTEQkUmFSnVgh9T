@@ -56,7 +56,7 @@
         {% endif %}
 
         <!-- store -->
-        {% if site.data.manifest.store_url %}
+        {% if site.data.manifest.store_url and site.data.manifest.store_url != "" %}
           <li id="store"><a target="_blank" href="{{ site.data.manifest.store_url }}">STORE</a></li>
         {% endif %}
       </ul>
