@@ -11,7 +11,10 @@ permalink: /
 endif %}
 
 <!-- Next matches module -->
-{% if site.data.manifest.modules.next_matches %} {% include
+<!-- FIXME: for now check if first team on array has permissions (they are the same for each team)-->
+{% if site.data.manifest.modules.next_matches and
+site.data.manifest.modules.teams and
+site.data.manifest.modules.teams[0].permissions.show_result %} {% include
 modules/next_matches.html %} {% endif %}
 
 <!-- News module -->
@@ -23,5 +26,5 @@ endif %}
 modules/preenrolled.html %} {% endif %}
 
 <!-- Sponsors module -->
-{% if site.data.manifest.modules.sponsors %} {% include modules/sponsors.html %} {%
-endif %}
+{% if site.data.manifest.modules.sponsors %} {% include modules/sponsors.html %}
+{% endif %}
