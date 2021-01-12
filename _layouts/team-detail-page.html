@@ -40,7 +40,7 @@
               {% endif %}
 
               <!-- Results tab toggle -->
-              {% if page.results and page.results.size > 0 %}
+              {% if page.results and page.results.size > 0 and page.permissions.show_result %}
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -56,7 +56,7 @@
               {% endif %}
 
               <!-- Standing tab toggle -->
-              {% if page.standing %}
+              {% if page.standing and page.standing.size > 0 and page.permissions.show_standing %}
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -200,7 +200,7 @@
           {% endif %}
 
           <!-- Results TAB -->
-          {% if page.results and page.results.size > 0 %}
+          {% if page.results and page.results.size > 0 and page.permissions.show_result %}
           <div
             class="tab-pane fade"
             id="calendar"
@@ -270,7 +270,7 @@
           {% endif %}
 
           <!-- Standings TAB -->
-          {% if page.standing %}
+          {% if page.standing and page.standing.size > 0 and page.permissions.show_standing %}
           <div
             class="tab-pane fade"
             id="ranking"
