@@ -1,3 +1,12 @@
+{% if site.data.manifest.modules.affiliation and
+  site.data.manifest.modules.affiliation.name %} {% assign is_affiliate_name = true
+  %}{% endif %}
+
+{% if site.data.manifest.modules.affiliation and
+  site.data.manifest.modules.affiliation.link and 
+  site.data.manifest.modules.affiliation.link != "" %} {% assign is_affiliate_link = true
+  %}{% endif %}
+
 <footer class="footer-area">
   <div class="container-fluid">
     <div class="footer-widgets">
@@ -7,17 +16,16 @@
           {{ site.data.manifest.club_name }}
         </h4>
 
-        {% if site.data.manifest.modules.affiliation and
-        site.data.manifest.modules.affiliation.name and
-        site.data.manifest.modules.affiliation.link %}
+        {% if is_affiliate_name %}
         <div class="affiliation">
           Società affiliata a
-          <a
-            href="{{site.data.manifest.modules.affiliation.link}}"
-            target="_blank"
-          >
+          {% if is_affiliate_link %}
+          <a href="{{site.data.manifest.modules.affiliation.link}}" target="_blank">
             {{site.data.manifest.modules.affiliation.name}}
           </a>
+          {% else %}
+          {{site.data.manifest.modules.affiliation.name}}
+          {% endif %}
         </div>
 
         {% endif %}
@@ -29,19 +37,16 @@
         <h4 class="foot-heading">Contatti</h4>
         <ul>
           <li>
-            <a href="tel:{{site.data.manifest.modules.contacts.phone}}"
-              >{{ site.data.manifest.modules.contacts.phone }}</a
-            >
+            <a
+              href="tel:{{site.data.manifest.modules.contacts.phone}}">{{ site.data.manifest.modules.contacts.phone }}</a>
           </li>
           <li>
-            <a href="tel:{{site.data.manifest.modules.contacts.mobile}}"
-              >{{ site.data.manifest.modules.contacts.mobile }}</a
-            >
+            <a
+              href="tel:{{site.data.manifest.modules.contacts.mobile}}">{{ site.data.manifest.modules.contacts.mobile }}</a>
           </li>
           <li>
-            <a href="mailto:{{ site.data.manifest.modules.contacts.email }}"
-              >{{ site.data.manifest.modules.contacts.email }}</a
-            >
+            <a
+              href="mailto:{{ site.data.manifest.modules.contacts.email }}">{{ site.data.manifest.modules.contacts.email }}</a>
           </li>
         </ul>
         {% endif %}
@@ -83,14 +88,8 @@
       <div>
         <h4 class="foot-heading">Powered by</h4>
         <div class="contact_info">
-          <a
-            class="foot-logo text-right"
-            href="https://golee.it"
-            target="_blank"
-            ><img
-              width="120"
-              src="{{site.data.manifest.subpath}}assets/img/logo-footer.png"
-          /></a>
+          <a class="foot-logo text-right" href="https://golee.it" target="_blank"><img width="120"
+              src="{{site.data.manifest.subpath}}assets/img/logo-footer.png" /></a>
         </div>
       </div>
     </div>
@@ -99,9 +98,7 @@
   <div class="copy py-3 d-flex align-items-center justify-content-center">
     <p class="white">
       © Copyright Golee 2020 |
-      <a href="https://golee.it/privacy-policy/" target="_blank"
-        >Privacy Policy</a
-      >
+      <a href="https://golee.it/privacy-policy/" target="_blank">Privacy Policy</a>
     </p>
   </div>
 </footer>
