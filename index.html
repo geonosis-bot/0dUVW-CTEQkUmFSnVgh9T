@@ -22,7 +22,9 @@ modules/next_matches.html %} {% endif %}
 endif %}
 
 <!-- Pre-enrolled module -->
-{% if site.data.manifest.modules.preenrolled %} {% include
+{% if site.data.manifest.modules.preenrolled and
+site.data.manifest.modules.preenrolled.subtitle and
+site.data.manifest.modules.preenrolled.subtitle != ""%} {% include
 modules/preenrolled.html %} {% endif %}
 
 <!-- Sponsors module -->
