@@ -40,7 +40,8 @@
               {% endif %}
 
               <!-- Results tab toggle -->
-              {% if page.results and page.results.size > 0 and page.permissions.show_result %}
+              {% if page.results and page.results.size > 0 and
+              page.permissions.show_result %}
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -56,7 +57,8 @@
               {% endif %}
 
               <!-- Standing tab toggle -->
-              {% if page.standing and page.standing.size > 0 and page.permissions.show_standing %}
+              {% if page.standing and page.standing.size > 0 and
+              page.permissions.show_standing %}
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -74,6 +76,7 @@
           </div>
         </div>
 
+        {% assign permissions = page.permissions %}
         <div class="tab-content" id="tab-content">
           <!-- Team TAB -->
           {% if page.athletes or page.tech_staffs %}
@@ -95,7 +98,8 @@
                 <div class="people">
                   <div>
                     {% for item in page.athletes.POR %} {% include
-                    components/person.html item=item %} {% endfor %}
+                    components/person.html item=item permissions=permissions %}
+                    {% endfor %}
                   </div>
                 </div>
               </div>
@@ -114,7 +118,8 @@
                 <div class="people">
                   <div>
                     {% for item in page.athletes.DIF %} {% include
-                    components/person.html item=item %} {% endfor %}
+                    components/person.html item=item
+                    permissions=permissions %} {% endfor %}
                   </div>
                 </div>
               </div>
@@ -133,7 +138,8 @@
                 <div class="people">
                   <div>
                     {% for item in page.athletes.CEN %} {% include
-                    components/person.html item=item %} {% endfor %}
+                    components/person.html item=item
+                    permissions=permissions %} {% endfor %}
                   </div>
                 </div>
               </div>
@@ -152,7 +158,8 @@
                 <div class="people">
                   <div>
                     {% for item in page.athletes.ATT %} {% include
-                    components/person.html item=item %} {% endfor %}
+                    components/person.html item=item
+                    permissions=permissions %} {% endfor %}
                   </div>
                 </div>
               </div>
@@ -171,7 +178,8 @@
                 <div class="people">
                   <div>
                     {% for item in page.athletes.GIO %} {% include
-                    components/person.html item=item %} {% endfor %}
+                    components/person.html item=item
+                    permissions=permissions %} {% endfor %}
                   </div>
                 </div>
               </div>
@@ -200,7 +208,8 @@
           {% endif %}
 
           <!-- Results TAB -->
-          {% if page.results and page.results.size > 0 and page.permissions.show_result %}
+          {% if page.results and page.results.size > 0 and
+          page.permissions.show_result %}
           <div
             class="tab-pane fade"
             id="calendar"
@@ -270,7 +279,8 @@
           {% endif %}
 
           <!-- Standings TAB -->
-          {% if page.standing and page.standing.size > 0 and page.permissions.show_standing %}
+          {% if page.standing and page.standing.size > 0 and
+          page.permissions.show_standing %}
           <div
             class="tab-pane fade"
             id="ranking"
