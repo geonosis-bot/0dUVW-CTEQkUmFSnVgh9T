@@ -426,6 +426,7 @@ section.news-detail {
       height: calc(100% - 40px);
       background-size: cover;
       background-position: center;
+      background-color: $first_color;
 
       .overlay {
         position: absolute;
