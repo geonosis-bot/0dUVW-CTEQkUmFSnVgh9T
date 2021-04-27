@@ -10,7 +10,6 @@
     <div class="menu">
       <ul>
         <!-- society -->
-        {% comment %}
         {% if site.data.manifest.modules.club_history %}
           {% if page.namespace == "club" %}
             <li class="active" id="club"><a href="{{ site.data.manifest.subpath }}club">SOCIETÀ</a></li>
@@ -18,7 +17,6 @@
             <li id="club"><a href="{{ site.data.manifest.subpath }}club">SOCIETÀ</a></li>
           {% endif %}
         {% endif %}
-        {% endcomment %}
 
         <!-- news -->
         {% if site.data.manifest.modules.news %}
