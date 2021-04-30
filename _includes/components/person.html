@@ -25,7 +25,7 @@
   {% endif %}
 
   <!-- date -->
-  {% if permissions.birthdate == "HIDE"%} {% else %} {% if item.birthdate %}
+  {% if permissions.birthdate == "HIDE" or include.birthdate==false %} {% else %} {% if item.birthdate %}
   <p class="date">{{ item.birthdate }}</p>
   {% endif %} {% endif %}
 </div>

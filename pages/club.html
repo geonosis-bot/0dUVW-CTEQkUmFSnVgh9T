@@ -50,7 +50,7 @@ permalink: /club
       <div class="people d-block">
         <div>
           {% for item in site.data.manifest.modules.management_staff %} {% include
-          components/person.html item=item %} {% endfor %}
+          components/person.html item=item birthdate=false %} {% endfor %}
         </div>
       </div>
       {% else %}
