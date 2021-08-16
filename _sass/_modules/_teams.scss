@@ -101,7 +101,9 @@
 
         .match {
           padding: 10px 0;
-          > div {
+          display: grid;
+          grid-template-columns: auto 20px;
+          > div > div {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -125,6 +127,18 @@
               font-weight: $font_light !important;
             }
           }
+
+          .score-wrap {
+            display: flex;
+            align-items: center;
+            .forfeit {
+              color: $grey_color_dark;
+              font-size: 10px;
+              text-transform: uppercase;
+              margin-right: 10px;
+            }
+          }
+
           border: 1px solid $grey_color_light;
 
           &:nth-child(odd) {
@@ -141,7 +155,7 @@
           .club-logo {
             width: 25px;
             margin-right: 15px;
-      
+
             @include respond-to(xs) {
               width: 20px;
             }

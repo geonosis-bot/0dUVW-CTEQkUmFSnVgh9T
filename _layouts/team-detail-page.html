@@ -118,8 +118,8 @@
                 <div class="people">
                   <div>
                     {% for item in page.athletes.DIF %} {% include
-                    components/person.html item=item
-                    permissions=permissions %} {% endfor %}
+                    components/person.html item=item permissions=permissions %}
+                    {% endfor %}
                   </div>
                 </div>
               </div>
@@ -138,8 +138,8 @@
                 <div class="people">
                   <div>
                     {% for item in page.athletes.CEN %} {% include
-                    components/person.html item=item
-                    permissions=permissions %} {% endfor %}
+                    components/person.html item=item permissions=permissions %}
+                    {% endfor %}
                   </div>
                 </div>
               </div>
@@ -158,8 +158,8 @@
                 <div class="people">
                   <div>
                     {% for item in page.athletes.ATT %} {% include
-                    components/person.html item=item
-                    permissions=permissions %} {% endfor %}
+                    components/person.html item=item permissions=permissions %}
+                    {% endfor %}
                   </div>
                 </div>
               </div>
@@ -178,8 +178,8 @@
                 <div class="people">
                   <div>
                     {% for item in page.athletes.GIO %} {% include
-                    components/person.html item=item
-                    permissions=permissions %} {% endfor %}
+                    components/person.html item=item permissions=permissions %}
+                    {% endfor %}
                   </div>
                 </div>
               </div>
@@ -198,7 +198,8 @@
                 <div class="people">
                   <div>
                     {% for item in page.tech_staffs %} {% include
-                    components/person.html item=item birthdate=false %} {% endfor %}
+                    components/person.html item=item birthdate=false %} {%
+                    endfor %}
                   </div>
                 </div>
               </div>
@@ -240,33 +241,44 @@
                     else %} {% assign away_class = "" %} {% endif %}
 
                     <div class="match">
-                      <div class="home {{home_class}}">
-                        <div class="info">
-                          <img
-                            class="club-logo"
-                            src="{%if res.home.club_logo %}{{res.home.club_logo}}{% else %}https://storage.googleapis.com/gle-assets/no-logo.png{% endif %}"
-                          />
-                          <span>{{ res.home.club_name }}</span>
+                      <div>
+                        <div class="home {{home_class}}">
+                          <div class="info">
+                            <img
+                              class="club-logo"
+                              src="{%if res.home.club_logo %}{{res.home.club_logo}}{% else %}https://storage.googleapis.com/gle-assets/no-logo.png{% endif %}"
+                            />
+                            <span>{{ res.home.club_name }}</span>
+                          </div>
+
+                          <div class="score-wrap">
+                            {% if res.result.forfeit == "home" %}
+                            <div class="forfeit">tavolino</div>
+                            {% endif %} {% if res.result.home %}
+                            <div class="score">{{ res.result.home }}</div>
+                            {% else %}
+                            <div class="score">-</div>
+                            {% endif %}
+                          </div>
                         </div>
-                        {% if res.result.home %}
-                        <div class="score">{{ res.result.home }}</div>
-                        {% else %}
-                        <div class="score">-</div>
-                        {% endif %}
-                      </div>
-                      <div class="away {{away_class}}">
-                        <div class="info">
-                          <img
-                            class="club-logo"
-                            src="{%if res.away.club_logo %}{{res.away.club_logo}}{% else %}https://storage.googleapis.com/gle-assets/no-logo.png{% endif %}"
-                          />
-                          <span>{{ res.away.club_name }}</span>
+                        <div class="away {{away_class}}">
+                          <div class="info">
+                            <img
+                              class="club-logo"
+                              src="{%if res.away.club_logo %}{{res.away.club_logo}}{% else %}https://storage.googleapis.com/gle-assets/no-logo.png{% endif %}"
+                            />
+                            <span>{{ res.away.club_name }}</span>
+                          </div>
+                          <div class="score-wrap">
+                            {% if res.result.forfeit == "away" %}
+                            <div class="forfeit">tavolino</div>
+                            {% endif %} {% if res.result.away %}
+                            <div class="score">{{ res.result.away }}</div>
+                            {% else %}
+                            <div class="score">-</div>
+                            {% endif %}
+                          </div>
                         </div>
-                        {% if res.result.away %}
-                        <div class="score">{{ res.result.away }}</div>
-                        {% else %}
-                        <div class="score">-</div>
-                        {% endif %}
                       </div>
                     </div>
                     {% endfor %}
