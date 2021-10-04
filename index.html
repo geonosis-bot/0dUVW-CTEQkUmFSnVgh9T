@@ -11,10 +11,7 @@ permalink: /
 endif %}
 
 <!-- Next matches module -->
-<!-- FIXME: for now check if first team on array has permissions (they are the same for each team)-->
-{% if site.data.manifest.modules.next_matches and
-site.data.manifest.modules.teams and
-site.data.manifest.modules.teams[0].permissions.show_result %} {% include
+{% if site.data.manifest.modules.next_matches %} {% include
 modules/next_matches.html %} {% endif %}
 
 <!-- News module -->
