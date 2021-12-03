@@ -21,6 +21,7 @@ jobs:
         with:
           jekyll_src: "./"
           target_branch: "build"
+          pre_build_commands: 'bundle update ffi'
 
       - name: Dump steps context
         env:
