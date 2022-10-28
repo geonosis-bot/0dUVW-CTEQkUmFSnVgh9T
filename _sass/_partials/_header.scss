@@ -289,26 +289,9 @@ header.main_menu {
         grid-auto-rows: max-content;
         grid-template-columns: repeat(4, 1fr);
 
-        .submenu {
-          // max-height: 250px;
-          margin-bottom: 30px;
-          h3,
-          a {
-            color: $text_on_first_color;
-          }
+        a {
           h3 {
-            margin-bottom: 20px;
-          }
-
-          a {
-            font-weight: $font_light;
-            font-size: 16px;
-            display: block;
-            padding: 5px 0;
-            &:hover {
-              color: $text_on_first_color !important;
-              text-decoration: underline;
-            }
+            color: $text_on_first_color !important;
           }
         }
       }

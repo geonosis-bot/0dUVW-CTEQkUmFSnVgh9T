@@ -115,25 +115,16 @@
         <div class="left">
           <div class="head">Squadre</div>
           <div class="menu">
-            <ul>
-              {% for item in site.data.manifest.modules.teams_for_menu %}
-              <li class="submenu">
-                <a href="#"
-                  >{{ item.category_name }} <i class="las la-angle-down"></i
-                ></a>
                 <ul>
-                  {% for subitem in item.teams %}
+                  {% for item in site.data.manifest.modules.teams_for_menu %}
                   <li>
                     <a
-                      href="{{ site.data.manifest.subpath }}teams/{{subitem.slug}}"
-                      >{{ subitem.name }}</a
+                      href="{{ site.data.manifest.subpath }}teams/{{item.slug}}"
+                      >{{ item.name }}</a
                     >
                   </li>
                   {% endfor %}
                 </ul>
-              </li>
-              {% endfor %}
-            </ul>
           </div>
         </div>
         <div class="right">
@@ -156,22 +147,11 @@
       <div class="teams-menu-close">
         <i class="las la-times"></i>
       </div>
+
       <div class="menu-wrapper">
-        {% for item in site.data.manifest.modules.teams_for_menu %} {% if
-        item.teams.size > 0 %}
-        <div class="submenu">
-          <h3>{{ item.category_name }}</h3>
-          <ul>
-            {% for subitem in item.teams %}
-            <li>
-              <a href="{{ site.data.manifest.subpath }}teams/{{subitem.slug}}"
-                >{{ subitem.name }}</a
-              >
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %} {% endfor %}
+        {% for item in site.data.manifest.modules.teams_for_menu %}
+          <a  href="{{ site.data.manifest.subpath }}teams/{{item.slug}}""><h3>{{ item.name }}</h3></a>
+      {% endfor %}
       </div>
     </div> 
   </div>
