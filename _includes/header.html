@@ -29,7 +29,7 @@
         {% endif %}
 
         <!-- teams -->
-        {% if site.data.manifest.modules.teams_for_menu %}
+        {% if site.data.manifest.modules.teams_for_menu and site.data.manifest.modules.teams_for_menu.size > 0 %}
           {% if page.namespace == "teams" or page.team_id %}
           <li id="teams" class="active"><a class="teams-menu-open">SQUADRE</a></li>
           {% else %}
@@ -83,7 +83,7 @@
         {% endif %}
 
         <!-- teams -->
-        {% if site.data.manifest.modules.teams_for_menu %}
+        {% if site.data.manifest.modules.teams_for_menu and site.data.manifest.modules.teams_for_menu.size > 0 %}
         <li><a class="mobile-teams-menu-open">Squadre</a></li>
         {% endif %}
 
