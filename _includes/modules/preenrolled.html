@@ -1,7 +1,11 @@
 <section class="preenrolled section-right-image first-color-bg">
   <div>
     <div class="left container-fluid">
-      <h3 class="section-title">Entra nel Club!</h3>
+      <h3 class="section-title">
+        {% if site.data.manifest.modules.preenrolled.title %}
+        {{site.data.manifest.modules.preenrolled.title}} {% else %} Entra nel
+        Club! {% endif %}
+      </h3>
       <p class="whiteBigP">
         {{ site.data.manifest.modules.preenrolled.subtitle }}
       </p>
@@ -10,7 +14,10 @@
           href="{{ site.data.manifest.modules.preenrolled.url }}"
           target="_blank"
           class="btn btn-secondary btn-3d"
-          >Iscriviti!</a
+        >
+          {% if site.data.manifest.modules.preenrolled.buttonText %}
+          {{site.data.manifest.modules.preenrolled.buttonText}} {% else %}
+          Iscriviti! {% endif %}</a
         >
       </div>
     </div>
