@@ -1,9 +1,11 @@
 <div class="person">
   <div class="img-wrap">
     {% if item.avatar_url %} {% if item.avatar_url contains 'googleusercontent'
-    %}
-    <img src="{{item.avatar_url}}=w600-h600-pp" />
+    %} {% if item.avatar_url contains '=s0' %}
+    <img src="{{item.avatar_url}}-w600-h600-pp" />
     {% else %}
+    <img src="{{item.avatar_url}}=w600-h600-pp" />
+    {% endif %} {% else %}
     <img src="{{item.avatar_url}}" />
     {% endif %} {% else %}
     <img src="{{site.data.manifest.subpath}}assets/img/player.svg" />
@@ -25,7 +27,8 @@
   {% endif %}
 
   <!-- date -->
-  {% if permissions.birthdate == "HIDE" or include.birthdate==false %} {% else %} {% if item.birthdate %}
+  {% if permissions.birthdate == "HIDE" or include.birthdate==false %} {% else
+  %} {% if item.birthdate %}
   <p class="date">{{ item.birthdate }}</p>
   {% endif %} {% endif %}
 </div>
