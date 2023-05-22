@@ -16,12 +16,11 @@ jobs:
       # Standard usage
       - uses: helaili/jekyll-action@v2
         id: "build"
-        env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           jekyll_src: "./"
           target_branch: "build"
-          pre_build_commands: 'bundle update ffi'
+          pre_build_commands: 'bundle update ffi; git config --global http.version HTTP/1.1'
 
       - name: Dump steps context
         env:
