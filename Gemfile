@@ -31,3 +31,5 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem 'jekyll-multiple-languages-plugin'
 
 gem "webrick"
+
+gem "faraday-retry"
