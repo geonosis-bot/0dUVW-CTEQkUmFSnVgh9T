@@ -2,7 +2,7 @@
 // Constants
 // -----------------------------------------------------------------
 const submitFormURL =
-  "https://website-php-mailsend-dot-golee-infra.appspot.com/";
+  "https://api.golee.dev/hermes/mailer/send-email-from-organization-site";
 
 // Base rules used in every form
 const baseRules = {
