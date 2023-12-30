@@ -8,7 +8,10 @@
     {% endif %} {% else %}
     <img src="{{item.avatar_url}}" />
     {% endif %} {% else %}
-    <img src="{{site.data.manifest.subpath}}assets/img/player.svg" />
+    <img
+      src="{{ site.data.manifest.logo_url}}"
+      style="width: 100px !important"
+    />
     {% endif %}
   </div>
 

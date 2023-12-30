@@ -2,7 +2,7 @@
 // Constants
 // -----------------------------------------------------------------
 const submitFormURL =
-  "https://website-php-mailsend-dot-golee-infra.appspot.com/";
+  "https://api.golee.dev/hermes/mailer/send-email-from-organization-site";
 
 // Base rules used in every form
 const baseRules = {
@@ -40,15 +40,13 @@ const baseValidationMsg = {
 };
 
 // Compose form data
-function createFormData(form) {
-  var formData = new FormData();
+function createFormDataJson(form) {
+  var formData = {};
   for (item of $(form).serializeArray()) {
-    formData.append(item.name, item.value);
+    formData[item.name] = item.value;
   }
-
-  formData.append("templateId", "d-d08314b7c9c2414cb1567088c8964d56");
-
-  return formData;
+  formData['templateId'] = "d-d08314b7c9c2414cb1567088c8964d56";
+  return JSON.stringify(formData);
 }
 
 // Handle response
@@ -88,9 +86,10 @@ $(document).ready(function () {
       try {
         $.ajax({
           url: submitFormURL,
-          data: createFormData(form),
+          data: createFormDataJson(form),
           processData: false,
-          contentType: false,
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
           type: "POST",
         }).done(function (res) {
           handleResponse(true, "contactFormSupport");
